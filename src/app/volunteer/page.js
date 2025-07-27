@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import OurMission from "@/components/OurMission/OurMission";
+import { Dot } from 'lucide-react';
 
 export default function VolunteerForm() {
   const initialForm = {
@@ -103,17 +105,17 @@ export default function VolunteerForm() {
   };
 
   return (
-    <section className="py-10 mt-20 sm:mt-20 md:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-10 mt-30   bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <ToastContainer />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center  ">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 mt-18 sm:mt-0 md:mt-20"
           >
             <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
               <Award className="w-4 h-4 mr-2" />
@@ -153,6 +155,51 @@ export default function VolunteerForm() {
                   </h4>
                   <p className="text-gray-600 text-sm">
                     Get badges and appreciation letters for your contributions.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Award className="w-4 h-4 text-blue-600" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="font-medium text-gray-900">
+                    Boost Your Portfolio
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Add volunteering experience, appreciation letters, and communication skills to your resume.
+
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Dot className="w-4 h-4 text-blue-600" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="font-medium text-gray-900">
+                    Empower Others
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Make a difference in someone’s journey to fluency by simply talking to them.
+
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Dot className="w-4 h-4 text-blue-600" />
+                </div>
+                <div className="ml-3">
+                  <h4 className="font-medium text-gray-900">
+                    Join a Global Mission
+
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    Be part of a community that believes communication is a right, not a privilege.
+
+
                   </p>
                 </div>
               </div>
@@ -275,7 +322,8 @@ export default function VolunteerForm() {
             </div>
           </motion.div>
         </div>
-        <Empowerment className="" />
+        {/* <Empowerment className="" /> */}
+        <OurMission />
       </div>
     </section>
   );
@@ -298,9 +346,8 @@ function InputField({ label, name, icon, value, onChange, error, type = "text" }
           name={name}
           value={value}
           onChange={onChange}
-          className={`block w-full pl-10 pr-3 py-3 border ${
-            error ? "border-red-500" : "border-gray-300"
-          } rounded-lg focus:ring-blue-500 focus:border-blue-500`}
+          className={`block w-full pl-10 pr-3 py-3 border ${error ? "border-red-500" : "border-gray-300"
+            } rounded-lg focus:ring-blue-500 focus:border-blue-500`}
           placeholder={`Enter ${label.toLowerCase()}`}
           aria-invalid={error ? "true" : "false"}
         />
