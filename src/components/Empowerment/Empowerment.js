@@ -33,7 +33,7 @@ const Empowerment = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-orange-50 to-blue-50 py-12 md:py-16 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-orange-50 to-blue-50 py-12 md:py-16 relative overflow-hidden mt-20">
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 right-20 w-40 h-40 bg-orange-200 rounded-full blur-[60px]"></div>
