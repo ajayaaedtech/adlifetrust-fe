@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, HeartPulse, Briefcase, ArrowRight, Heart, Users, Smile, HandHeart, Globe, ShieldCheck } from 'lucide-react';
+import { BookOpen, HeartPulse, Briefcase, ArrowRight, Heart, Users, Smile, HandHeart, Globe, ShieldCheck, Star, Sparkles } from 'lucide-react';
 
 const Empowerment = () => {
   const features = [
@@ -57,73 +57,115 @@ const Empowerment = () => {
         </div>
 
         <div className="grid lg:grid-cols-12 gap-6 md:gap-8 items-center">
-          {/* Visual Component */}
+          {/* Redesigned Visual Component */}
           <div className="lg:col-span-6 relative">
-            <div className="relative h-[320px] md:h-[400px] rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-orange-100 to-blue-100">
-              {/* Main Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-400/80 via-yellow-400/80 to-green-400/80"></div>
+            <div className="relative h-[320px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl bg-white">
+              {/* Modern gradient background with glassmorphism */}
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-orange-400/30 via-transparent to-blue-400/30"></div>
               
-              {/* Community Elements */}
-              <div className="absolute inset-0 p-4">
-                {/* Education Card */}
-                <div className="absolute top-4 left-4 w-28 h-20 bg-white/90 rounded-lg p-2 shadow-sm transform hover:scale-105 transition-all duration-300 border border-white/50">
-                  <div className="flex items-center justify-between mb-1">
-                    <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-                      <BookOpen className="w-3 h-3 text-white" />
+              {/* Animated background elements */}
+              <div className="absolute inset-0">
+                <div className="absolute top-8 left-8 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
+                <div className="absolute top-16 right-12 w-12 h-12 bg-white/5 rounded-full animate-pulse delay-1000"></div>
+                <div className="absolute bottom-20 left-16 w-16 h-16 bg-white/10 rounded-full animate-pulse delay-500"></div>
+              </div>
+
+              {/* Main content area */}
+              <div className="absolute inset-0 p-6 flex flex-col">
+                {/* Top stats row */}
+                <div className="flex justify-between items-start mb-6">
+                  <div className="bg-white/20 backdrop-blur-md rounded-xl p-3 border border-white/30">
+                    <div className="flex items-center gap-2 mb-1">
+                      <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                        <BookOpen className="w-4 h-4 text-white" />
+                      </div>
+                      <Sparkles className="w-4 h-4 text-yellow-300" />
                     </div>
-                    <Smile className="w-4 h-4 text-yellow-500" />
+                    <div className="text-white font-bold text-lg">2,500+</div>
+                    <div className="text-white/80 text-xs">Students Educated</div>
                   </div>
-                  <div>
-                    <div className="text-sm font-medium text-gray-800">Education</div>
-                    <div className="text-xs text-gray-600">Building Dreams</div>
+                  
+                  <div className="bg-white/20 backdrop-blur-md rounded-xl p-3 border border-white/30">
+                    <div className="flex items-center gap-2 mb-1">
+                      <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                        <HeartPulse className="w-4 h-4 text-white" />
+                      </div>
+                      <Star className="w-4 h-4 text-yellow-300" />
+                    </div>
+                    <div className="text-white font-bold text-lg">15K+</div>
+                    <div className="text-white/80 text-xs">Families Served</div>
                   </div>
                 </div>
-                
-                {/* Health Card */}
-                <div className="absolute top-20 right-4 w-24 h-20 bg-white/90 rounded-lg p-2 shadow-sm transform hover:scale-105 transition-all duration-300 border border-white/50">
-                  <div className="text-center">
-                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-1">
-                      <HeartPulse className="w-3 h-3 text-white" />
+
+                {/* Center impact circle */}
+                <div className="flex-1 flex items-center justify-center">
+                  <div className="relative">
+                    {/* Outer ring */}
+                    <div className="w-32 h-32 border-4 border-white/30 rounded-full flex items-center justify-center">
+                      {/* Inner circle */}
+                      <div className="w-24 h-24 bg-white/25 backdrop-blur-md rounded-full border border-white/40 flex flex-col items-center justify-center">
+                        <Heart className="w-8 h-8 text-red-400 mb-1" />
+                        <div className="text-white font-bold text-lg">18K+</div>
+                        <div className="text-white/80 text-xs">Lives Changed</div>
+                      </div>
                     </div>
-                    <div className="text-sm font-medium text-gray-800">Healthcare</div>
-                    <div className="text-xs text-gray-600">Healing Communities</div>
-                  </div>
-                </div>
-                
-                {/* Livelihood Card */}
-                <div className="absolute bottom-4 left-6 w-32 h-20 bg-white/90 rounded-lg p-2 shadow-sm transform hover:scale-105 transition-all duration-300 border border-white/50">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center">
+                    
+                    {/* Floating elements around the circle */}
+                    <div className="absolute -top-2 -left-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                      <Smile className="w-3 h-3 text-white" />
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center">
+                      <Users className="w-3 h-3 text-white" />
+                    </div>
+                    <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-green-400 rounded-full flex items-center justify-center">
+                      <Globe className="w-3 h-3 text-white" />
+                    </div>
+                    <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-orange-400 rounded-full flex items-center justify-center">
                       <Briefcase className="w-3 h-3 text-white" />
                     </div>
-                    <div>
-                      <div className="text-sm font-medium text-gray-800">Livelihoods</div>
-                      <div className="text-xs text-gray-600">Sustainable Futures</div>
-                    </div>
                   </div>
                 </div>
-                
-                {/* Impact Card */}
-                <div className="absolute bottom-8 right-8 w-24 h-24 bg-white/90 rounded-full p-2 shadow-sm flex flex-col items-center justify-center transform hover:scale-105 transition-all duration-300 border border-white/50">
-                  <Users className="w-5 h-5 text-blue-600 mb-1" />
-                  <div className="text-md font-bold text-gray-800">18K+</div>
-                  <div className="text-xs text-gray-600">Lives Touched</div>
+
+                {/* Bottom row */}
+                <div className="flex justify-between items-end">
+                  <div className="bg-white/20 backdrop-blur-md rounded-xl p-3 border border-white/30">
+                    <div className="flex items-center gap-2 mb-1">
+                      <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
+                        <Briefcase className="w-4 h-4 text-white" />
+                      </div>
+                      <div className="flex">
+                        <Star className="w-3 h-3 text-yellow-300" />
+                        <Star className="w-3 h-3 text-yellow-300" />
+                        <Star className="w-3 h-3 text-yellow-300" />
+                      </div>
+                    </div>
+                    <div className="text-white font-bold text-lg">800+</div>
+                    <div className="text-white/80 text-xs">Entrepreneurs</div>
+                  </div>
+                  
+                  <div className="bg-white/20 backdrop-blur-md rounded-xl p-3 border border-white/30">
+                    <div className="flex items-center gap-2 mb-1">
+                      <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
+                        <ShieldCheck className="w-4 h-4 text-white" />
+                      </div>
+                      <Sparkles className="w-4 h-4 text-yellow-300" />
+                    </div>
+                    <div className="text-white font-bold text-lg">120+</div>
+                    <div className="text-white/80 text-xs">Communities</div>
+                  </div>
                 </div>
               </div>
 
-              {/* Central Symbol */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-14 h-14 bg-white/80 rounded-full border border-white/60 flex items-center justify-center shadow-md">
-                  <Heart className="w-6 h-6 text-red-500" />
-                </div>
-              </div>
+              {/* Subtle overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
             </div>
           </div>
           
           {/* Content Section */}
           <div className="lg:col-span-6 space-y-5">
             {/* Impact Stats */}
-            <div className="grid grid-cols-3 gap-3 mb-4">
+            {/* <div className="grid grid-cols-3 gap-3 mb-4">
               {impactStats.map((stat, index) => (
                 <div key={index} className="bg-white/80 rounded-lg p-3 shadow-sm text-center">
                   <div className="flex justify-center mb-1">{stat.icon}</div>
@@ -131,7 +173,7 @@ const Empowerment = () => {
                   <div className="text-xs text-gray-600">{stat.label}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
             
             {/* Features */}
             <div className="space-y-3">

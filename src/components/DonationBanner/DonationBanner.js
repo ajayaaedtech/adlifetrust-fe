@@ -49,7 +49,14 @@ const DonationBanner = () => {
         {/* Right side - Donate button */}
         <div className="flex-shrink-0 ml-8">
           <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-offset-2 focus:ring-offset-orange-500">
-            Donate Now
+         
+             <a
+                href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               Donate Now
+              </a>
           </button>
         </div>
       </div>

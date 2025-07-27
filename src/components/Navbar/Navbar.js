@@ -98,11 +98,6 @@ const Navbar = () => {
                 rel="noopener noreferrer"
               >
                 <button className="relative bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white px-6 py-2 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-red-500/30 flex items-center space-x-2 hover:cursor-pointer">
-
-                  {/* 🔴 Ping Dot */}
-
-
-                  {/* Button Text */}
                   <span>Donate Now</span>
                   <span className="">
                     <span className="flex h-3 w-3 relative">

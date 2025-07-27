@@ -135,44 +135,53 @@ const OrangeHunRun = () => {
               )}
 
               {activeTab === 'details' && (
-                <div className="space-y-4">
-                  <div className="bg-orange-50 p-4 rounded-lg">
-                    <h3 className="font-medium text-orange-800 mb-2 flex items-center">
-                      <Award className="w-4 h-4 mr-2" />
-                      Race Categories
+                <div className="space-y-1">
+                  {/* Intro Section (Replaces Race Categories) */}
+                  <div className="bg-orange-50 p-6 rounded-lg shadow border-l-4 border-orange-500">
+                    <h3 className="text-xl font-semibold text-orange-800 mb-3">
+                      Our Launch in Hyderabad
                     </h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      <div className="bg-white p-3 rounded border border-orange-100">
-                        <h4 className="font-medium text-sm text-orange-700">10 KM RUN</h4>
-                        <p className="text-xs text-gray-600 mt-1">Competitive race with chip timing</p>
-                        <p className="text-xs text-gray-500 mt-2">Age groups: 16-25, 26-35, 36+</p>
-                      </div>
-                      <div className="bg-white p-3 rounded border border-blue-100">
-                        <h4 className="font-medium text-sm text-blue-700">5 KM RUN/WALK</h4>
-                        <p className="text-xs text-gray-600 mt-1">Family-friendly non-competitive</p>
-                        <p className="text-xs text-gray-500 mt-2">All ages welcome</p>
-                      </div>
-                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      We are thrilled to launch our journey in the vibrant city of Hyderabad, Telangana, where we are proud to unveil our inaugural event—a dynamic and high-energy run event that embodies the spirit of community, health, and celebration.
+                      <br /><br />
+
+                      This pilot initiative reflects the energy, passion, and community-driven spirit that defines Orange Hub Events.
+                    </p>
                   </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h3 className="font-medium text-gray-800 mb-2 flex items-center">
-                      <Shield className="w-4 h-4 mr-2 text-orange-500" />
+
+                  {/* What's Included */}
+                  <div className="bg-white p-6 rounded-lg shadow border border-gray-200">
+                    <h3 className="font-semibold text-gray-800 mb-4 flex items-center text-lg">
+                      <Shield className="w-5 h-5 mr-2 text-orange-500" />
                       What&apos;s Included
                     </h3>
-                    <ul className="text-sm text-gray-600 space-y-2">
+                    <ul className="text-sm text-gray-700 space-y-3">
                       <li className="flex items-start">
-                        <span className="text-orange-500 mr-2">•</span>
+                        <span className="text-orange-500 mr-2 text-lg">•</span>
                         <span>High-quality event T-shirt & Finisher medal for all participants</span>
                       </li>
                       <li className="flex items-start">
-                        <span className="text-orange-500 mr-2">•</span>
+                        <span className="text-orange-500 mr-2 text-lg">•</span>
                         <span>Refreshments and hydration stations along the route</span>
                       </li>
-
                     </ul>
+                  </div>
+
+                  {/* Quote & Image */}
+                  <div className="flex flex-col md:flex-row items-center justify-between bg-blue-900 text-white rounded-lg p-6 gap-6 shadow-md">
+                    <img
+                      src="/runner.png"
+                      alt="Runners"
+                      className="h-24 object-contain"
+                    />
+                    <blockquote className="text-center md:text-right font-semibold text-xl md:text-2xl leading-snug">
+                      “Fueling Aspirations,<br />
+                      Creating Celebrations.”
+                    </blockquote>
                   </div>
                 </div>
               )}
+
 
               {activeTab === 'register' && (
                 <div className="space-y-4">

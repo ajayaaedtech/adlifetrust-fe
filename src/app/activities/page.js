@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Stethoscope, Briefcase, BookOpen, Users, MapPin, Calendar, Target } from 'lucide-react';
+import { GraduationCap, Stethoscope, Briefcase, BookOpen, Users, MapPin, Calendar, Target,Brain  } from 'lucide-react';
 import Image from 'next/image';
 
 const activities = [
@@ -15,7 +15,7 @@ const activities = [
     images: [
       {
         id: 1,
-        src: '/livelihood.png',
+        src: '/project.jpg',
         alt: 'Women learning tailoring skills'
       },
 
@@ -53,8 +53,8 @@ const activities = [
     images: [
       {
         id: 1,
-        src: '/research.png',
-        alt: 'Mobile medical camp in village'
+        src: '/c.jpg',
+        alt: 'women gathered for a knowledge of healthcare camp organized by AD Life in Telangana.'
       },
 
     ],
@@ -73,13 +73,32 @@ const activities = [
       {
         id: 1,
         src: '/b.jpg',
-        alt: 'Mobile medical camp in village'
+        alt: ''
       },
 
     ],
     paragraphs: [
       "Ensuring good health is pivotal for a fulfilling life, yet India grapples with widespread health issues, including malnutrition, infant, and maternal mortality. Despite constitutional guarantees for free healthcare, over 70% of health expenses are borne by individuals, creating a significant financial burden.",
       "Recognizing this challenge, AD Life has focused its efforts on healthcare, particularly targeting tribal populations, constituting 7.95% of India's total population. Working in Telangana, AD Life has provided essential health services to 25,000 tribal individuals, collaborating with local gram panchayats in 30 villages. Medical camps facilitated access to general physicians, cardiologists, pediatricians, and gynecologists, benefitting 9,467 tribal members. Eye and dental camps further addressed specific health needs.",
+    ]
+  },
+    {
+    id: 'Mental-Health ',
+    title: 'Mental Health ',
+    icon: Brain ,
+    color: 'from-orange-500 to-oreange-600',
+    bgColor: 'bg-red-50',
+    images: [
+      {
+        id: 1,
+        src: '/oranghub-events.JPG',
+        alt: 'Upcoing event -  Mind Over Miles'
+      },
+
+    ],
+    paragraphs: [
+      " At Orange Hub Events, we believe mental health deserves the same attention and celebration as physical wellness. In today’s fast-paced world, mental well-being is often neglected or misunderstood — but it’s at the heart of how we live, work, connect, and grow.",
+      "According to global studies, 1 in 4 people will experience mental health issues at some point in their lives. Yet the stigma surrounding mental health keeps millions from seeking help, speaking up, or even recognizing the signs.",
     ]
   }
 ];
@@ -283,9 +302,16 @@ const ActivitiesPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
             >
-              <button className="px-8 py-4 bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-400/30">
-                Donate Us
-              </button>
+              <a
+                href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-base rounded-full transition-all duration-300 shadow-md"
+              >
+                GIVE NOW
+                <span className="ml-2 text-lg">→</span>
+              </a>
+
             </motion.div>
           </motion.div>
         </div>

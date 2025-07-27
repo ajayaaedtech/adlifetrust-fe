@@ -77,7 +77,7 @@ export default function DonationSection() {
 
                                 </p>
                                 <div className="bg-gray-900/50 p-4 rounded-lg mb-6">
-                                    <p className="text-blue-400 font-mono break-all">adlifetrust@addlifegroupcom</p>
+                                    <p className="text-blue-400 font-mono break-all">adlife.trust@addlifegroup.com</p>
                                 </div>
                             </div>
                         </div>
@@ -85,13 +85,13 @@ export default function DonationSection() {
                         <div className="mt-auto">
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <a
-                                    href="#donate"
+                                      href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
                                     className="flex-1 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300 text-center"
                                 >
                                     Donate Now
                                 </a>
                                 <a
-                                    href="mailto:adlifetrust@addlifegroupcom"
+                                    href="mailto:adlife.trust@addlifegroup.com"
                                     className="flex-1 px-6 py-3 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-600 transition-all duration-300 text-center"
                                 >
                                     Contact Us

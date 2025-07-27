@@ -144,7 +144,7 @@ const Mentees = () => {
   const tabInfo = tabs.find(t => t.id === activeTab);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <div className="min-h-screen mt-30 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       <ToastContainer position="top-right" autoClose={3000} />
 
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
@@ -208,7 +208,7 @@ const Mentees = () => {
           )}
 
           <div className="p-8 md:p-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div className="text-white space-y-6">
                 <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                   {activeTab === 'mentees' ? <Heart className="w-4 h-4 fill-white" /> : <Star className="w-4 h-4 fill-white" />}
@@ -242,14 +242,14 @@ const Mentees = () => {
                 </div>
               </div>
 
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50">
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl md:p-8 p-2  shadow-xl border border-white/50">
                 <form className="space-y-5" onSubmit={handleSubmit}>
                   <div className="text-center mb-6">
                     <h3 className="text-2xl font-bold text-slate-800 mb-2">Join Now</h3>
                     <p className="text-slate-600">Fill in your details to get started</p>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
                     <div className="space-y-1">
                       <input 
                         name="firstName" 

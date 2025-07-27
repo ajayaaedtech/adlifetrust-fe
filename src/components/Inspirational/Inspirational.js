@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
 export default function GandhiQuoteHero() {
@@ -90,7 +91,7 @@ export default function GandhiQuoteHero() {
               {/* Animated Divider */}
               <div className="flex justify-center mb-8">
                 <div className="relative w-40 h-px overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400 to-transparent animate-grow"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-400 to-transparent animate-grow"></div>
                 </div>
               </div>
 
@@ -129,7 +130,7 @@ export default function GandhiQuoteHero() {
                 </div>
 
                 <div className="text-left">
-                  <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-200">Our Mission</h3>
+                  <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-200">Our Vision</h3>
                   <p className="text-gray-300 leading-relaxed text-base md:text-lg font-light">
                     AD Life is an 18-year-old Trust that is passionate about making a difference in the lives of people who are marginalized or vulnerable. This passion is reflected in our motto, &apos;Adding Value to Life&apos;.
                   </p>
@@ -174,13 +175,17 @@ export default function GandhiQuoteHero() {
                   background: 'linear-gradient(135deg, #4A5FD4 0%, #6B7FE8 100%)',
                   boxShadow: '0 8px 30px rgba(74, 95, 212, 0.5)'
                 }}>
-                <span className="absolute inset-0 bg-gradient-to-r from-[#6B7FE8] to-[#4A5FD4] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                <span className="relative z-10 flex items-center">
-                  Join Our Mission
-                  <svg className="ml-3 w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
+                <Link href="/activities" className="">
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#6B7FE8] to-[#4A5FD4] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                  <span className="relative z-10 flex items-center">
+
+                    Join Our Mission
+                    <svg className="ml-3 w-5 h-5 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </Link>
+
                 <span className="absolute -bottom-1 left-0 w-full h-1 bg-white/30 group-hover:bg-white/50 transition-all duration-500"></span>
               </button>
 
@@ -189,14 +194,17 @@ export default function GandhiQuoteHero() {
                   border: '1px solid rgba(107, 127, 232, 0.5)',
                   background: 'rgba(11, 13, 45, 0.5)'
                 }}>
-                <span className="absolute inset-0 bg-gradient-to-r from-[#1B1E5B]/30 to-[#2A2F7A]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                <span className="relative z-10 flex items-center">
-                  Learn More
-                  <svg className="ml-3 w-5 h-5 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </span>
-                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-blue-300 group-hover:w-full transition-all duration-500"></span>
+                <Link href="/about-us">
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#1B1E5B]/30 to-[#2A2F7A]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                  <span className="relative z-10 flex items-center">
+                    Learn More
+                    <svg className="ml-3 w-5 h-5 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-1 bg-blue-300 group-hover:w-full transition-all duration-500"></span>
+                </Link>
+
               </button>
             </div>
           </div>
