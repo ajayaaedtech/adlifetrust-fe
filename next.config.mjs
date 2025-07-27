@@ -10,7 +10,13 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'placehold.co', // Also adding the fallback image host
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
         port: '',
         pathname: '/**',
       }

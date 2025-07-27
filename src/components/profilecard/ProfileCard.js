@@ -46,7 +46,7 @@ const ProfileScreen = () => {
               <div className="lg:w-1/3 flex flex-col items-center">
                 <div className="relative group">
                   <Image 
-                    src="/z.jpg" 
+                    src="https://raw.githubusercontent.com/ajayaaedtech/adlifetrust-fe/refs/heads/main/public/z.JPG" 
                     alt="Dr. K Sudharani"
                     width={512}
                     height={512}
