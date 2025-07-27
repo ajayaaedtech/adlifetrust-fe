@@ -169,7 +169,9 @@ const OrangeHunRun = () => {
 
                   {/* Quote & Image */}
                   <div className="flex flex-col md:flex-row items-center justify-between bg-blue-900 text-white rounded-lg p-6 gap-6 shadow-md">
-                    <img
+                    <Image
+                      width={100}
+                      height={100}
                       src="/runner.png"
                       alt="Runners"
                       className="h-24 object-contain"

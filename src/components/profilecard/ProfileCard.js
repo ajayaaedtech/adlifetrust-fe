@@ -26,8 +26,8 @@ const CheckCircleIcon = ({ className }) => (
 const ProfileScreen = () => {
   const achievements = [
     "Published 15 research papers in renowned medical journals",
-    "Successfully guided over 10 postgraduate theses to completion",
-    "Active promoter of mental health via community and TV programs",
+    "Successfully guided over 10 postgraduate ",
+    "Active promoter of mental health via community ",
     "Recognized as a dedicated academic and clinician in her field",
     "Continues to mentor future psychiatrists and advance mental healthcare"
   ];
@@ -37,7 +37,7 @@ const ProfileScreen = () => {
       <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
           {/* Header with subtle gradient */}
-          <div className="h-32 bg-gradient-to-r from-cyan-500 to-blue-600 relative"></div>
+          <div className="h-32 bg-gradient-to-r from-red-200 to-[#2E3467] relative"></div>
 
           {/* Main Content */}
           <div className="p-6 md:p-8 -mt-16">

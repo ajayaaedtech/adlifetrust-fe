@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Stethoscope, Briefcase, BookOpen, Users, MapPin, Calendar, Target,Brain  } from 'lucide-react';
+import { GraduationCap, Stethoscope, Briefcase, BookOpen, Users, MapPin, Calendar, Target, Brain } from 'lucide-react';
 import Image from 'next/image';
 
 const activities = [
@@ -82,10 +82,10 @@ const activities = [
       "Recognizing this challenge, AD Life has focused its efforts on healthcare, particularly targeting tribal populations, constituting 7.95% of India's total population. Working in Telangana, AD Life has provided essential health services to 25,000 tribal individuals, collaborating with local gram panchayats in 30 villages. Medical camps facilitated access to general physicians, cardiologists, pediatricians, and gynecologists, benefitting 9,467 tribal members. Eye and dental camps further addressed specific health needs.",
     ]
   },
-    {
+  {
     id: 'Mental-Health ',
     title: 'Mental Health ',
-    icon: Brain ,
+    icon: Brain,
     color: 'from-orange-500 to-oreange-600',
     bgColor: 'bg-red-50',
     images: [
@@ -141,7 +141,7 @@ const ActivitySection = ({ activity, index, isReverse = false }) => {
 
   return (
     <section className={`py-20 ${activity.bgColor}`}>
-      <div className="px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+      <div className="px-4 md:px-8 lg:px-16 max-w-7xl mx-auto overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -273,21 +273,21 @@ const ActivitiesPage = () => {
             </div>
 
             {/* Activity Icons */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16 ">
+            <div className="grid grid-cols-2 sm:grid-cols-4  gap-6 max-w-4xl mx-auto mt-16 ">
               {[
-                { icon: <GraduationCap size={38} />, label: "Education" },
+                { icon: <GraduationCap size={38} className=''/>, label: "Education" },
                 { icon: <Stethoscope size={38} />, label: "Healthcare" },
                 { icon: <Briefcase size={38} />, label: "Livelihoods" },
                 { icon: <BookOpen size={38} />, label: "Research" }
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
-                  className="flex flex-col items-center group"
+                  className="flex flex-col items-center group "
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
                 >
-                  <div className="w-20 h-20  bg-white/5 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:bg-yellow-400/20 group-hover:scale-105 border border-white/10 group-hover:border-yellow-400/30">
+                  <div className="w-20 h-20  bg-white/5 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:bg-yellow-400/30 bg-yellow-400/10 group-hover:scale-105 border border-white/10 ">
                     {item.icon}
                   </div>
                   <span className="text-white font-medium tracking-wide text-sm sm:text-base">{item.label}</span>
@@ -346,14 +346,14 @@ const ActivitiesPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <motion.button
+              <motion.a
+                href="/volunteer"  // Link to the volunteer page
                 className="bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Become a Volunteer
-              </motion.button>
-
+              </motion.a>
             </div>
           </motion.div>
         </div>

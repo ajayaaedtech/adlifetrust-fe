@@ -14,7 +14,7 @@ const FeatureCard = ({ icon: Icon, title, description, color, index }) => {
   const selectedColor = colorClasses[color] || colorClasses.blue;
 
   return (
-    <div 
+    <div
       className={`bg-white p-6 rounded-lg border ${selectedColor.border} hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up`}
       style={{ animationDelay: `${index * 100}ms` }}
     >
@@ -41,7 +41,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "", prefix = "" }) => 
     if (hasStarted) {
       const increment = end / (duration / 50);
       let current = 0;
-      
+
       const counter = setInterval(() => {
         current += increment;
         if (current >= end) {
@@ -66,7 +66,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "", prefix = "" }) => 
 // Animated Impact Stats Component
 const ImpactStat = ({ number, label, icon: Icon, delay = 0, isAnimated = false }) => {
   return (
-    <div 
+    <div
       className="text-center bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-all duration-300 animate-fade-in-up"
       style={{ animationDelay: `${delay}ms` }}
     >
@@ -94,47 +94,67 @@ const ADLifeProfilePage = () => {
   }, []);
 
   const priorityAreas = [
-    { 
-      text: 'Health and Nutrition', 
-      icon: Heart, 
+    {
+      text: 'Health and Nutrition',
+      icon: Heart,
       color: 'rose',
-      description: 'Ensuring access to healthcare and nutrition for vulnerable communities across rural and urban areas.'
+      description: ''
     },
-    { 
-      text: 'Education', 
-      icon: BookOpen, 
+    {
+      text: 'Education',
+      icon: BookOpen,
       color: 'blue',
-      description: 'Providing quality education and learning opportunities to children and adults in underserved communities.'
+      description: ''
     },
-    { 
-      text: 'Livelihoods & Skills', 
-      icon: Briefcase, 
+    {
+      text: 'Livelihoods and Skill Development',
+      icon: Briefcase,
       color: 'green',
-      description: 'Creating sustainable income opportunities through skill development and vocational training programs.'
+      description: ''
     },
-    { 
-      text: 'Humanitarian Aid', 
-      icon: Handshake, 
+    {
+      text: 'Humanitarian Efforts',
+      icon: Handshake,
       color: 'orange',
-      description: 'Providing immediate relief and support during emergencies, disasters, and humanitarian crises.'
+      description: ''
     },
-    { 
-      text: 'Research & Documentation', 
-      icon: Search, 
+    {
+      text: 'Research and Documentation',
+      icon: Search,
       color: 'purple',
-      description: 'Conducting research to understand community needs and document impact for evidence-based interventions.'
+      description: ''
     }
   ];
 
   return (
     <div className="bg-gray-50 min-h-screen font-sans">
-      
+
+      {/* <section className="text-center bg-gradient-to-br from-orange-100 to-yellow-50 py-16 px-4">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-orange-700 mb-4 leading-tight animate-fade-in-up">
+          About AD Life Trust
+        </h1>
+        <p className="text-gray-600 max-w-2xl mx-auto text-lg animate-fade-in-up" style={{ animationDelay: '100ms' }}>
+          Empowering communities through health, education, and sustainable development since 2005.
+        </p>
+      </section> */}
+
       {/* Header/Hero Section */}
-     
+      <div className="text-center py-16 px-4">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
+          <span className="block">Our Mission, Our Impact</span>
+          <span className="block bg-gradient-to-r from-orange-500 to-rose-500 text-transparent bg-clip-text">
+            Adding Value to Life
+          </span>
+        </h1>
+        <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
+          Discover the story behind AD Life Trust and our unwavering commitment to creating a world of hope, dignity, and equality.
+        </p>
+      </div>
+
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 py-12 space-y-16">
-        
+
         {/* About Us Section */}
         <section className={`bg-white rounded-lg shadow-sm p-8 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '500ms' }}>
           <div className="flex items-center mb-6">
@@ -146,19 +166,19 @@ const ADLifeProfilePage = () => {
               <p className="text-gray-500">Our commitment to social development</p>
             </div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                AD Life Trust, established in 2005, is dedicated to improving the lives of people in India. Our tagline, 'Adding Value to Life', reflects our commitment to making a meaningful difference for marginalized and vulnerable individuals.
+                AD Life Trust, established in 2005, is dedicated to improving the lives of people in India. Our tagline, &apos;Adding Value to Life&apos; , reflects our commitment to making a meaningful difference for marginalized and vulnerable individuals.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 We work with communities to address their most pressing challenges through sustainable, locally-driven solutions that create lasting positive change.
               </p>
             </div>
-            
+
             <div className="bg-green-50 p-6 rounded-lg border border-green-200 hover:shadow-md transition-shadow duration-300">
-              <h3 className="font-semibold text-green-800 mb-3">Our Core Belief</h3>
+              <h3 className="font-semibold text-green-800 mb-3">Our Focus Areas -</h3>
               <p className="text-green-700 leading-relaxed">
                 We put <strong>women and girls</strong> at the center of our work because we know that we cannot overcome poverty until all people have equal rights and opportunities.
               </p>
@@ -174,10 +194,10 @@ const ADLifeProfilePage = () => {
               <h3 className="text-xl font-bold text-gray-800">Our Mission</h3>
             </div>
             <p className="text-gray-700 leading-relaxed">
-              AD Life works in India to save lives and defeat poverty through community-centered programs that address health, education, livelihoods, and emergency response.
+              AD Life works in India to save lives and defeat poverty.
             </p>
           </div>
-          
+
           <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-orange-500 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
             <div className="flex items-center mb-4">
               <Eye size={24} className="text-orange-600 mr-3" />
@@ -194,18 +214,17 @@ const ADLifeProfilePage = () => {
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">Our Priority Areas</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              We focus on key areas that create sustainable change and improve the quality of life for communities we serve.
-            </p>
+              We are making a difference through our work on those aspects that bring about a sustainable change in the lives of people            </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {priorityAreas.map((area, index) => (
-              <FeatureCard 
-                key={area.text} 
-                icon={area.icon} 
-                title={area.text} 
+              <FeatureCard
+                key={area.text}
+                icon={area.icon}
+                title={area.text}
                 description={area.description}
-                color={area.color} 
+                color={area.color}
                 index={index}
               />
             ))}
@@ -223,7 +242,7 @@ const ADLifeProfilePage = () => {
               <h3 className="font-semibold text-gray-800 mb-2">Community-Centered</h3>
               <p className="text-gray-600 text-sm">Working directly with communities to understand their needs and build local capacity.</p>
             </div>
-            
+
             <div className="text-center group">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Target size={28} className="text-green-600" />
@@ -231,7 +250,7 @@ const ADLifeProfilePage = () => {
               <h3 className="font-semibold text-gray-800 mb-2">Sustainable Impact</h3>
               <p className="text-gray-600 text-sm">Creating lasting change through programs that communities can sustain long-term.</p>
             </div>
-            
+
             <div className="text-center group">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Heart size={28} className="text-purple-600" />
@@ -241,10 +260,10 @@ const ADLifeProfilePage = () => {
             </div>
           </div>
         </section>
-        
+
 
       </main>
-       <section className="bg-gradient-to-br from-orange-600 via-orange-700 to-red-700 text-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-orange-600 via-orange-700 to-red-700 text-white relative overflow-hidden">
         {/* Subtle background pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -252,9 +271,9 @@ const ADLifeProfilePage = () => {
                              radial-gradient(circle at 75% 75%, #ffffff 0%, transparent 50%)`
           }}></div>
         </div>
-        
+
         <div className={`relative max-w-6xl mx-auto px-4 py-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-         
+
 
           {/* Impact Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
