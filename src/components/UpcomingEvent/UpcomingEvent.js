@@ -56,14 +56,14 @@ const OrangeHunRun = () => {
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Run for Wellness </h2>
                 <p className="text-sm text-gray-600">Organized by <span className="text-red-700 font-bold">AdLife Trust</span> & <span className='text-orange-400 font-bold'>Orange Hub events</span></p>
               </div>
-              <div className="flex space-x-2">
+              <div className="flex bg-white space-x-2">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow border border-gray-100">
                   <Image
                     src="/logo.png"
                     width={40}
                     height={40}
                     alt="AdLife Trust Logo"
-                    className="w-6 h-6 object-contain"
+                    className="w-18 h-18 object-contain"
                   />
                 </div>
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow border border-gray-100">
@@ -72,7 +72,7 @@ const OrangeHunRun = () => {
                     width={100}
                     height={100}
                     alt="AdLife Trust Logo"
-                    className="w-40 h-40 object-contain"
+                    className="w-18 h-18 object-contain"
                   />
                 </div>
               </div>

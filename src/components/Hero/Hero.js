@@ -44,7 +44,7 @@ const Hero = () => {
         .font-inter { font-family: 'Inter', sans-serif; }
       `}</style>
 
-      <section className="relative h-screen flex items-center justify-center text-white font-inter">
+      <section className="relative min-h-screen flex items-center justify-center text-white font-inter">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -82,11 +82,11 @@ const Hero = () => {
             style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.7)' }}
             variants={itemVariants}
           >
-           AD Life Trust focuses on a quality life for women and children across the Globe. AD Life Trust aims to provide better lives to marginalized and vulnerable people through interventions and support in health (including nutrition), education, livelihoods and humanitarian efforts
+            AD Life Trust focuses on a quality life for women and children across the Globe. AD Life Trust aims to provide better lives to marginalized and vulnerable people through interventions and support in health (including nutrition), education, livelihoods and humanitarian efforts
           </motion.p>
 
           <motion.p
-            className="mt-8 text-md text-gray-200 italic"
+            className="mt-8 text-md  text-gray-200 font-semibold md:py-0 py-4"
             variants={itemVariants}
           >
             Everything is possible only with good health and adequate nutrition.
@@ -95,7 +95,7 @@ const Hero = () => {
 
         {/* NEW: Animated Scroll Down Indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20"
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden sm:block"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 1 }}
