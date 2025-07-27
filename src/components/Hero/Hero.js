@@ -36,8 +36,8 @@ const Hero = () => {
 
   return (
     <>
-   
-      
+
+
       {/* Inline styles to apply the fonts. In a real app, configure this in tailwind.config.js */}
       <style jsx global>{`
         .font-poppins { font-family: 'Poppins', sans-serif; }
@@ -54,8 +54,8 @@ const Hero = () => {
             fill
             // Add a fallback for the background image
             onError={(e) => {
-              e.target.onerror = null; 
-              e.target.src='https://placehold.co/1920x1080/1A237E/FFFFFF?text=loading';
+              e.target.onerror = null;
+              e.target.src = 'https://placehold.co/1920x1080/1A237E/FFFFFF?text=loading';
             }}
           />
           {/* NEW: Gradient Overlay for better visibility and a lighter feel */}
@@ -74,25 +74,16 @@ const Hero = () => {
             style={{ textShadow: '3px 3px 10px rgba(0, 0, 0, 0.5)' }}
             variants={itemVariants}
           >
-            Changing Lives, One Act of Kindness at a Time.
+            Adding Value to Lives, One act of kindness at a time.
           </motion.h1>
 
           <motion.p
-            className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-100"
+            className="text-lg md:text-xl max-w-5xl mx-auto mb-8 text-gray-100"
             style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.7)' }}
             variants={itemVariants}
           >
-            Our activities aim to provide better outcomes for marginalized and vulnerable people through interventions and support in health (including nutrition), education, and empowerment.
+           AD Life Trust focuses on a quality life for women and children across the Globe. AD Life Trust aims to provide better lives to marginalized and vulnerable people through interventions and support in health (including nutrition), education, livelihoods and humanitarian efforts
           </motion.p>
-
-          <motion.div variants={itemVariants}>
-            <Link href="/donate">
-              <button className="bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-xl hover:shadow-red-500/50 focus:outline-none focus:ring-4 focus:ring-red-500/50 flex items-center justify-center mx-auto space-x-2">
-                <Heart className="w-6 h-6" />
-                <span>Donate Now</span>
-              </button>
-            </Link>
-          </motion.div>
 
           <motion.p
             className="mt-8 text-md text-gray-200 italic"

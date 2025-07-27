@@ -25,29 +25,29 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Humanitarian Efforts", link: "/activities" },
+    { name: "Activities", link: "/activities" },
     { name: "Volunteer", link: "/volunteer" },
     { name: "Mentorship", link: "/mentees" },
-    { name: "Information ", link: "/information " },
+    { name: "About us ", link: "/about-us " },
   ];
 
-const toggleDrawer = (open) => () => {
-  setDrawerOpen(open);
-};
+  const toggleDrawer = (open) => () => {
+    setDrawerOpen(open);
+  };
 
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
+    <header className="fixed top-0 left-0 w-full z-50 ">
       {/* Top Contact Bar */}
-      <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white text-xs md:text-sm py-2">
+      <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white text-xs md:text-sm p-4 ">
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Mail className="w-3 h-3 md:w-4 md:h-4 text-red-400" />
-            <span>info@example.org</span>
+            <span className="text-md ">adlife.trust@addlifegroup.com</span>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 ">
             <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-400" />
-            <span>+91-9876543210</span>
+            <span className="text-md ">+91-9505051521</span>
           </div>
         </div>
       </div>
@@ -56,40 +56,62 @@ const toggleDrawer = (open) => () => {
       <nav className="bg-[#1B1E5B] text-white py-3 shadow-lg">
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3 bg-white p-2 rounded-lg shadow-md">
-            <Image
-              src="/logo.png"
-              alt="AD Trust Logo"
-              width={48}
-              height={48}
-              className="object-contain"
-              priority
-            />
-            <span className="font-bold text-xl text-[#1B1E5B] hidden sm:block">
-              Life
-            </span>
-          </div>
+          <Link href="/" passHref>
+            <div className="flex items-center space-x-3 bg-white p-2 rounded-lg shadow-md cursor-pointer">
+              <Image
+                src="/logo.png"
+                alt="AD Life Trust Logo"
+                width={48}
+                height={48}
+                className="object-contain"
+                priority
+              />
+              <span className="font-bold text-xl text-[#1B1E5B] hidden sm:block">
+                Life
+              </span>
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden space-x-1 md:flex items-center space-x-1">
             <ul className="flex space-x-1 items-center font-medium">
               {navItems.map(({ name, link }) => (
                 <li key={name} className="px-3 py-2">
-                  <Link href={link} className="hover:text-[#E51C23] transition-colors duration-200 relative group">
+                  <Link
+                    href={link}
+                    className="relative inline-block pb-1 hover:text-[#f0a3a6] transition-colors duration-200 group"
+                  >
                     {name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E51C23] transition-all duration-300 group-hover:w-full"></span>
+                    <span
+                      className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-[#e25d62] transition-all duration-300 group-hover:w-full"
+                    ></span>
                   </Link>
                 </li>
               ))}
             </ul>
 
-            <div className="ml-6">
-              <Link href="/donate">
-                <button className="bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white px-6 py-2 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-red-500/30 flex items-center space-x-2">
+
+            <div className="ml-6 ">
+              <a
+                href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="relative bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white px-6 py-2 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-red-500/30 flex items-center space-x-2 hover:cursor-pointer">
+
+                  {/* 🔴 Ping Dot */}
+
+
+                  {/* Button Text */}
                   <span>Donate Now</span>
-                  <ChevronRight className="w-4 h-4" />
+                  <span className="">
+                    <span className="flex h-3 w-3 relative">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-85"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                    </span>
+                  </span>
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
 

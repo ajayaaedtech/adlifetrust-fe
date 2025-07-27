@@ -10,16 +10,24 @@ const OrangeHunRun = () => {
   return (
     <div className='bg-gradient-to-br from-orange-50 via-white to-blue-50 py-12 px-4 sm:px-6'>
       {/* Improved Heading Section */}
-      <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-4 animate-pulse">
-          <Heart className="w-4 h-4 mr-2 fill-orange-500" />
-          Upcomming Event
+      <div className="max-w-5xl mx-auto text-center mb-16 px-4">
+        {/* Premium Tag */}
+        <div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white rounded-full text-lg font-semibold shadow-lg mb-6 animate-bounce">
+          <Heart className="w-5 h-5 fill-white" />
+          <span className="uppercase tracking-widest">Upcoming Event</span>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Mind Over Miles 2025</h1>
-        <small className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Join Hyderabad&apos;s premier running event supporting mental health awareness
-        </small>
+
+        {/* Main Heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 leading-tight mb-4">
+          Mind Over Miles 2025
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+          Join Hyderabad&apos;s premier running event supporting mental health awareness.
+        </p>
       </div>
+
 
       {/* Main Card Container */}
       <div className="flex items-center justify-center">
@@ -74,7 +82,7 @@ const OrangeHunRun = () => {
             <div className="flex border-b border-gray-200 mb-6">
               <button
                 onClick={() => setActiveTab('info')}
-                className={`px-4 py-3 text-sm font-medium ${activeTab === 'info' ? 'text-orange-600 border-b-2 border-orange-600' : 'text-gray-500 hover:text-gray-700'}`}
+                className={`px-4 py-3  text-sm font-medium ${activeTab === 'info' ? 'text-orange-600 border-b-2 border-orange-600' : 'text-gray-500 hover:text-gray-700'}`}
               >
                 Event Info
               </button>
@@ -117,6 +125,12 @@ const OrangeHunRun = () => {
                       and funds for mental health initiatives.
                     </p>
                   </div>
+                  <div className="bg-orange-500 p-4 rounded-lg mt-4">
+                    <p className="text-md text-white font-semibold">
+                      Every Step Counts For You, For Us For Mental Health
+
+                    </p>
+                  </div>
                 </div>
               )}
 
@@ -154,7 +168,7 @@ const OrangeHunRun = () => {
                         <span className="text-orange-500 mr-2">•</span>
                         <span>Refreshments and hydration stations along the route</span>
                       </li>
-                    
+
                     </ul>
                   </div>
                 </div>
@@ -179,29 +193,22 @@ const OrangeHunRun = () => {
                         </p>
                       </div>
                     </div>
-                    <button className="w-full bg-gradient-to-r from-orange-500 to-blue-600 text-white font-medium py-3 px-4 rounded-lg hover:shadow-md transition-all">
-                      Register Now
+                    <button className="w-full" >
+                      <a
+                        href="https://orangehub.co.in/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block w-full sm:w-auto bg-gradient-to-r from-orange-500 to-blue-600 text-white text-center font-semibold py-3 px-6 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+                      >
+                        Register Now
+                      </a>
+
                     </button>
                   </div>
                 </div>
               )}
             </div>
 
-            {/* Progress Bar */}
-            <div className="mb-6">
-              <div className="flex justify-between text-sm text-gray-600 mb-1">
-                <span>Registration Progress</span>
-                <span>65% Full (Limited spots remaining)</span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5">
-                <div
-                  className="bg-gradient-to-r from-orange-500 to-blue-600 h-2.5 rounded-full"
-                  style={{ width: '65%' }}
-                ></div>
-              </div>
-            </div>
-
-       
           </div>
         </div>
       </div>
