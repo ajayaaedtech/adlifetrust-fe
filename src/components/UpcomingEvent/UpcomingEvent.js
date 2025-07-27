@@ -17,7 +17,7 @@ const OrangeHunRun = () => {
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Mind Over Miles 2025</h1>
         <small className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Join Hyderabad's premier running event supporting mental health awareness
+          Join Hyderabad&apos;s premier running event supporting mental health awareness
         </small>
       </div>
 
@@ -27,9 +27,10 @@ const OrangeHunRun = () => {
           {/* Left Side - Image (Hidden on mobile) */}
           <div className="hidden md:block md:w-1/3 relative overflow-hidden min-h-[500px]">
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
-            <img
+            <Image
               // src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
               src="/run.png"
+              fill
               alt="Runners at sunrise"
               className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
             />
@@ -45,7 +46,7 @@ const OrangeHunRun = () => {
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Run for Wellness </h2>
-                <p className="text-sm text-gray-600">Organized by <span class="text-red-700 font-bold">AdLife Trust</span> & <span className='text-orange-400 font-bold'>Orange Hub events</span></p>
+                <p className="text-sm text-gray-600">Organized by <span className="text-red-700 font-bold">AdLife Trust</span> & <span className='text-orange-400 font-bold'>Orange Hub events</span></p>
               </div>
               <div className="flex space-x-2">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow border border-gray-100">
@@ -142,7 +143,7 @@ const OrangeHunRun = () => {
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h3 className="font-medium text-gray-800 mb-2 flex items-center">
                       <Shield className="w-4 h-4 mr-2 text-orange-500" />
-                      What's Included
+                      What&apos;s Included
                     </h3>
                     <ul className="text-sm text-gray-600 space-y-2">
                       <li className="flex items-start">

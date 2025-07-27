@@ -78,7 +78,7 @@ export default function GandhiQuoteHero() {
                   }}>
                     <blockquote className="max-w-4xl mx-auto">
                       <p className="text-3xl md:text-4xl lg:text-5xl font-serif italic leading-tight text-shadow-lg">
-                        "The best way to find yourself is to lose yourself in the service of others."
+                        &quot; The best way to find yourself is to lose yourself in the service of others. &quot;
                       </p>
                     </blockquote>
                   </span>
@@ -131,7 +131,7 @@ export default function GandhiQuoteHero() {
                 <div className="text-left">
                   <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-200">Our Mission</h3>
                   <p className="text-gray-300 leading-relaxed text-base md:text-lg font-light">
-                    AD Life is an 18-year-old Trust that is passionate about making a difference in the lives of people who are marginalized or vulnerable. This passion is reflected in our motto, 'Adding Value to Life'.
+                    AD Life is an 18-year-old Trust that is passionate about making a difference in the lives of people who are marginalized or vulnerable. This passion is reflected in our motto, &apos;Adding Value to Life&apos;.
                   </p>
                 </div>
               </div>

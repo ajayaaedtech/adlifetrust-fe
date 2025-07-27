@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Heart, ArrowDown } from 'lucide-react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 const Hero = () => {
   // Framer Motion variants for animations
@@ -35,12 +36,7 @@ const Hero = () => {
 
   return (
     <>
-      {/* For a full Next.js app, it's best to import fonts in your layout.js or _app.js file */}
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
-      </Head>
+   
       
       {/* Inline styles to apply the fonts. In a real app, configure this in tailwind.config.js */}
       <style jsx global>{`
@@ -51,14 +47,15 @@ const Hero = () => {
       <section className="relative h-screen flex items-center justify-center text-white font-inter">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://cdn.pixabay.com/photo/2021/05/22/18/36/india-6274349_1280.jpg"
+          <Image
+            src="/home-girl.jpg"
             alt="Happy Indian children in a rural classroom, embodying hope and education"
             className="w-full h-full object-cover"
+            fill
             // Add a fallback for the background image
             onError={(e) => {
               e.target.onerror = null; 
-              e.target.src='https://placehold.co/1920x1080/1A237E/FFFFFF?text=Our+Mission';
+              e.target.src='https://placehold.co/1920x1080/1A237E/FFFFFF?text=loading';
             }}
           />
           {/* NEW: Gradient Overlay for better visibility and a lighter feel */}

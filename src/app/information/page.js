@@ -90,7 +90,7 @@ const Information = () => {
                                 </div>
                                 <div className="prose prose-lg text-gray-700">
                                     <p>
-                                        A dynamic professional deeply empathetic to farmers, tribes, and women's issues. From a young age, he has actively addressed tribal concerns through:
+                                        A dynamic professional deeply empathetic to farmers, tribes, and women&apos;s issues. From a young age, he has actively addressed tribal concerns through:
                                     </p>
                                     <div className="mt-4 bg-blue-50 rounded-lg p-6">
                                         <div className="flex items-center mb-3">
@@ -276,7 +276,7 @@ const Information = () => {
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-gray-900 mb-6">Want to learn more about our work?</h2>
                     <p className="text-xl text-gray-600 mb-8">
-                        Explore how we're making a difference in communities through education, healthcare, and livelihood programs.
+                        Explore how we`&apos;`;re making a difference in communities through education, healthcare, and livelihood programs.
                     </p>
                     <a
                         href="/information"

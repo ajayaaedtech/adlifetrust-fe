@@ -202,7 +202,7 @@ const Mentees = () => {
               <div className="text-center text-white">
                 <CheckCircle className="w-16 h-16 mx-auto mb-4 animate-bounce" />
                 <h3 className="text-2xl font-bold mb-2">Successfully Submitted!</h3>
-                <p className="text-green-100">We'll get back to you soon.</p>
+                <p className="text-green-100">We&apos;ll get back to you soon.</p>
               </div>
             </div>
           )}

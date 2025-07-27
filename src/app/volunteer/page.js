@@ -125,7 +125,7 @@ export default function VolunteerForm() {
             </h2>
 
             <p className="text-lg text-gray-600">
-              We're launching “Speak with Ease” to help learners improve
+              We&apos;re launching “Speak with Ease” to help learners improve
               communication. You’ll earn badges and appreciation letters.
             </p>
 

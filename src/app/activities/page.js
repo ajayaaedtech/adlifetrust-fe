@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Stethoscope, Briefcase, BookOpen, Users, MapPin, Calendar, Target } from 'lucide-react';
+import Image from 'next/image';
 
 const activities = [
- 
+
   {
     id: 'livelihood',
     title: 'Livelihood',
@@ -17,7 +18,7 @@ const activities = [
         src: '/livelihood.png',
         alt: 'Women learning tailoring skills'
       },
-     
+
     ],
     paragraphs: [
       "AD Life Trust is deeply committed to enhancing livelihoods through skill development programs, with a focus on empowering suburban women. Over 30 batches, comprising 10 women each, were trained in Akiveedu, West Godavari district, mastering skills such as tailoring, embroidery, and handicraft making.",
@@ -25,7 +26,7 @@ const activities = [
       "This collaboration led to successful placements in various apparel units, aligning with industry needs. With a 3000 square feet training center, AD Life Trust has supported the program with experienced trainers, covering essential skills and holistic development"
     ]
   },
-   {
+  {
     id: 'education',
     title: 'Education',
     icon: GraduationCap,
@@ -55,14 +56,14 @@ const activities = [
         src: '/research.png',
         alt: 'Mobile medical camp in village'
       },
-   
+
     ],
     paragraphs: [
       "Ensuring good health is pivotal for a fulfilling life, yet India grapples with widespread health issues, including malnutrition, infant, and maternal mortality. Despite constitutional guarantees for free healthcare, over 70% of health expenses are borne by individuals, creating a significant financial burden.",
       "Recognizing this challenge, AD Life has focused its efforts on healthcare, particularly targeting tribal populations, constituting 7.95% of India's total population. Working in Telangana, AD Life has provided essential health services to 25,000 tribal individuals, collaborating with local gram panchayats in 30 villages. Medical camps facilitated access to general physicians, cardiologists, pediatricians, and gynecologists, benefitting 9,467 tribal members. Eye and dental camps further addressed specific health needs.",
     ]
   },
-   {
+  {
     id: 'research',
     title: 'Research and Documentation',
     icon: Stethoscope,
@@ -74,7 +75,7 @@ const activities = [
         src: '/b.jpg',
         alt: 'Mobile medical camp in village'
       },
-   
+
     ],
     paragraphs: [
       "Ensuring good health is pivotal for a fulfilling life, yet India grapples with widespread health issues, including malnutrition, infant, and maternal mortality. Despite constitutional guarantees for free healthcare, over 70% of health expenses are borne by individuals, creating a significant financial burden.",
@@ -92,11 +93,13 @@ const ImageDisplay = ({ images, title, color }) => {
       <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl bg-gray-200">
         {currentImage.src ? (
           <div className="w-full h-full relative">
-            <img 
-              src={currentImage.src} 
-              alt={currentImage.alt} 
-              className="w-full h-full object-cover"
+            <Image
+              src={currentImage.src}
+              alt={currentImage.alt}
+              fill
+              className="object-cover"
             />
+
             <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-4 text-sm">
               {currentImage.alt}
             </div>
@@ -207,13 +210,13 @@ const ActivitiesPage = () => {
     <div className="min-h-screen bg-white mt-20">
       {/* Hero Section */}
       <div className="relative bg-gradient-to-br from-blue-900/70 via-indigo-900/70 to-purple-900/70 py-28 md:py-36 overflow-hidden"
-        style={{ 
-          backgroundImage: "url(/top.png)", 
-          backgroundSize: "cover", 
-          backgroundPosition: "center", 
-          backgroundBlendMode: "overlay" 
+        style={{
+          backgroundImage: "url(/top.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundBlendMode: "overlay"
         }}>
-        
+
         {/* Additional background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/70 via-indigo-900/75 to-purple-900/70" />
@@ -322,9 +325,9 @@ const ActivitiesPage = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-              Become a Volunteer
+                Become a Volunteer
               </motion.button>
-             
+
             </div>
           </motion.div>
         </div>
