@@ -82,7 +82,7 @@ const Hero = () => {
             style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.7)' }}
             variants={itemVariants}
           >
-            AD Life Trust focuses on a quality life for women and children across the Globe. AD Life Trust aims to provide better lives to marginalized and vulnerable people through interventions and support in health (including nutrition), education, livelihoods and humanitarian efforts
+            AD Life Trust focuses on quality life for women and children across the Globe. AD Life Trust aims to provide better lives to marginalized and vulnerable people through interventions and support in health (including nutrition), education, livelihoods and humanitarian efforts
           </motion.p>
 
           <motion.p
