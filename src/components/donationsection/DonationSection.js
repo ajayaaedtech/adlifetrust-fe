@@ -74,7 +74,7 @@ export default function DonationSection() {
                             </div>
                         </div>
                         {/* Donation Buttons */}
-                        <div className="mt-auto">
+                        <div className="mt-auto md:block hidden">
                             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-stretch justify-center sm:justify-start">
                                 <a
                                     href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
