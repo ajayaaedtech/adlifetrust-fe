@@ -77,7 +77,7 @@ export default function DonationSection() {
 
                                 </p>
                                 <div className="bg-gray-900/50 p-4 rounded-lg mb-6">
-                                    <p className="text-blue-400 font-mono break-all">adlife.trust@addlifegroup.com</p>
+                                    <p className="text-blue-400 font-mono break-all">adlifetrust@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ export default function DonationSection() {
                                     Donate Now
                                 </a>
                                 <a
-                                    href="mailto:adlife.trust@addlifegroup.com"
+                                    href="mailto:adlifetrust@gmail.com"
                                     className="flex-1 px-6 py-3 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-600 transition-all duration-300 text-center"
                                 >
                                     Contact Us

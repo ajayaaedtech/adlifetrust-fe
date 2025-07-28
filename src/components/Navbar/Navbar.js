@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Mail className="w-3 h-3 md:w-4 md:h-4 text-red-400" />
-            <span className="text-md ">adlife.trust@addlifegroup.com</span>
+            <span className="text-md ">adlifetrust@gmail.com</span>
           </div>
           <div className="flex items-center space-x-2 ">
             <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-400" />

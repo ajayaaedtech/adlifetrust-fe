@@ -108,16 +108,14 @@ export default function GandhiQuoteHero() {
           </div>
 
           {/* Content Cards */}
-          <div className={`grid md:grid-cols-2 gap-8 max-w-6xl mx-auto transform transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+          {/* <div className={`grid md:grid-cols-2 gap-8 max-w-6xl mx-auto transform transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
 
-            {/* Mission Card */}
             <div className="group relative">
               <div className="absolute -inset-px rounded-xl blur-md opacity-60 group-hover:opacity-100 transition-all duration-500"
                 style={{ background: 'linear-gradient(135deg, #4A5FD4 0%, #6B7FE8 100%)' }}></div>
               <div className="relative bg-gradient-to-br from-[#0A0B21]/90 to-[#1B1E5B]/90 rounded-xl p-8 border border-white/5 transition-all duration-500 hover:shadow-2xl hover:border-white/10"
                 style={{ backdropFilter: 'blur(12px)' }}>
 
-                {/* Icon with glow effect */}
                 <div className="flex justify-start mb-6">
                   <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-500"
                     style={{ background: 'linear-gradient(135deg, #4A5FD4 0%, #6B7FE8 100%)' }}>
@@ -138,14 +136,12 @@ export default function GandhiQuoteHero() {
               </div>
             </div>
 
-            {/* Impact Card */}
             <div className="group relative">
               <div className="absolute -inset-px rounded-xl blur-md opacity-60 group-hover:opacity-100 transition-all duration-500"
                 style={{ background: 'linear-gradient(135deg, #6B7FE8 0%, #4A5FD4 100%)' }}></div>
               <div className="relative bg-gradient-to-br from-[#0A0B21]/90 to-[#1B1E5B]/90 rounded-xl p-8 border border-white/5 transition-all duration-500 hover:shadow-2xl hover:border-white/10"
                 style={{ backdropFilter: 'blur(12px)' }}>
 
-                {/* Icon with glow effect */}
                 <div className="flex justify-start mb-6">
                   <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-500"
                     style={{ background: 'linear-gradient(135deg, #6B7FE8 0%, #4A5FD4 100%)' }}>
@@ -166,6 +162,7 @@ export default function GandhiQuoteHero() {
               </div>
             </div>
           </div>
+           */}
 
           {/* Bottom CTA Section */}
           <div className={`text-center mt-16 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>

@@ -149,8 +149,8 @@ const Footer = () => {
                   <Mail className="w-8 h-8 text-red-400" />
                 </div>
                 <span className="font-semibold text-white text-lg mb-2">Email Us</span>
-                <a href="mailto:info@adlifetrust.org" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  adlife.trust@addlifegroup.com
+                <a href="mailto:adlifetrust@gmail.com" className="text-gray-300 hover:text-white transition-colors text-sm">
+                 adlifetrust@gmail.com
                 </a>
               </div>
 
