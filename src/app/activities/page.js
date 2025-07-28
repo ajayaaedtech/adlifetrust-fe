@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, Stethoscope, Briefcase, BookOpen, Users, MapPin, Calendar, Target, Brain } from 'lucide-react';
 import Image from 'next/image';
+import ProductShowcase from '@/components/ProductList/ProductList';
 
 const activities = [
 
@@ -275,7 +276,7 @@ const ActivitiesPage = () => {
             {/* Activity Icons */}
             <div className="grid grid-cols-2 sm:grid-cols-4  gap-6 max-w-4xl mx-auto mt-16 ">
               {[
-                { icon: <GraduationCap size={38} className=''/>, label: "Education" },
+                { icon: <GraduationCap size={38} className='' />, label: "Education" },
                 { icon: <Stethoscope size={38} />, label: "Healthcare" },
                 { icon: <Briefcase size={38} />, label: "Livelihoods" },
                 { icon: <BookOpen size={38} />, label: "Research" }
@@ -327,6 +328,10 @@ const ActivitiesPage = () => {
         />
       ))}
 
+      <section>
+        <ProductShowcase />
+      </section>
+
       {/* Call to Action Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900">
         <div className="px-4 md:px-8 lg:px-16 max-w-4xl mx-auto text-center">
@@ -358,6 +363,7 @@ const ActivitiesPage = () => {
           </motion.div>
         </div>
       </section>
+
     </div>
   );
 };
