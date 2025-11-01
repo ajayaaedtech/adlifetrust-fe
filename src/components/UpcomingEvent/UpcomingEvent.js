@@ -95,8 +95,8 @@ const OrangeHunRun = () => {
               </h2>
               <p className="text-sm text-gray-600">
                 Organized by{" "}
-                <span className="text-red-700 font-bold">AdLife Trust</span> &{" "}
-                <span className="text-orange-400 font-bold">
+                <span className="text-black  font-extrabold">AD Life Trust</span> &
+                <span className="text-orange-400 font-extrabold">
                   Orange Hub Events
                 </span>
               </p>
@@ -125,46 +125,45 @@ const OrangeHunRun = () => {
             {/* Tabs Content */}
             <div className="flex-1">
               {activeTab === "info" && (
-                <div className="flex flex-col min-h-[300px] justify-between">
-                  <div className="space-y-4">
-                    <div className="flex items-center text-gray-700">
-                      <Calendar className="w-5 h-5 mr-3 text-orange-500" />
-                      <div>
-                        <p className="font-bold">
-                          Sunday, 9th November 2025
-                        </p>
-                        <p className="text-sm text-gray-500 font-bold">
-                          06:00 AM - 11:00 AM
-                        </p>
-                      </div>
-                    </div>
+                <div className="flex flex-col min-h-[300px] justify-start rounded-xl space-y-5">
 
-                    <div className="flex items-center text-gray-700">
-                      <MapPin className="w-5 h-5 mr-3 text-orange-500" />
-                      <div>
-                        <p className="font-bold">Gachibowli Stadium</p>
-                        <p className="text-sm text-gray-500 font-bold">
-                          Hyderabad, Telangana
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="bg-blue-50 p-4 rounded-lg mt-4">
-                      <p className="text-sm text-gray-700">
-                        Run, jog, or walk — every step breaks stigma and supports
-                        mental health.
+                  {/* 📅 Date & Time */}
+                  <div className="flex items-center text-gray-800">
+                    <Calendar className="w-7 h-7 mr-3 text-orange-500 flex-shrink-0" />
+                    <div>
+                      <p className="text-xl md:text-xl font-bold">
+                        Sunday, 9th November 2025
+                      </p>
+                      <p className="text-lg text-gray-500 font-medium">
+                        06:00 AM – 11:00 AM
                       </p>
                     </div>
                   </div>
 
-                  {/* ✅ Always last button */}
-                  <div className="bg-orange-500 p-4 rounded-lg mt-6">
-                    <p className="text-md text-center text-white font-semibold">
-                      Every Step Counts For You, For Us For Mental Health
+                  {/* 📍 Location */}
+                  <div className="flex items-center text-gray-800">
+                    <MapPin className="w-7 h-7 mr-3 text-orange-500 flex-shrink-0" />
+                    <div>
+                      <p className="text-xl md:text-xl font-bold">
+                        Gachibowli Stadium
+                      </p>
+                      <p className="text-lg text-gray-500 font-medium">
+                        Hyderabad, Telangana
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* ✨ Motivation Banner — moved upward */}
+                  <div className="bg-orange-500 py-3 px-4 mt-10 rounded-lg shadow-md">
+                    <p className="text-white text-center text-base md:text-lg font-semibold tracking-wide">
+                      Every Step Counts — For You, For Us, For Mental Health
                     </p>
                   </div>
+
                 </div>
               )}
+
+
 
               {activeTab === 'details' && (<div className="space-y-1"> {/* Intro Section (Replaces Race Categories) */} <div className="bg-orange-50 p-6 rounded-lg shadow border-l-4 border-orange-500"> <h3 className="text-xl font-semibold text-orange-800 mb-3"> Our Launch in Hyderabad </h3> <p className="text-gray-700 text-sm leading-relaxed"> We are thrilled to launch our journey in the vibrant city of Hyderabad, Telangana, where we are proud to unveil our inaugural event—a dynamic and high-energy run event that embodies the spirit of community, health, and celebration. <br /><br /> This pilot initiative reflects the energy, passion, and community-driven spirit that defines Orange Hub Events. </p> </div> {/* What's Included */} <div className="bg-white p-6 rounded-lg shadow border border-gray-200"> <h3 className="font-semibold text-gray-800 mb-4 flex items-center text-lg"> <Shield className="w-5 h-5 mr-2 text-orange-500" /> What&apos;s Included </h3> <ul className="text-sm text-gray-700 space-y-3"> <li className="flex items-start"> <span className="text-orange-500 mr-2 text-lg">•</span> <span>High-quality event T-shirt & Finisher medal for all participants</span> </li> <li className="flex items-start"> <span className="text-orange-500 mr-2 text-lg">•</span> <span>Refreshments and hydration stations along the route</span> </li> </ul> </div> {/* Quote & Image */} <div className="flex flex-col md:flex-row items-center justify-between bg-blue-900 text-white rounded-lg p-6 gap-6 shadow-md"> <Image width={100} height={100} src="/runner.png" alt="Runners" className="h-24 object-contain" /> <blockquote className="text-center md:text-right font-semibold text-xl md:text-2xl leading-snug"> “Fueling Aspirations,<br /> Creating Celebrations.” </blockquote> </div> </div>)}
 

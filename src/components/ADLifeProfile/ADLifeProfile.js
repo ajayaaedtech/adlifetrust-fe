@@ -138,14 +138,14 @@ const ADLifeProfilePage = () => {
             Adding Value to Life
           </span>
         </h1>
-        <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
+        <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600 font-black">
           Discover the story behind AD Life Trust and our unwavering commitment to creating a world of hope, dignity, and equality.
         </p>
       </div>
 
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto space-y-3 mt-4">
+      <main className="max-w-6xl mx-auto space-y-3 mt-6">
         {/* About Us Section */}
         <section className={`bg-white rounded-lg shadow-sm p-8 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '500ms' }}>
           <div className="flex items-center mb-6">
@@ -161,10 +161,10 @@ const ADLifeProfilePage = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                AD Life Trust, established in 2005, is dedicated to improving the lives of people in India. Our tagline, &apos;Adding Value to Life&apos; , reflects our commitment to making a meaningful difference for marginalized and vulnerable individuals.
+                <span className='font-bold'>AD Life Trust</span>, established in 2005, is dedicated to improving the lives of people in India&nbsp;. Our tagline&nbsp;, &nbsp;&apos;&nbsp;Adding Value to Life&nbsp;&apos;&nbsp; , reflects our commitment to making a meaningful difference for marginalized and vulnerable individuals.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                We work with communities to address their most pressing challenges through sustainable, locally-driven solutions that create lasting positive change.
+                <span>&nbsp;</span>We work with communities to address their most pressing challenges through sustainable, locally-driven solutions that create lasting positive change.
               </p>
             </div>
 

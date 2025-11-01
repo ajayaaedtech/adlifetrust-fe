@@ -91,9 +91,9 @@ const Hero = () => {
           >
             <p className="text-lg sm:text-xl text-white max-w-3xl mx-auto text-center">
               <span className="font-semibold" style={{ color: "#fe8f8f" }}>
-                AD Life 
+                AD Life Trust
               </span><span> </span>
-               Trust empowers women and children globally by advancing health, nutrition,
+                empowers women and children globally by advancing health, nutrition,
               education, livelihoods, and humanitarian resilience.
             </p>
 
