@@ -328,9 +328,9 @@ const ActivitiesPage = () => {
         />
       ))}
 
-      <section>
+      {/* <section>
         <ProductShowcase />
-      </section>
+      </section> */}
 
       {/* Call to Action Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900">

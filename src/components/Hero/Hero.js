@@ -7,6 +7,12 @@ import { motion } from 'framer-motion';
 import { Heart, ArrowDown } from 'lucide-react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { Red_Hat_Display } from "next/font/google";
+
+const redHatDisplay = Red_Hat_Display({
+  subsets: ["latin"],
+  weight: ["400"], // use 400 for normal (no bold)
+});
 
 const Hero = () => {
   // Framer Motion variants for animations
@@ -70,27 +76,35 @@ const Hero = () => {
           animate="visible"
         >
           <motion.h1
-            className="text-4xl mt-80 md:text-5xl font-extrabold leading-tight mb-4 font-poppins text-white uppercase"
+            className="font-redhat text-4xl mt-80 md:text-5xl font-extrabold leading-tight mb-4 uppercase text-[#fe8f8f]"
             style={{ textShadow: '3px 3px 10px rgba(0, 0, 0, 0.5)' }}
             variants={itemVariants}
           >
             Adding Value to Lives, One act of kindness at a time.
           </motion.h1>
 
+
           <motion.p
             className="text-lg md:text-xl max-w-5xl mx-auto mb-8 text-gray-100"
             style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.7)' }}
             variants={itemVariants}
           >
-            AD Life Trust focuses on quality life for women and children across the Globe. AD Life Trust aims to provide better lives to marginalized and vulnerable people through interventions and support in health (including nutrition), education, livelihoods and humanitarian efforts
+            <p className="text-lg sm:text-xl text-white max-w-3xl mx-auto text-center">
+              <span className="font-semibold" style={{ color: "#fe8f8f" }}>
+                AD Life 
+              </span><span> </span>
+               Trust empowers women and children globally by advancing health, nutrition,
+              education, livelihoods, and humanitarian resilience.
+            </p>
+
+
           </motion.p>
 
           <motion.p
             className="mt-8 text-md  text-gray-200 font-semibold md:py-0 py-4"
             variants={itemVariants}
           >
-            Everything is possible only with good health and adequate nutrition.
-          </motion.p>
+            We believe lasting progress begins with good health and adequate nutrition.          </motion.p>
         </motion.div>
 
         {/* NEW: Animated Scroll Down Indicator */}

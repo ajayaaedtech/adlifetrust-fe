@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://www.adlifetrust.org.in',
-  generateRobotsTxt: true,
+  generateRobotsTxt: false,
   generateIndexSitemap: false, // ❗ disables index + nested sitemap-0.xml
   changefreq: 'daily',
   priority: 0.7,

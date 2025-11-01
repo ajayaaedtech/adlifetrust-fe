@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "AD Life  Trust",
+  title: "AD Life Trust",
   description: "Adlife Trust",
 };
 

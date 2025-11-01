@@ -129,17 +129,9 @@ const ADLifeProfilePage = () => {
   return (
     <div className="bg-gray-50 min-h-screen font-sans">
 
-      {/* <section className="text-center bg-gradient-to-br from-orange-100 to-yellow-50 py-16 px-4">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-orange-700 mb-4 leading-tight animate-fade-in-up">
-          About AD Life Trust
-        </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto text-lg animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-          Empowering communities through health, education, and sustainable development since 2005.
-        </p>
-      </section> */}
 
       {/* Header/Hero Section */}
-      <div className="text-center py-16 px-4">
+      <div className="text-center ">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
           <span className="block">Our Mission, Our Impact</span>
           <span className="block bg-gradient-to-r from-orange-500 to-rose-500 text-transparent bg-clip-text">
@@ -153,8 +145,7 @@ const ADLifeProfilePage = () => {
 
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-12 space-y-16">
-
+      <main className="max-w-6xl mx-auto space-y-3 mt-4">
         {/* About Us Section */}
         <section className={`bg-white rounded-lg shadow-sm p-8 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '500ms' }}>
           <div className="flex items-center mb-6">
@@ -210,7 +201,7 @@ const ADLifeProfilePage = () => {
         </section>
 
         {/* Priority Areas */}
-        <section className={`transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '700ms' }}>
+        <section className={`mt-10 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '700ms' }}>
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">Our Priority Areas</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
