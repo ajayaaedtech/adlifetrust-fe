@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Users, Target, Eye, Heart, BookOpen, Briefcase, Handshake, Search, MapPin, Phone, Mail } from 'lucide-react';
+import { Users, Target, Eye, Heart, BookOpen, Briefcase, Handshake, Search, MapPin, Phone, Mail , BriefcaseBusiness  } from 'lucide-react';
 
 // Animated Feature Card for Priority Areas
 const FeatureCard = ({ icon: Icon, title, description, color, index }) => {
@@ -15,7 +15,7 @@ const FeatureCard = ({ icon: Icon, title, description, color, index }) => {
 
   return (
     <div
-      className={`bg-white p-6 rounded-lg border ${selectedColor.border} hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up`}
+      className={`bg-white p-6 rounded-lg border ${selectedColor.border} hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up `}
       style={{ animationDelay: `${index * 100}ms` }}
     >
       <div className={`w-12 h-12 ${selectedColor.bg} rounded-lg flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-300`}>
@@ -95,43 +95,51 @@ const ADLifeProfilePage = () => {
 
   const priorityAreas = [
     {
-      text: 'Health and Nutrition',
+      text: "Health And Nutrition",
       icon: Heart,
-      color: 'rose',
-      description: ''
+      color: "rose",
+      description: "Improving access to healthcare and promoting balanced nutrition for all."
     },
     {
-      text: 'Education',
+      text: "Education",
       icon: BookOpen,
-      color: 'blue',
-      description: ''
+      color: "blue",
+      description: "Empowering children and youth through quality education and learning."
     },
     {
-      text: 'Livelihoods and Skill Development',
+      text: "Livelihoods And Skill Development",
       icon: Briefcase,
-      color: 'green',
-      description: ''
+      color: "green",
+      description: "Building employability through training and sustainable livelihood programs."
     },
     {
-      text: 'Humanitarian Efforts',
+      text: "Humanitarian Efforts",
       icon: Handshake,
-      color: 'orange',
-      description: ''
+      color: "orange",
+      description: "Supporting communities during disasters and times of crisis."
     },
     {
-      text: 'Research and Documentation',
+      text: "Research And Documentation",
       icon: Search,
-      color: 'purple',
-      description: ''
-    }
+      color: "purple",
+      description: "Generating insights to shape impactful social development strategies."
+    },
+     {
+      text: "Training And Advocacy",
+      icon: BriefcaseBusiness ,
+      color: "purple",
+      description: "nurturing health, enriching education, strengthening livelihoods, guiding humanitarian action, and shaping tomorrow with research-driven insight."
+    },
+
   ];
+
 
   return (
     <div className="bg-gray-50 min-h-screen font-sans">
 
 
       {/* Header/Hero Section */}
-      <div className="text-center ">
+      <div className="text-center mt-10 ">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
           <span className="block">Our Mission, Our Impact</span>
           <span className="block bg-gradient-to-r from-orange-500 to-rose-500 text-transparent bg-clip-text">
@@ -201,29 +209,63 @@ const ADLifeProfilePage = () => {
         </section>
 
         {/* Priority Areas */}
-        <section className={`mt-10 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '700ms' }}>
-          <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">Our Priority Areas</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              We are making a difference through our work on those aspects that bring about a sustainable change in the lives of people            </p>
+        {/* 🌍 Priority Areas Section */}
+        <section
+          className={`mt-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+          style={{ animationDelay: "700ms" }}
+        >
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-gray-800 mb-3">
+              Our Priority Areas
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+              We are committed to building a healthier, educated, and self-reliant society through
+              initiatives that create lasting impact.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Content Cards */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {priorityAreas.map((area, index) => (
-              <FeatureCard
+              <div
                 key={area.text}
-                icon={area.icon}
-                title={area.text}
-                description={area.description}
-                color={area.color}
-                index={index}
-              />
+                className="group flex items-start sm:items-center bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 p-5"
+              >
+                {/* Icon + Title */}
+                <div
+                  className={`
+            w-14 h-14 flex items-center justify-center rounded-full 
+            bg-${area.color}-50 text-${area.color}-600 
+            transition-all duration-300 shadow-sm mr-4 flex-shrink-0
+            group-hover:bg-${area.color}-500 group-hover:text-[#1B1E5B] cursor-pointer
+
+            group-hover:scale-110 group-hover:shadow-[0_0_15px_rgba(0,0,0,0.1)]
+          `}
+                >
+                  <area.icon className="w-7 h-7 transition-transform duration-300 group-hover:rotate-6" />
+                </div>
+
+                {/* Text Content */}
+                <div className="flex-1">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-1">
+                    {area.text}
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-600 leading-snug">
+                    {area.description}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </section>
 
+
+
+
         {/* Our Approach */}
-        <section className={`bg-white rounded-lg shadow-sm p-8 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '800ms' }}>
+        <section className={`bg-white mt-10 rounded-lg shadow-sm p-8 transition-all duration-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ animationDelay: '800ms' }}>
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Our Approach</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center group">

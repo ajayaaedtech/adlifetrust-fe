@@ -8,26 +8,26 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Heart, Arr
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: '#', name: 'Facebook' },
-    { icon: Twitter, href: '#', name: 'Twitter' },
-    { icon: Instagram, href: '#', name: 'Instagram' },
+    // { icon: Facebook, href: '#', name: 'Facebook' },
+    // { icon: Twitter, href: '#', name: 'Twitter' },
+    // { icon: Instagram, href: '#', name: 'Instagram' },
     { icon: Linkedin, href: '#', name: 'LinkedIn' },
   ];
 
   const quickLinks = [
     { name: 'About Us', href: '/about-us' },
     { name: 'Our Activities', href: '/activities' },
-    { name: 'Volunteer', href: '/volunteer' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'News & Events', href: '/news' },
+    // { name: 'Volunteer', href: '/volunteer' },
+    // { name: 'Gallery', href: '/gallery' },
+    // { name: 'News & Events', href: '/news' },
   ];
 
   const programLinks = [
-    { name: 'Education Programs', href: '#' },
-    { name: 'Healthcare Initiatives', href: '#' },
-    { name: 'Livelihood Projects', href: '#' },
-    { name: 'Mentorship', href: '#' },
-    { name: 'Community Outreach', href: '#' },
+    { name: 'Education Programs', href: '/activities' },
+    { name: 'Healthcare Initiatives', href: '/activities' },
+    // { name: 'Livelihood Projects', href: '#' },
+    // { name: 'Mentorship', href: '#' },
+    // { name: 'Community Outreach', href: '#' },
   ];
 
   return (
@@ -141,7 +141,7 @@ const Footer = () => {
                   <MapPin className="w-8 h-8 text-red-400" />
                 </div>
                 <span className="font-semibold text-white text-lg mb-2">Our Location</span>
-                <span className="text-gray-300 text-sm leading-relaxed">B-803, 10-3-163/1 Amri Central Court Apartments Old Lance Lines , Secunderabad - 500025</span>
+                <span className="text-gray-300 text-sm leading-relaxed">Hyderabad, Telangana</span>
               </div>
 
               <div className="flex flex-col items-center text-center group">
@@ -149,8 +149,8 @@ const Footer = () => {
                   <Mail className="w-8 h-8 text-red-400" />
                 </div>
                 <span className="font-semibold text-white text-lg mb-2">Email Us</span>
-                <a href="mailto:adlifetrust@gmail.com" className="text-gray-300 hover:text-white transition-colors text-sm">
-                 adlifetrust@gmail.com
+                <a href="mailto:director@adlifetrust.org.in" className="text-gray-300 hover:text-white transition-colors text-sm">
+                 director@adlifetrust.org.in
                 </a>
               </div>
 

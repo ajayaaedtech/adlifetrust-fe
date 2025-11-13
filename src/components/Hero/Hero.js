@@ -89,13 +89,13 @@ const Hero = () => {
             style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.7)' }}
             variants={itemVariants}
           >
-            <p className="text-lg sm:text-xl text-white max-w-3xl mx-auto text-center">
+            <span className="text-lg sm:text-xl text-white max-w-3xl mx-auto text-center">
               <span className="font-semibold" style={{ color: "#fe8f8f" }}>
                 AD Life Trust
               </span><span> </span>
                 empowers women and children globally by advancing health, nutrition,
               education, livelihoods, and humanitarian resilience.
-            </p>
+            </span>
 
 
           </motion.p>

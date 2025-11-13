@@ -43,12 +43,24 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Mail className="w-3 h-3 md:w-4 md:h-4 text-red-400" />
-            <span className="text-md ">adlifetrust@gmail.com</span>
+            <a
+              href="mailto:director@adlifetrust.org.in"
+              className="text-md hover:underline"
+            >
+              director@adlifetrust.org.in
+            </a>
           </div>
-          <div className="flex items-center space-x-2 ">
+
+          <div className="flex items-center space-x-2">
             <Phone className="w-3 h-3 md:w-4 md:h-4 text-red-400" />
-            <span className="text-md ">+91-9505051521</span>
+            <a
+              href="tel:+919505051524"
+              className="text-md hover:underline"
+            >
+              +91 95050 51524
+            </a>
           </div>
+
         </div>
       </div>
 
@@ -91,7 +103,7 @@ const Navbar = () => {
             </ul>
 
 
-            <div className="ml-6 ">
+            {/* <div className="ml-6 ">
               <a
                 href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
                 target="_blank"
@@ -107,7 +119,28 @@ const Navbar = () => {
                   </span>
                 </button>
               </a>
-            </div>
+            </div> */}
+            <div className="ml-6">
+  <a
+    href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button
+      className="relative bg-gradient-to-r from-[#E51C23] to-[#c2181e]
+      text-white px-9 py-3 rounded-md text-base font-semibold shadow-xl
+      flex items-center space-x-2 hover:cursor-pointer animate-bounce"
+    >
+      <span>Donate Now</span>
+
+      <span className="flex h-3 w-3 relative">
+        <span className="absolute inline-flex h-full w-full rounded-full bg-white opacity-60 animate-ping"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+      </span>
+    </button>
+  </a>
+</div>
+
           </div>
 
           {/* Mobile Toggle Button */}

@@ -69,7 +69,7 @@ export default function DonationSection() {
                                     Please drop an email with the details of your contribution (such as screenshot/ transaction details) and your PAN number to enable us to provide you a tax deductible receipt.
                                 </p>
                                 <div className="bg-gray-900/50 p-4 rounded-lg mb-6">
-                                    <p className="text-blue-400 font-mono break-all">adlifetrust@gmail.com</p>
+                                    <p className="text-blue-400 font-mono break-all">director@adlifetrust.org.in</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ export default function DonationSection() {
                                     Donate Now
                                 </a>
                                 <a
-                                    href="mailto:adlifetrust@gmail.com"
+                                    href="mailto:director@adlifetrust.org.in"
                                     className="flex-1 px-6 py-3 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-600 transition-all duration-300 text-center"
                                 >
                                     Contact Us

@@ -6,7 +6,25 @@ import Image from 'next/image';
 import ProductShowcase from '@/components/ProductList/ProductList';
 
 const activities = [
+ {
+    id: 'Mental-Health ',
+    title: 'Mental Health ',
+    icon: Brain,
+    color: 'from-orange-500 to-oreange-600',
+    bgColor: 'bg-red-50',
+    images: [
+      {
+        id: 1,
+        src: '/oranghub-events.JPG',
+        alt: 'Upcoing event -  Mind Over Miles'
+      },
 
+    ],
+    paragraphs: [
+      " At Orange Hub Events, we believe mental health deserves the same attention and celebration as physical wellness. In today’s fast-paced world, mental well-being is often neglected or misunderstood — but it’s at the heart of how we live, work, connect, and grow.",
+      "According to global studies, 1 in 4 people will experience mental health issues at some point in their lives. Yet the stigma surrounding mental health keeps millions from seeking help, speaking up, or even recognizing the signs.",
+    ]
+  },
   {
     id: 'livelihood',
     title: 'Livelihood',
@@ -83,25 +101,7 @@ const activities = [
       "Recognizing this challenge, AD Life has focused its efforts on healthcare, particularly targeting tribal populations, constituting 7.95% of India's total population. Working in Telangana, AD Life has provided essential health services to 25,000 tribal individuals, collaborating with local gram panchayats in 30 villages. Medical camps facilitated access to general physicians, cardiologists, pediatricians, and gynecologists, benefitting 9,467 tribal members. Eye and dental camps further addressed specific health needs.",
     ]
   },
-  {
-    id: 'Mental-Health ',
-    title: 'Mental Health ',
-    icon: Brain,
-    color: 'from-orange-500 to-oreange-600',
-    bgColor: 'bg-red-50',
-    images: [
-      {
-        id: 1,
-        src: '/oranghub-events.JPG',
-        alt: 'Upcoing event -  Mind Over Miles'
-      },
-
-    ],
-    paragraphs: [
-      " At Orange Hub Events, we believe mental health deserves the same attention and celebration as physical wellness. In today’s fast-paced world, mental well-being is often neglected or misunderstood — but it’s at the heart of how we live, work, connect, and grow.",
-      "According to global studies, 1 in 4 people will experience mental health issues at some point in their lives. Yet the stigma surrounding mental health keeps millions from seeking help, speaking up, or even recognizing the signs.",
-    ]
-  }
+ 
 ];
 
 const ImageDisplay = ({ images, title, color }) => {

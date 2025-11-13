@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <div>
       <Hero/>
-      <UpcomingEvent />
+      {/* <UpcomingEvent /> */}
       {/* <DonationBanner/> */}
       {/* <Empowerment/> */}
-      <ADLifeProfile/>
+      <ADLifeProfile  />
       
       <GandhiQuoteHero/>
       <DonationSection/>

@@ -70,7 +70,7 @@ const ProfileScreen = () => {
                 
                 <div className="mt-6 w-full border-t pt-6">
                   <h3 className="text-sm uppercase font-semibold text-gray-500 mb-3">Experience</h3>
-                  <p className="text-2xl font-bold text-gray-800">35+ Years</p>
+                  <p className="text-2xl font-bold text-gray-800">35 Years</p>
                   <p className="text-gray-600 text-sm">in Psychiatry</p>
                 </div>
               </div>
