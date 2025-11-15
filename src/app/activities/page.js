@@ -6,7 +6,7 @@ import Image from 'next/image';
 import ProductShowcase from '@/components/ProductList/ProductList';
 
 const activities = [
- {
+  {
     id: 'Mental-Health ',
     title: 'Mental Health ',
     icon: Brain,
@@ -15,8 +15,9 @@ const activities = [
     images: [
       {
         id: 1,
-        src: '/oranghub-events.JPG',
-        alt: 'Upcoing event -  Mind Over Miles'
+        src: '/dr_maam.jpg',
+        alt: 'Event -  Mind Over Miles',
+        customstyle: `customstyle`
       },
 
     ],
@@ -101,7 +102,7 @@ const activities = [
       "Recognizing this challenge, AD Life has focused its efforts on healthcare, particularly targeting tribal populations, constituting 7.95% of India's total population. Working in Telangana, AD Life has provided essential health services to 25,000 tribal individuals, collaborating with local gram panchayats in 30 villages. Medical camps facilitated access to general physicians, cardiologists, pediatricians, and gynecologists, benefitting 9,467 tribal members. Eye and dental camps further addressed specific health needs.",
     ]
   },
- 
+
 ];
 
 const ImageDisplay = ({ images, title, color }) => {
@@ -113,11 +114,16 @@ const ImageDisplay = ({ images, title, color }) => {
       <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl bg-gray-200">
         {currentImage.src ? (
           <div className="w-full h-full relative">
+
             <Image
               src={currentImage.src}
               alt={currentImage.alt}
               fill
-              className="object-cover"
+              className={
+                currentImage.customstyle === "customstyle"
+                  ? "object-cover object-bottom"
+                  : "object-cover object-center"
+              }
             />
 
             <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white p-4 text-sm">
@@ -263,7 +269,7 @@ const ActivitiesPage = () => {
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                 <span className="text-white">We Need Your </span>
                 <span className="text-yellow-400 relative inline-block">
-                  <span className="relative z-10">Help</span>
+                  <span className="relative z-10">Support</span>
                   <span className="absolute bottom-2 left-0 w-full h-3 md:h-4 bg-yellow-400/30 -z-0" style={{ transform: 'skewX(-15deg)' }} />
                 </span>
               </h1>
