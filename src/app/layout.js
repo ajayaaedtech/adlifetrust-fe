@@ -2,6 +2,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { Dancing_Script } from 'next/font/google';
+
+const dancing = Dancing_Script({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

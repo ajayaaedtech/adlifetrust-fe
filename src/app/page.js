@@ -6,21 +6,27 @@ import Hero from "@/components/Hero/Hero";
 import GandhiQuoteHero from "@/components/Inspirational/Inspirational";
 import MindOverMilesHero from "@/components/MindOverMilesHero/MindOverMilesHero";
 import ProfileCard from "@/components/profilecard/ProfileCard";
+import ReelShowcase from "@/components/ReelShowcase";
 import UpcomingEvent from "@/components/UpcomingEvent/UpcomingEvent";
 
 export default function Home() {
   return (
     <div>
-      <Hero/>
+      <Hero />
       {/* <UpcomingEvent /> */}
       {/* <DonationBanner/> */}
       {/* <Empowerment/> */}
-      <MindOverMilesHero/>
-      <ADLifeProfile  />
-      
-      <GandhiQuoteHero/>
-      <DonationSection/>
-      <ProfileCard/>
+      <MindOverMilesHero />
+      <ReelShowcase
+        videos={[
+          "/videos/reel1.mp4",
+          "/videos/reel2.mp4"
+        ]}
+      />      
+        <ADLifeProfile />
+      <GandhiQuoteHero />
+      <DonationSection />
+      <ProfileCard />
     </div>
   );
 }
