@@ -17,13 +17,19 @@ export default function Home() {
       {/* <DonationBanner/> */}
       {/* <Empowerment/> */}
       <MindOverMilesHero />
-      <ReelShowcase
+      {/* <ReelShowcase
         videos={[
           "/videos/reel1.mp4",
           "/videos/reel2.mp4"
         ]}
-      />      
-        <ADLifeProfile />
+      />       */}
+      <ReelShowcase
+        videos={[
+          "https://firebasestorage.googleapis.com/v0/b/for-pic-storages.appspot.com/o/addlifetrust-reels%2Freel-one.mp4?alt=media&token=b27a5db6-f3fc-4d22-a78a-74a724bfda8b",
+          "https://firebasestorage.googleapis.com/v0/b/for-pic-storages.appspot.com/o/addlifetrust-reels%2Freel-two.mp4?alt=media&token=78264621-b7fe-43cd-a6f4-d85bd872e3d6"
+        ]}
+      />
+      <ADLifeProfile />
       <GandhiQuoteHero />
       <DonationSection />
       <ProfileCard />
