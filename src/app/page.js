@@ -1,4 +1,5 @@
 import ADLifeProfile from "@/components/ADLifeProfile/ADLifeProfile";
+import BloodBankLanding from "@/components/BloodBankLanding";
 import DonationBanner from "@/components/DonationBanner/DonationBanner";
 import DonationSection from "@/components/donationsection/DonationSection";
 import Empowerment from "@/components/Empowerment/Empowerment";
@@ -12,17 +13,12 @@ import UpcomingEvent from "@/components/UpcomingEvent/UpcomingEvent";
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <BloodBankLanding/>
+      {/* <Hero /> */}
       {/* <UpcomingEvent /> */}
-      {/* <DonationBanner/> */}
+      <DonationBanner/>
       {/* <Empowerment/> */}
       <MindOverMilesHero />
-      {/* <ReelShowcase
-        videos={[
-          "/videos/reel1.mp4",
-          "/videos/reel2.mp4"
-        ]}
-      />       */}
       <ReelShowcase
         videos={[
           "https://firebasestorage.googleapis.com/v0/b/for-pic-storages.appspot.com/o/addlifetrust-reels%2Freel-one.mp4?alt=media&token=b27a5db6-f3fc-4d22-a78a-74a724bfda8b",

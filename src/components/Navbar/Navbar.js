@@ -57,7 +57,7 @@ const Navbar = () => {
               href="tel:+919505051524"
               className="text-md hover:underline"
             >
-              +91 95050 51524
+              +91 95050 51521
             </a>
           </div>
 
@@ -69,18 +69,16 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" passHref>
-            <div className="flex items-center space-x-3 bg-white p-2 rounded-lg shadow-md cursor-pointer">
+            <div className="flex items-center bg-white  rounded-lg shadow-md cursor-pointer">
               <Image
-                src="/logo.png"
+                src="/ad_life_adding_value_to_life_logo.png"
                 alt="AD Life Trust Logo"
-                width={48}
-                height={48}
+                width={80}
+                height={80}
                 className="object-contain"
                 priority
               />
-              <span className="font-bold text-xl text-[#1B1E5B] hidden sm:block">
-                Life
-              </span>
+
             </div>
           </Link>
 
@@ -102,44 +100,26 @@ const Navbar = () => {
               ))}
             </ul>
 
-
-            {/* <div className="ml-6 ">
+            <div className="ml-6">
               <a
                 href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="relative bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white px-6 py-2 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-red-500/30 flex items-center space-x-2 hover:cursor-pointer">
+                <button
+                  className="relative bg-gradient-to-r from-[#E51C23] to-[#c2181e]
+      text-white px-9 py-3 rounded-md text-base font-semibold shadow-xl
+      flex items-center space-x-2 hover:cursor-pointer animate-bounce"
+                >
                   <span>Donate Now</span>
-                  <span className="">
-                    <span className="flex h-3 w-3 relative">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-85"></span>
-                      <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-                    </span>
+
+                  <span className="flex h-3 w-3 relative">
+                    <span className="absolute inline-flex h-full w-full rounded-full bg-white opacity-60 animate-ping"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
                   </span>
                 </button>
               </a>
-            </div> */}
-            <div className="ml-6">
-  <a
-    href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <button
-      className="relative bg-gradient-to-r from-[#E51C23] to-[#c2181e]
-      text-white px-9 py-3 rounded-md text-base font-semibold shadow-xl
-      flex items-center space-x-2 hover:cursor-pointer animate-bounce"
-    >
-      <span>Donate Now</span>
-
-      <span className="flex h-3 w-3 relative">
-        <span className="absolute inline-flex h-full w-full rounded-full bg-white opacity-60 animate-ping"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-      </span>
-    </button>
-  </a>
-</div>
+            </div>
 
           </div>
 

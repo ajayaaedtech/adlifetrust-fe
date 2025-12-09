@@ -51,16 +51,14 @@ const Footer = () => {
             <Link href="/" className="flex items-center space-x-3 group">
               <div className="bg-white p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 <Image
-                  src="/logo.png"
+                  src="/ad_life_adding_value_to_life_logo.png"
                   alt="AD Trust Logo"
-                  width={48}
+                  width={180}
                   height={48}
                   className="object-contain"
                 />
               </div>
-              <span className="font-bold text-3xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                 Life 
-              </span>
+          
             </Link>
 
             <p className="text-gray-300 text-base leading-relaxed max-w-md">
