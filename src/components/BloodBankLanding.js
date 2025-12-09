@@ -10,7 +10,7 @@ const BloodBankLanding = () => {
   // counter
   useEffect(() => {
     setIsVisible(true);
-    const target = 3500;
+    const target = 4500;
     const steps = 60;
     const inc = target / steps;
     let now = 0;
