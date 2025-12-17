@@ -30,7 +30,7 @@ const BloodBankLanding = () => {
   const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdAUUeVGV3MXTG7wtQRM-mTvcDjy1k065eN3VTlryVMBipCYA/viewform?usp=header";
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white " id="blood-bank">
 
       {/* HERO */}
       <section className="relative min-h-screen mt-28 overflow-hidden">

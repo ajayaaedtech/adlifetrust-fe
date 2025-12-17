@@ -23,7 +23,7 @@ const Footer = () => {
   ];
 
   const programLinks = [
-    { name: 'Education Programs', href: '/activities' },
+    { name: 'Blood Donation Drive – 2026', href: '/#blood-bank' },
     { name: 'Healthcare Initiatives', href: '/activities' },
     // { name: 'Livelihood Projects', href: '#' },
     // { name: 'Mentorship', href: '#' },
@@ -58,7 +58,7 @@ const Footer = () => {
                   className="object-contain"
                 />
               </div>
-          
+
             </Link>
 
             <p className="text-gray-300 text-base leading-relaxed max-w-md">
@@ -148,7 +148,7 @@ const Footer = () => {
                 </div>
                 <span className="font-semibold text-white text-lg mb-2">Email Us</span>
                 <a href="mailto:director@adlifetrust.org.in" className="text-gray-300 hover:text-white transition-colors text-sm">
-                 director@adlifetrust.org.in
+                  director@adlifetrust.org.in
                 </a>
               </div>
 
