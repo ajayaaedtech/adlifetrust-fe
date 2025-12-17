@@ -76,7 +76,7 @@ const BloodBankLanding = () => {
 
                     <div className="px-8 py-4 text-center border-r border-white/30">
                       <p className="text-white text-xs tracking-widest">DAY</p>
-                      <p className="text-4xl font-extrabold text-white">05</p>
+                      <p className="text-4xl font-extrabold text-white">28</p>
                     </div>
 
                     <div className="px-8 py-4 text-center">
