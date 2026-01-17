@@ -21,6 +21,7 @@ function HomeContent() {
   const searchParams = useSearchParams();
 
   // 🩹 Fix scroll to section after navigation from another page
+  // 🩹 Scroll fix for hash navigation
   useEffect(() => {
     if (typeof window !== "undefined") {
       const hash = window.location.hash;
@@ -28,13 +29,15 @@ function HomeContent() {
         const el = document.querySelector(hash);
         if (el) {
           setTimeout(() => {
-            el.scrollIntoView({ behavior: "smooth" });
-          }, 300); // delay to wait for hydration
+            // ✅ Always scroll to the top of the element
+            const yOffset = -100; // adjust if navbar height differs
+            const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }, 400);
         }
       }
     }
   }, [pathname, searchParams]);
-
   return (
     <main className="overflow-x-hidden">
       {/* ❤️ Blood Bank Drive Section */}

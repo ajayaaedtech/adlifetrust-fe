@@ -26,7 +26,8 @@ const BloodBankLanding = () => {
   }, []);
 
   // const qrImageUrl = "/qr-code.jpg";
-  const qrImageUrl = "/qr-code.jpeg";
+  // const qrImageUrl = "/design.jpeg";
+  const qrImageUrl = "/design.png";
   const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdAUUeVGV3MXTG7wtQRM-mTvcDjy1k065eN3VTlryVMBipCYA/viewform?usp=header";
 
   return (
