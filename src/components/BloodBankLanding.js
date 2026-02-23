@@ -92,8 +92,8 @@ const BloodBankLanding = () => {
 
                 {/* Title */}
                 <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-6">
-                  Blood Bank Program
-                  <span className="block text-yellow-300 mt-3">Save Lives Together</span>
+                 Dream Big. 
+                  <span className="block text-yellow-300 mt-3">Take the First Step.</span>
                 </h1>
 
                 <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-xl">
