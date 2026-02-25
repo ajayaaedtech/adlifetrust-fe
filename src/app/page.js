@@ -46,7 +46,7 @@ function HomeContent() {
       </section>
 
       {/* 💖 Donation Banner 
-      <DonationBanner />*/}
+      <DonationBanner />*/ }
 
       {/* 🧠 Mind Over Miles Hero */}
       <MindOverMilesHero />
