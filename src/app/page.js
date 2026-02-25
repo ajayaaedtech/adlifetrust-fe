@@ -45,8 +45,8 @@ function HomeContent() {
         <BloodBankLanding />
       </section>
 
-      {/* 💖 Donation Banner */}
-      <DonationBanner />
+      {/* 💖 Donation Banner 
+      <DonationBanner />*/ }
 
       {/* 🧠 Mind Over Miles Hero */}
       <MindOverMilesHero />
