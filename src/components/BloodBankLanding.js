@@ -60,20 +60,7 @@ const BloodBankLanding = () => {
         {/* ── CONTENT ── */}
         <div className="relative z-10 max-w-3xl px-6 text-white flex flex-col items-center" style={{ animation: 'fadeInUp 0.9s ease both', paddingTop: '80px' }}>
 
-          {/* Tag */}
-          <div
-            className="inline-flex items-center gap-2 rounded-full text-xs font-semibold uppercase tracking-widest mb-8"
-            style={{
-              background: 'rgba(245,168,0,0.12)',
-              border: '1px solid rgba(245,168,0,0.38)',
-              color: '#ffc93c',
-              padding: '7px 20px',
-              animation: 'fadeInUp 0.9s ease 0.15s both',
-            }}
-          >
-            <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#f5a800', animation: 'blink 1.6s ease-in-out infinite', display: 'inline-block' }} />
-            An Initiative by AD Life Trust
-          </div>
+         
 
           {/* Headline */}
           <h1
@@ -110,24 +97,31 @@ const BloodBankLanding = () => {
               animation: 'fadeInUp 0.9s ease 0.4s both',
             }}
           />
-
+           {/* Tag */}
+          <div
+            className="inline-flex items-center gap-2 rounded-full text-xs font-semibold uppercase tracking-widest mb-8"
+            style={{
+              background: 'rgba(245,168,0,0.12)',
+              border: '1px solid rgba(245,168,0,0.38)',
+              color: '#ffc93c',
+              padding: '7px 20px',
+              animation: 'fadeInUp 0.9s ease 0.15s both',
+            }}
+          >
+            <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#f5a800', animation: 'blink 1.6s ease-in-out infinite', display: 'inline-block' }} />
+            An Initiative by AD Life Trust
+          </div>
           {/* Scholarship Card */}
           <div
             className="w-full flex items-center gap-5 mb-10 rounded-2xl text-left"
             style={{
-              background: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(255,255,255,0.09)',
-              padding: '22px 28px',
-              backdropFilter: 'blur(8px)',
-              position: 'relative',
-              overflow: 'hidden',
-              animation: 'fadeInUp 0.9s ease 0.5s both',
+            
             }}
           >
-            {/* Left gold bar */}
+            {/* Left gold bar 
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: 'linear-gradient(180deg, #f5a800, #ffc93c)', borderRadius: '4px 0 0 4px' }} />
-
-            {/* Icon */}
+              */}
+            {/* Icon 
             <div
               className="flex items-center justify-center text-2xl flex-shrink-0 rounded-xl"
               style={{
@@ -136,31 +130,31 @@ const BloodBankLanding = () => {
               }}
             >
               🎓
-            </div>
+            </div>*/}
 
-            {/* Text */}
+            {/* Text
             <div className="flex-1">
               <div className="font-semibold text-white text-lg leading-snug">National Coaching Scholarship Test</div>
               <div className="text-md mt-1" style={{ color: 'rgb(255, 255, 255)' }}>Full coaching scholarships for deserving students across India</div>
-            </div>
+            </div> */}
 
-            {/* Badge */}
+            {/* Badge 
             <div
               className="flex-shrink-0 text-sm font-bold rounded-full px-4 py-1.5"
               style={{ background: 'linear-gradient(135deg, #f5a800, #ffc93c)', color: '#071226' }}
             >
               100 Seats
-            </div>
+            </div>*/}
           </div>
 
           {/* CTA Buttons */}
           <div
-            className="flex flex-wrap items-center justify-center gap-4"
+            className="flex flex-wrap items-center justify-center gap-4 animate-bounce"
             style={{ animation: 'fadeInUp 0.9s ease 0.65s both' }}
           >
             <button
               disabled
-              className="inline-flex items-center gap-2 font-bold rounded-full cursor-not-allowed"
+              className="inline-flex items-center gap-2 font-bold rounded-full cursor-not-allowed animate-bounce"
               style={{
                 background: 'linear-gradient(135deg, #f5a800, #ffc93c)',
                 color: '#071226',
