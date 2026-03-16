@@ -120,10 +120,10 @@ export default function BrochureDownload() {
               <p className="text-slate-500 text-sm font-medium">
                 If you encounter any suspicious demands, please report them immediately to our director at{" "}
                 <a
-                  href="mailto:director@adlifetrust.org.in"
+                  href="mailto:enquiry@adlifetrust.org.in"
                   className="text-blue-600 font-bold hover:text-blue-800 hover:underline underline-offset-2 transition-colors"
                 >
-                  director@adlifetrust.org.in
+                  enquiry@adlifetrust.org.in
                 </a>
               </p>
           </div>
@@ -197,10 +197,10 @@ export default function BrochureDownload() {
             <div className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-5 py-3 text-sm text-slate-600">
               <span style={{ fontSize: 15 }}>🔒</span> Files are safe & virus-free
             </div>
-            <a href="mailto:director@adlifetrust.org.in"
+            <a href="mailto:enquiry@adlifetrust.org.in"
               className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-5 py-3 text-sm text-slate-600 hover:border-slate-300 hover:bg-white transition-all no-underline">
               <span style={{ fontSize: 15 }}>📬</span>
-              <span>Queries: <span className="text-[#1a3a6b] font-semibold">director@adlifetrust.org.in</span></span>
+              <span>Queries: <span className="text-[#1a3a6b] font-semibold">enquiry@adlifetrust.org.in</span></span>
             </a>
             <a href="tel:+919505051521"
               className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-5 py-3 text-sm text-slate-600 hover:border-slate-300 hover:bg-white transition-all no-underline">

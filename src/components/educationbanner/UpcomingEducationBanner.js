@@ -1,67 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 
-/* ─── Global styles injected once ─── */
-const CSS = `
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700;800&display=swap');
 
-  @keyframes shimmer   { 0%{transform:translateX(-130%) skewX(-12deg)} 100%{transform:translateX(310%) skewX(-12deg)} }
-  @keyframes ripple    { 0%{transform:scale(0);opacity:.5} 100%{transform:scale(6);opacity:0} }
-  @keyframes gradS     { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
-  @keyframes fadeUp    { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
-  @keyframes ping      { 75%,100%{transform:scale(2);opacity:0} }
-  @keyframes phoneWig  { 0%,70%,100%{transform:rotate(0)} 18%{transform:rotate(14deg)} 36%{transform:rotate(-10deg)} 54%{transform:rotate(6deg)} }
-  @keyframes orb       { 0%,100%{transform:scale(1);opacity:.12} 50%{transform:scale(1.08);opacity:.22} }
-  @keyframes borderGlow{ 0%,100%{opacity:.6} 50%{opacity:1} }
-  @keyframes floatCard { 0%,100%{transform:translateY(0) rotate(.4deg)} 50%{transform:translateY(-8px) rotate(-.4deg)} }
 
-  .btb-shimmer::after {
-    content:''; position:absolute; inset:0;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent);
-    transform: translateX(-130%) skewX(-12deg);
-    animation: shimmer 2.2s ease-in-out infinite;
-  }
-  .btb-ping  { animation: ping 1.3s cubic-bezier(0,0,.2,1) infinite; }
-  .btb-ph    { animation: phoneWig 2.8s ease-in-out infinite; }
-  .btb-float { animation: floatCard 4s ease-in-out infinite; }
 
-  .btb-su1 { animation: fadeUp .55s ease-out .00s both; }
-  .btb-su2 { animation: fadeUp .55s ease-out .10s both; }
-  .btb-su3 { animation: fadeUp .55s ease-out .20s both; }
-  .btb-su4 { animation: fadeUp .55s ease-out .30s both; }
-  .btb-su5 { animation: fadeUp .55s ease-out .42s both; }
-  .btb-su6 { animation: fadeUp .55s ease-out .54s both; }
-
-  .btb-fee-card::before {
-    content:''; position:absolute; inset:-1px; border-radius:22px;
-    background: linear-gradient(135deg,rgba(249,115,22,.28),rgba(255,255,255,.04),rgba(99,102,241,.14));
-    z-index:-1; animation: borderGlow 3s ease-in-out infinite;
-  }
-
-  /* Custom Dropdown Hide Arrow */
-  .btb-select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-`;
-
-function InjectCSS() {
-  const done = useRef(false);
-  useEffect(() => {
-    if (done.current) return;
-    done.current = true;
-    const el = document.createElement("style");
-    el.textContent = CSS;
-    document.head.appendChild(el);
-  }, []);
-  return null;
-}
-
-const BROCHURES = [
-  { id: "en", lang: "English", flag: "🇬🇧", href: "#" },
-  { id: "hi", lang: "हिन्दी", flag: "🇮🇳", href: "#" },
-  { id: "te", lang: "తెలుగు", flag: "🏛️", href: "#" },
-];
 
 /* ─── Terms Modal ─── */
 const TERMS = [
@@ -76,36 +17,36 @@ const TERMS = [
 
 function TermsModal({ onClose }) {
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-      style={{ background: "rgba(4,8,22,.92)", backdropFilter: "blur(12px)" }}>
-      <div className="absolute inset-0" onClick={onClose} />
-      <div className="relative bg-white rounded-[32px] shadow-2xl max-w-md w-full max-h-[85vh] overflow-y-auto z-10">
-        <div className="sticky top-0 bg-white/96 backdrop-blur border-b border-slate-100 px-6 py-5 flex items-center justify-between rounded-t-[32px]">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-[#1a3a6b] grid place-items-center">
-              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 "
+      style={{ background: "rgba(4,8,22,.9)", backdropFilter: "blur(8px)" }}>
+      <div className="absolute inset-0 " onClick={onClose} />
+      <div className="relative bg-white rounded-3xl shadow-2xl max-w-md w-full max-h-[82vh] overflow-y-auto z-10 ">
+        <div className="sticky top-0 bg-white/96 backdrop-blur border-b border-slate-100 px-5 py-4 flex items-center justify-between rounded-t-3xl">
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-xl bg-[#1a3a6b] grid place-items-center">
+              <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414A1 1 0 0121 9.414V19a2 2 0 01-2 2z" />
               </svg>
             </div>
-            <h3 className="font-extrabold text-slate-800 text-base">Terms & Conditions</h3>
+            <h3 className="font-bold text-slate-800 text-sm">Terms & Conditions</h3>
           </div>
-          <button onClick={onClose} className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 transition-colors grid place-items-center">✕</button>
+          <button onClick={onClose} className="w-7 h-7 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 text-xs font-bold transition-colors grid place-items-center">✕</button>
         </div>
-        <div className="px-6 py-5 space-y-4">
+        <div className="px-5 py-4 space-y-3">
           {TERMS.map(([title, text], i) => (
-            <div key={i} className="flex gap-3.5 items-start">
-              <div className="shrink-0 mt-1 w-5 h-5 rounded-full bg-orange-100 grid place-items-center">
-                <span className="text-orange-600 font-black text-[10px]">{i + 1}</span>
+            <div key={i} className="flex gap-2.5 items-start">
+              <div className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-[#1a3a6b]/10 grid place-items-center">
+                <span className="text-[#1a3a6b] font-black text-[9px]">{i + 1}</span>
               </div>
-              <p className="text-[13px] text-slate-600 leading-relaxed">
-                <strong className="text-slate-800 font-bold">{title}: </strong>{text}
+              <p className="text-xs text-slate-600 leading-relaxed">
+                <strong className="text-slate-800">{title}: </strong>{text}
               </p>
             </div>
           ))}
         </div>
-        <div className="px-6 pb-6 pt-2">
+        <div className="px-5 pb-5 pt-2">
           <button onClick={onClose}
-            className="w-full py-4 rounded-2xl bg-[#1a3a6b] hover:bg-[#0f2548] text-white font-bold text-sm transition-all shadow-lg shadow-blue-900/20">
+            className="w-full py-3 rounded-2xl bg-[#1a3a6b] hover:bg-[#0f2548] text-white font-bold text-sm transition-colors">
             I Understand & Agree
           </button>
         </div>
@@ -140,7 +81,7 @@ function RegisterButton({ href = "#" }) {
           background: "rgba(255,255,255,.36)", animation: "ripple .9s ease-out forwards", pointerEvents: "none",
         }} />
       ))}
-      <span className="relative z-10">Register Now</span>
+      <span className="relative z-10 text-md">Register Now</span>
       <span className="relative z-10 w-7 h-7 rounded-lg bg-white/20 border border-white/28 grid place-items-center">
         <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5-5 5M18 12H6" />
@@ -166,8 +107,8 @@ function PhoneButton({ phone = "+919505051521", display = "+91 95050 51521" }) {
         </svg>
       </div>
       <div className="flex flex-col leading-none">
-        <span className="text-white/38 text-md font-bold uppercase tracking-widest mb-0.5" style={{ fontSize: 9.5 }}>Call Us</span>
-        <span className="text-white font-bold" style={{ fontSize: 12.5 }}>{display}</span>
+        <span className="text-white/38 text-md font-bold uppercase tracking-widest mb-0.5" style={{ fontSize: 9 }}>Call Us</span>
+        <span className="text-white font-bold " style={{ fontSize: 14.5 }}>{display}</span>
       </div>
     </a>
   );
@@ -202,6 +143,7 @@ function StatRow({ value, label, svgPath, accent }) {
   );
 }
 
+/* ─── Elig Badge ─── */
 function EligBadge({ label, icon }) {
   return (
     <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full font-semibold cursor-default transition-all duration-150"
@@ -215,50 +157,77 @@ function EligBadge({ label, icon }) {
 }
 
 /* ═══════════════════════════════
-    MAIN EXPORT
+   MAIN EXPORT
 ═══════════════════════════════ */
 export default function UpcomingEducationBanner() {
   const [showTerms, setShowTerms] = useState(false);
-  const [selectedLang, setSelectedLang] = useState(BROCHURES[0]);
-
-  const handleDownload = () => {
-    // Replace '#' with actual PDF links in BROCHURES array
-    const link = document.createElement('a');
-    link.href = selectedLang.href;
-    link.download = `Brochure_${selectedLang.lang}.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   const stats = [
-    { value: "100% Coaching Fee", label: "Full scholarship — zero cost", accent: "orange", svgPath: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" },
-    { value: "100 Students", label: "Pilot batch — limited seats", accent: "gold", svgPath: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" },
-    { value: "Results in 15 Days", label: "Email · SMS · Applicant portal", accent: "teal", svgPath: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
-    { value: "AI-Proctored Exam", label: "Fair · Merit-based · Online", accent: "violet", svgPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
+    {
+      value: "100% Coaching Fee", label: "Full scholarship — zero cost to student", accent: "orange",
+      svgPath: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+    },
+    {
+      value: "100 Students", label: "Pilot batch — limited seats only", accent: "gold",
+      svgPath: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+    },
+    {
+      value: "Results in 15 Days", label: "Email · SMS · Applicant portal", accent: "teal",
+      svgPath: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+    },
+    {
+      value: "AI-Proctored Exam", label: "Fair · Merit-based · 90-min online test", accent: "violet",
+      svgPath: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+    },
+  ];
+  const BROCHURES = [
+    { id: "en", lang: "English", icon: "🌐", href: "/education-pdf/BridgeToBrilliance.pdf" },
+    { id: "hi", lang: "हिन्दी", icon: "🌐", href: "/education-pdf/BridgeToBrilliance_Hindi.pdf" }, // Agar Hindi file hai toh
+    { id: "te", lang: "తెలుగు", icon: "🌐", href: "/education-pdf/BridgeToBrilliance_Telugu.pdf" },
+  ];
+  const [selectedLang, setSelectedLang] = useState(BROCHURES[0]);
+
+  const eligibility = [
+    { label: "Class 11 & 12", icon: "📗" },
+    { label: "UG Degree", icon: "🎓" },
+    { label: "Postgraduate", icon: "🏅" },
+    { label: "All India", icon: "🇮🇳" },
   ];
 
   return (
     <>
-      <InjectCSS />
+
       {showTerms && <TermsModal onClose={() => setShowTerms(false)} />}
 
       <section className="relative overflow-hidden min-h-screen flex items-center">
-        {/* Background */}
+
+        {/* ── Background image + overlays ── */}
         <div className="absolute inset-0 z-0">
+          {/* <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80&fit=crop&crop=top"
+            alt="" aria-hidden className="w-full h-full object-cover"
+            style={{ objectPosition:"center 30%" }}
+          /> */}
+          {/* Dark base */}
           <div className="absolute inset-0" style={{ background: "linear-gradient(110deg,rgba(4,8,20,.97) 0%,rgba(6,15,38,.94) 38%,rgba(8,20,50,.88) 60%,rgba(4,10,28,.96) 100%)" }} />
+          {/* Orange warm bottom-left */}
           <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 12% 85%,rgba(249,115,22,.16) 0%,transparent 48%)" }} />
+          {/* Indigo top-right */}
           <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 82% 12%,rgba(99,102,241,.1) 0%,transparent 42%)" }} />
+          {/* Orbs */}
           <div className="absolute pointer-events-none" style={{ top: -100, right: -80, width: 440, height: 440, borderRadius: "50%", background: "radial-gradient(circle,rgba(249,115,22,.08) 0%,transparent 70%)", animation: "orb 6s ease-in-out infinite" }} />
           <div className="absolute pointer-events-none" style={{ bottom: -60, left: -40, width: 340, height: 340, borderRadius: "50%", background: "radial-gradient(circle,rgba(99,102,241,.1) 0%,transparent 70%)", animation: "orb 8s ease-in-out infinite 2s" }} />
+          {/* Grid texture */}
           <div className="absolute inset-0 pointer-events-none" style={{ opacity: .022, backgroundImage: "linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)", backgroundSize: "52px 52px" }} />
         </div>
 
+        {/* ── Content ── */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-20 sm:mt-20 mt-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
-            {/* LEFT COLUMN */}
+            {/* ══════ LEFT COLUMN ══════ */}
             <div>
+              {/* Org label */}
               <div className="btb-su1 flex items-center gap-3 mb-4">
                 <div className="h-px w-5" style={{ background: "rgba(255,255,255,.2)" }} />
                 <span style={{ fontFamily: "'DM Sans',system-ui,sans-serif", fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: ".14em", color: "rgba(255,255,255,.35)" }}>
@@ -267,6 +236,7 @@ export default function UpcomingEducationBanner() {
                 <div className="h-px w-5" style={{ background: "rgba(255,255,255,.2)" }} />
               </div>
 
+              {/* Live pill */}
               <div className="btb-su1 mb-5">
                 <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full"
                   style={{ fontFamily: "'DM Sans',system-ui,sans-serif", fontSize: 10.5, fontWeight: 800, letterSpacing: ".08em", textTransform: "uppercase", color: "#fb923c", background: "rgba(249,115,22,.14)", border: "1px solid rgba(249,115,22,.28)" }}>
@@ -278,107 +248,146 @@ export default function UpcomingEducationBanner() {
                 </span>
               </div>
 
+              {/* Headline */}
               <div className="btb-su2 mb-4">
                 <h1 style={{ fontFamily: "'Playfair Display',Georgia,serif", fontSize: "clamp(34px,4.5vw,56px)", fontWeight: 900, color: "#fff", lineHeight: 1.06, textShadow: "0 2px 32px rgba(0,0,0,.6)", marginBottom: 0 }}>
-                  Bridge To <span className="relative inline-block">
-                    <span style={{ background: "linear-gradient(135deg,#fb923c 0%,#fbbf24 45%,#fb923c 100%)", backgroundSize: "200%", animation: "gradS 3s ease infinite", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Brilliance</span>
+                  Bridge To{" "}
+                  <span className="relative inline-block">
+                    <span style={{ background: "linear-gradient(135deg,#fb923c 0%,#fbbf24 45%,#fb923c 100%)", backgroundSize: "200%", animation: "gradS 3s ease infinite", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
+                      Brilliance
+                    </span>
                     <span className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full" style={{ background: "linear-gradient(90deg,#f97316,#fbbf24)" }} />
                   </span>
                 </h1>
               </div>
 
-              <div className="btb-su3 mb-8">
-                <p style={{ fontFamily: "'DM Sans',system-ui,sans-serif", fontSize: 15, color: "rgba(191,219,254,.65)", lineHeight: 1.72, maxWidth: 420 }}>
-                  "Because Every Dream Deserves a Chance." Providing <strong style={{ color: "#fff" }}>100% coaching fee support</strong> to <strong style={{ color: "#fff" }}>100 merit students</strong> — funded directly by the trust.
+              {/* Tagline */}
+              <div className="btb-su3 mb-6">
+                <p style={{ fontFamily: "'DM Sans',system-ui,sans-serif", fontSize: 15, color: "rgba(191,219,254,.65)", lineHeight: 1.72, maxWidth: 400 }}>
+                  "Because Every Dream Deserves a Chance." A trust-funded program providing{" "}
+                  <strong style={{ color: "rgba(255,255,255,.88)", fontWeight: 600 }}>100% coaching fee support</strong> to{" "}
+                  <strong style={{ color: "rgba(255,255,255,.88)", fontWeight: 600 }}>100 selected students</strong> — paid directly to the institute.
                 </p>
               </div>
 
-              {/* Action Area: Register & Call */}
-              <div className="btb-su4 flex flex-wrap items-center gap-3 mb-4">
+              {/* CTA row */}
+              <div className=" flex flex-wrap items-center gap-2.5 mb-5">
                 <RegisterButton />
                 <PhoneButton />
-              </div>
+                {/* Redesigned Brochure Section */}
+                <div className="mt-3 flex flex-wrap items-center gap-4 p-2 rounded-[24px] bg-white/[0.03] border border-white/[0.08] max-w-fit mb-10">
+                  <div className="relative group min-w-[170px]">
+                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-xl opacity-80 pointer-events-none z-10">
+                      🌐
+                    </div>
 
-              {/* BROCHURE DOWNLOAD SECTION */}
-              <div className="btb-su5 flex flex-wrap items-center gap-3 mb-8 p-1.5 rounded-2xl max-w-fit" 
-                   style={{ background: "rgba(255,255,255,.03)", border: "1px solid rgba(255,255,255,.07)" }}>
-                <div className="relative group min-w-[130px]">
-                  <select 
-                    value={selectedLang.id}
-                    onChange={(e) => setSelectedLang(BROCHURES.find(b => b.id === e.target.value))}
-                    className="btb-select w-full bg-[#060c1f] text-white/60 border border-white/10 rounded-xl px-4 py-2 text-[11px] font-bold outline-none focus:border-orange-500/40 transition-all cursor-pointer"
-                  >
-                    {BROCHURES.map(b => <option key={b.id} value={b.id} className="bg-[#060c1f]">{b.flag} {b.lang}</option>)}
-                  </select>
-                  <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-white/20 group-hover:text-orange-500 transition-colors">
-                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" /></svg>
+                    <select
+                      value={selectedLang?.id}
+                      onChange={(e) => setSelectedLang(BROCHURES?.find(b => b.id === e.target.value))}
+                      className="appearance-none w-full pl-12 pr-10 py-3.5 bg-[#0a1020] text-white font-bold text-sm rounded-[18px] border border-white/10 outline-none focus:border-orange-500/50 transition-all cursor-pointer"
+                      style={{
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
+                        backgroundRepeat: 'no-repeat',
+                        backgroundPosition: 'right 1rem center',
+                        backgroundSize: '1.2em',
+                      }}
+                    >
+                      {BROCHURES?.map((b) => (
+                        <option key={b.id} value={b?.id} className="bg-[#0a1020] py-2">
+                          {b?.lang}
+                        </option>
+                      ))}
+                    </select>
                   </div>
+
+                  {/* Real Download Button */}
+                  <a
+                    href={selectedLang?.href}
+                    download={`Brochure_${selectedLang?.lang}.pdf`}
+                    className="group flex items-center gap-3 px-7 py-3.5 rounded-[18px] font-extrabold text-sm text-white bg-white/5 border border-white/10 hover:bg-white/10 transition-all active:scale-95"
+                  >
+                    <svg className="w-4 h-4 text-orange-500 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 3v12" />
+                    </svg>
+                    Download Brochure
+                  </a>
                 </div>
-                <button onClick={handleDownload}
-                  className="flex items-center gap-2 px-5 py-2 rounded-xl font-bold text-[11px] transition-all active:scale-95 border border-white/5 hover:bg-white/5"
-                  style={{ color: "rgba(255,255,255,.8)", fontFamily: "'DM Sans', sans-serif" }}>
-                  <svg className="w-3.5 h-3.5 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 3v12" /></svg>
-                  Download Brochure
-                </button>
               </div>
 
+              {/* Eligibility */}
               <div className="btb-su5 mb-3">
-                <p style={{ fontSize: 9.5, fontWeight: 800, textTransform: "uppercase", letterSpacing: ".16em", color: "rgba(255,255,255,.25)", marginBottom: 8 }}>Eligible For</p>
+                <p style={{ fontFamily: "'DM Sans',system-ui,sans-serif", fontSize: 9.5, fontWeight: 800, textTransform: "uppercase", letterSpacing: ".16em", color: "rgba(255,255,255,.25)", marginBottom: 8 }}>
+                  Eligible For
+                </p>
                 <div className="flex flex-wrap gap-1.5">
-                  {[{ label: "Class 11 & 12", icon: "📗" }, { label: "UG Degree", icon: "🎓" }, { label: "Postgraduate", icon: "🏅" }, { label: "All India", icon: "🇮🇳" }].map(e => <EligBadge key={e.label} {...e} />)}
+                  {eligibility.map(e => <EligBadge key={e.label} {...e} />)}
                 </div>
               </div>
 
+              {/* Terms */}
               <div className="btb-su6">
                 <button onClick={() => setShowTerms(true)}
-                  style={{ background: "none", border: "none", cursor: "pointer", fontSize: 11.5, color: "rgba(255,255,255,.3)", textDecoration: "underline", textUnderlineOffset: 3, fontFamily: "'DM Sans',system-ui,sans-serif" }}>
+                  style={{ background: "none", border: "none", cursor: "pointer", fontSize: 11.5, color: "rgba(255,255,255,.3)", textDecoration: "underline", textUnderlineOffset: 3, fontFamily: "'DM Sans',system-ui,sans-serif", transition: "color .18s" }}
+                  onMouseEnter={e => { e.currentTarget.style.color = "rgba(255,255,255,.6)"; }}
+                  onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,.3)"; }}
+                >
                   View Terms & Conditions
                 </button>
               </div>
             </div>
 
-            {/* RIGHT COLUMN */}
+            {/* ══════ RIGHT COLUMN ══════ */}
             <div className="flex flex-col gap-3">
-              {/* Fee Card */}
+
+              {/* Fee card */}
               <div className="btb-su3 btb-fee-card btb-float relative rounded-[22px] px-5 py-5"
-                style={{ background: "rgba(255,255,255,.07)", backdropFilter: "blur(24px)", border: "1px solid rgba(255,255,255,.14)", boxShadow: "0 14px 44px rgba(0,0,0,.35)" }}>
+                style={{ background: "rgba(255,255,255,.07)", backdropFilter: "blur(24px)", border: "1px solid rgba(255,255,255,.14)", boxShadow: "0 14px 44px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.1)" }}>
+                {/* Ribbon */}
                 <div className="absolute -top-3 left-5 px-3.5 py-1 rounded-full text-white"
-                  style={{ fontSize: 9.5, fontWeight: 900, textTransform: "uppercase", letterSpacing: ".13em", background: "linear-gradient(90deg,#f97316,#ea580c)", fontFamily: "'DM Sans',system-ui,sans-serif" }}>
+                  style={{ fontSize: 9.5, fontWeight: 900, textTransform: "uppercase", letterSpacing: ".13em", background: "linear-gradient(90deg,#f97316,#ea580c)", boxShadow: "0 3px 12px rgba(249,115,22,.5)", fontFamily: "'DM Sans',system-ui,sans-serif" }}>
                   Application Fee
                 </div>
                 <div className="flex items-end justify-between mt-2">
-                  <div style={{ fontFamily: "'Playfair Display',serif", fontSize: "clamp(38px,5vw,50px)", fontWeight: 900, color: "#fff", lineHeight: 1 }}>
-                    1,800 <span style={{ fontSize: "0.9em", verticalAlign: "top", marginLeft: ".32em", display: "inline-block", transform: "rotate(-12deg)", backgroundImage: "linear-gradient(135deg, #FF9933 15%, #FFFFFF 50%, #138808 85%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }} className="animate-pulse">₹</span>
-                  </div>
+                  <div style={{ fontSize: "clamp(38px,5vw,50px)", fontWeight: 900, color: "#fff", lineHeight: 1 }}>
+                    1,800
+                    <span
+                      style={{
+                        fontSize: "0.9em",
+                        fontFamily: "'DM Sans', sans-serif",
+                        fontWeight: 700,
+                        verticalAlign: "top",
+                        marginLeft: ".32em",
+                        display: "inline-block",
+                        transform: "rotate(-12deg)", /* Halka sa rotate */
+                        backgroundImage: "linear-gradient(135deg, #FF9933 15%, #FFFFFF 50%, #138808 85%)", /* Trio Color (Tiranga) */
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        color: "transparent"
+                      }}
+                      className="animate-pulse">
+                      ₹
+                    </span>                  </div>
                   <div className="flex flex-col items-end pb-1 gap-0.5">
                     {["✓ Non-refundable", "✓ Online only", "✓ No hidden fees"].map(t => (
-                      <span key={t} style={{ fontSize: 10.5, fontWeight: 700, color: "rgba(255,255,255,.42)" }}>{t}</span>
+                      <span key={t} style={{ fontSize: 10.5, fontWeight: 700, color: "rgba(255,255,255,.42)", fontFamily: "'DM Sans',system-ui,sans-serif" }}>{t}</span>
                     ))}
                   </div>
                 </div>
-                <div style={{ fontSize: 11, color: "rgba(255,255,255,.28)", borderTop: "1px solid rgba(255,255,255,.08)", paddingTop: 10, marginTop: 8 }}>
+                <div style={{ fontSize: 11, color: "rgba(255,255,255,.28)", borderTop: "1px solid rgba(255,255,255,.08)", paddingTop: 10, marginTop: 8, fontFamily: "'DM Sans',system-ui,sans-serif", letterSpacing: ".02em" }}>
                   Only payment for the entire program · Paid once before the exam
                 </div>
               </div>
 
-              {/* Stats */}
+              {/* Stats — 4 compact rows */}
               <div className="btb-su4 flex flex-col gap-2">
                 {stats.map(s => <StatRow key={s.value} {...s} />)}
               </div>
 
-              {/* Assurance Strip */}
-              <div className="btb-su5 flex items-center gap-4 rounded-2xl px-4 py-3.5"
-                style={{ background: "rgba(16,185,129,.08)", border: "1px solid rgba(16,185,129,.18)" }}>
-                <div className="w-8 h-8 rounded-xl grid place-items-center shrink-0" style={{ background: "rgba(16,185,129,.15)" }}>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="#10b981" strokeWidth={2.2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944" /></svg>
-                </div>
-                <div>
-                  <div style={{ fontSize: 14, fontWeight: 800, color: "rgba(255,255,255,.88)", marginBottom: 1 }}>₹1,800 is the ONLY payment</div>
-                  <div style={{ fontSize: 12, color: "rgba(255,255,255,.38)", lineHeight: 1.45 }}>No hidden costs before or after selection. Merit-based process.</div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
+
+            </div>{/* end right */}
+          </div>{/* end grid */}
         </div>
       </section>
     </>

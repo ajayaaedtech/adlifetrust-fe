@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Stethoscope, Briefcase, BookOpen, Users, MapPin, Calendar, Target, Brain } from 'lucide-react';
+import { GraduationCap, Stethoscope, Briefcase, BookOpen  , Brain,HeartHandshake  } from 'lucide-react';
+
+
 import Image from 'next/image';
 import ProductShowcase from '@/components/ProductList/ProductList';
 
@@ -24,6 +26,26 @@ const activities = [
     paragraphs: [
       " At Orange Hub Events, we believe mental health deserves the same attention and celebration as physical wellness. In today’s fast-paced world, mental well-being is often neglected or misunderstood — but it’s at the heart of how we live, work, connect, and grow.",
       "According to global studies, 1 in 4 people will experience mental health issues at some point in their lives. Yet the stigma surrounding mental health keeps millions from seeking help, speaking up, or even recognizing the signs.",
+    ]
+  },
+  {
+    id: 'mind_over_miles_bg.jpg',
+    title: 'MIND OVER MILES',
+    icon: HeartHandshake ,
+    color: 'from-orange-500 to-yellow-600',
+    bgColor: 'bg-orange-50',
+    images: [
+      {
+        id: 10,
+        src: '/mind_over_miles_bg.jpg',
+        alt: 'Every step counted'
+      },
+
+    ],
+    paragraphs: [
+      "Every step taken was a step toward breaking the stigma surrounding mental health. Thank you to every runner, volunteer, sponsor, and supporter who helped build this journey",
+      "more than 2800+ Participants ",
+      "Incredible distance! 25Km"
     ]
   },
   {
