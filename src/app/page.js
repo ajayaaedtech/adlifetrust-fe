@@ -18,6 +18,7 @@ import UpcomingEvent from "@/components/UpcomingEvent/UpcomingEvent";
 import UpcomingEducationBanner from "@/components/educationbanner/UpcomingEducationBanner";
 import CourseHighlights from "@/components/educationbanner/CourseHighlights";
 import BrochureDownload from "@/components/educationbanner/BrochureDownload";
+import ScholarshipDetails from "@/components/educationbanner/ScholarshipDetails";
 
 function HomeContent() {
   const pathname = usePathname();
@@ -46,6 +47,7 @@ function HomeContent() {
 
       <>
         <UpcomingEducationBanner />
+        <ScholarshipDetails/>
         <CourseHighlights />
         <BrochureDownload />
       </>

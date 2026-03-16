@@ -29,8 +29,8 @@ const steps = [
     id: 3,
     stepNum: "03",
     title: "Upload Documents",
-    description: "Securely upload scanned copies of the following mandatory documents:",
-    tags: ["Marksheet", "Aadhaar", "SSC Cert.", "Bank Passbook", "Photo", "Caste Cert."],
+    description: "Securely upload following mandatory documents:",
+    tags: ["Marksheet", "Aadhaar", "SSC Cert.", "Bank Passbook", "Photo",],
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
@@ -72,17 +72,26 @@ export default function ApplicationProcess() {
   return (
     <section className="bg-slate-50 py-16 md:py-24 font-sans overflow-hidden">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header matching the image style */}
         <div className="text-center mb-16 md:mb-20">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal text-slate-800 tracking-tight">
-            Steps To Follow For Getting <strong className="font-black text-slate-900">A SCHOLARSHIP</strong>
+            Steps To Follow For Getting{" "}
+            <span className="relative inline-block">
+              <strong className="font-black text-slate-900">A SCHOLARSHIP</strong>
+              {/* This is the wavy red underline */}
+              <span className="absolute -bottom-2 left-0 w-full h-3 bg-no-repeat bg-contain"
+                style={{
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 20' preserveAspectRatio='none'%3E%3Cpath d='M0,15 C150,5 350,25 500,10' stroke='%23ef4444' stroke-width='6' fill='transparent' stroke-linecap='round'/%3E%3C/svg%3E")`
+                }}>
+              </span>
+            </span>
           </h2>
         </div>
 
         {/* Timeline Container */}
         <div className="relative w-full max-w-7xl mx-auto">
-          
+
           {/* DESKTOP UI: Horizontal dashed connecting line */}
           <div className="hidden lg:block absolute top-[4.5rem] left-[10%] right-[10%] border-t-[2px] border-dashed border-slate-300 z-0 pointer-events-none"></div>
 
@@ -92,8 +101,8 @@ export default function ApplicationProcess() {
           {/* Steps Grid */}
           <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center lg:items-stretch gap-8 lg:gap-6">
             {steps.map((step) => (
-              <div 
-                key={step.id} 
+              <div
+                key={step.id}
                 className="bg-white rounded-[2rem] p-6 sm:p-8 w-full max-w-[320px] lg:flex-1 flex flex-col items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-2 group border border-slate-100"
               >
                 {/* Icon Container */}
@@ -102,15 +111,15 @@ export default function ApplicationProcess() {
                 </div>
 
                 {/* Step Indicator */}
-                <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">
+                <div className="text-[10px] font-bold uppercase tracking-widestmb-2 bg-red-500 text-white p-1 rounded-2xl">
                   Step {step.stepNum}
                 </div>
 
                 {/* Step Title */}
-                <h3 className="text-lg font-bold text-slate-900 mb-3 leading-snug px-2">
+                <h3 className="text-lg font-bold text-slate-900 mb-3 leading-snug m-2 ">
                   {step.title}
                 </h3>
-                
+
                 {/* Step Description */}
                 <p className="text-slate-500 text-sm leading-relaxed mb-4 flex-1">
                   {step.description}

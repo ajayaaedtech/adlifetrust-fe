@@ -1,9 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
 
-
-
-
 /* ─── Terms Modal ─── */
 const TERMS = [
   ["Application Fee", "₹1,800 is non-refundable in all circumstances, including withdrawal or disqualification."],
@@ -191,7 +188,7 @@ export default function UpcomingEducationBanner() {
     { label: "Class 11 & 12", icon: "📗" },
     { label: "UG Degree", icon: "🎓" },
     { label: "Postgraduate", icon: "🏅" },
-    { label: "All India", icon: "🇮🇳" },
+    { label: "Strundents from all academic streams", icon: "" },
   ];
 
   return (

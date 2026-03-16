@@ -10,7 +10,7 @@ const TIMELINE = [
   { period: "Months 1–3", label: "Application Window", desc: "Register, fill application, pay fee", color: "#1a3a6b", dot: "#3b82f6" },
   { period: "Month 4", label: "Examination", desc: "AI-proctored 90-min online exam", color: "#f97316", dot: "#f97316" },
   { period: "15 Days", label: "Results Declared", desc: "Email, SMS & applicant portal", color: "#059669", dot: "#10b981" },
-  { period: "Month 5", label: "Coaching Begins", desc: "Offer letters + enrollment at institute", color: "#7c3aed", dot: "#8b5cf6" },
+  { period: "Month 5", label: "Coaching Begins", desc: "enrollment at institute", color: "#7c3aed", dot: "#8b5cf6" },
 ];
 
 const BROCHURES = [
