@@ -139,9 +139,9 @@ const ADLifeProfilePage = () => {
 
 
       {/* Header/Hero Section */}
-      <div className="text-center mt-10 ">
+      <div className="text-center  p-4 ">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900">
-          <span className="block">Our Mission, Our Impact</span>
+          <span className="block ">Our Mission, Our Impact</span>
           <span className="block bg-gradient-to-r from-orange-500 to-rose-500 text-transparent bg-clip-text">
             Adding Value to Life
           </span>
