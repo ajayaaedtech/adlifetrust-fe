@@ -1,8 +1,35 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const BloodBankLanding = () => {
+  const [participantCount, setParticipantCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // counter
+  useEffect(() => {
+    setIsVisible(true);
+    const target = 4500;
+    const steps = 60;
+    const inc = target / steps;
+    let now = 0;
+
+    const timer = setInterval(() => {
+      now += inc;
+      now >= target
+        ? (setParticipantCount(target), clearInterval(timer))
+        : setParticipantCount(Math.floor(now));
+    }, 2000 / steps);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // const qrImageUrl = "/qr-code.jpg";
+  // const qrImageUrl = "/design.jpeg";
+  const qrImageUrl = "/design.png";
+  
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdAUUeVGV3MXTG7wtQRM-mTvcDjy1k065eN3VTlryVMBipCYA/viewform?usp=header";
+
   return (
     <div className="min-h-screen bg-white">
 
