@@ -78,7 +78,7 @@ export default function DonationSection() {
                             <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-stretch justify-center sm:justify-start">
                                 <a
                                     href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
-                                    className="flex-1 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300 text-center"
+                                    className="animate-bounce flex-1 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300 text-center"
                                 >
                                     Donate Now
                                 </a>

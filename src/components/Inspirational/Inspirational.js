@@ -107,62 +107,6 @@ export default function GandhiQuoteHero() {
             </div>
           </div>
 
-          {/* Content Cards */}
-          {/* <div className={`grid md:grid-cols-2 gap-8 max-w-6xl mx-auto transform transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-
-            <div className="group relative">
-              <div className="absolute -inset-px rounded-xl blur-md opacity-60 group-hover:opacity-100 transition-all duration-500"
-                style={{ background: 'linear-gradient(135deg, #4A5FD4 0%, #6B7FE8 100%)' }}></div>
-              <div className="relative bg-gradient-to-br from-[#0A0B21]/90 to-[#1B1E5B]/90 rounded-xl p-8 border border-white/5 transition-all duration-500 hover:shadow-2xl hover:border-white/10"
-                style={{ backdropFilter: 'blur(12px)' }}>
-
-                <div className="flex justify-start mb-6">
-                  <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-500"
-                    style={{ background: 'linear-gradient(135deg, #4A5FD4 0%, #6B7FE8 100%)' }}>
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                    <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      style={{ boxShadow: '0 0 30px 8px rgba(74, 95, 212, 0.6)' }}></div>
-                  </div>
-                </div>
-
-                <div className="text-left">
-                  <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-200">Our Vision</h3>
-                  <p className="text-gray-300 leading-relaxed text-base md:text-lg font-light">
-                    AD Life is an 18-year-old Trust that is passionate about making a difference in the lives of people who are marginalized or vulnerable. This passion is reflected in our motto, &apos;Adding Value to Life&apos;.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="group relative">
-              <div className="absolute -inset-px rounded-xl blur-md opacity-60 group-hover:opacity-100 transition-all duration-500"
-                style={{ background: 'linear-gradient(135deg, #6B7FE8 0%, #4A5FD4 100%)' }}></div>
-              <div className="relative bg-gradient-to-br from-[#0A0B21]/90 to-[#1B1E5B]/90 rounded-xl p-8 border border-white/5 transition-all duration-500 hover:shadow-2xl hover:border-white/10"
-                style={{ backdropFilter: 'blur(12px)' }}>
-
-                <div className="flex justify-start mb-6">
-                  <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-500"
-                    style={{ background: 'linear-gradient(135deg, #6B7FE8 0%, #4A5FD4 100%)' }}>
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                    <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      style={{ boxShadow: '0 0 30px 8px rgba(107, 127, 232, 0.6)' }}></div>
-                  </div>
-                </div>
-
-                <div className="text-left">
-                  <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-200">Our Impact</h3>
-                  <p className="text-gray-300 leading-relaxed text-base md:text-lg font-light">
-                    We are making a difference through our work on those aspects that bring about sustainable change. Our initiatives in education, healthcare, and community development create lasting impact for generations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-           */}
 
           {/* Bottom CTA Section */}
           <div className={`text-center mt-16 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
@@ -172,7 +116,7 @@ export default function GandhiQuoteHero() {
                   background: 'linear-gradient(135deg, #4A5FD4 0%, #6B7FE8 100%)',
                   boxShadow: '0 8px 30px rgba(74, 95, 212, 0.5)'
                 }}>
-                <Link href="/activities" className="">
+                <Link href="/volunteer" className="">
                   <span className="absolute inset-0 bg-gradient-to-r from-[#6B7FE8] to-[#4A5FD4] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                   <span className="relative z-10 flex items-center">
 

@@ -9,9 +9,10 @@ const PARTNERS = [
   { name: "Union Bank of India", logo: "/ourpartnerslogos/uboi.png" },
   { name: "IIM - Udaipur", logo: "/ourpartnerslogos/iimu.png" },
   { name: "Mahindra University", logo: "/ourpartnerslogos/mahindrauniversity.png" },
-  { name: "Sky Veda", logo: "" },
+  { name: "Mallareddy Viswhwa Vidya Peeth", logo: "/ourpartnerslogos/Mallareddy.png" },
+  // { name: "Sky Veda", logo: "" },
   { name: "Addlife Projects Private Limited", logo: "/ourpartnerslogos/adlifpvtltd.jpeg" },
-  { name: "Department of Health and Family Welfare", logo: "" },
+  // { name: "Department of Health and Family Welfare", logo: "" },
   { name: "Government of Andhra Pradesh", logo: "/ourpartnerslogos/govofandrapradesh.png" },
 ];
 

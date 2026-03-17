@@ -118,12 +118,12 @@ const ADLifeProfilePage = () => {
       color: "orange",
       description: "Supporting communities during disasters and times of crisis."
     },
-    {
-      text: "Research And Documentation",
-      icon: Search,
-      color: "purple",
-      description: "Generating insights to shape impactful social development strategies."
-    },
+    // {
+    //   text: "Research And Documentation",
+    //   icon: Search,
+    //   color: "purple",
+    //   description: "Generating insights to shape impactful social development strategies."
+    // },
      {
       text: "Training And Advocacy",
       icon: BriefcaseBusiness ,
@@ -169,8 +169,7 @@ const ADLifeProfilePage = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                <span className='font-bold'>AD Life Trust</span>, established in 2005, is dedicated to improving the lives of people in India&nbsp;. Our tagline&nbsp;, &nbsp;&apos;&nbsp;Adding Value to Life&nbsp;&apos;&nbsp; , reflects our commitment to making a meaningful difference for marginalized and vulnerable individuals.
-              </p>
+                <span className='font-bold'>AD Life Trust</span>, established in 2005, is dedicated to improving the lives of people in India&nbsp;. Our tagline&nbsp;, &nbsp;&apos;&nbsp;Adding Value to Life&nbsp;&apos;&nbsp; , reflects our commitment to marginalized communities . As a registered 12A and 80G institution, we offer tax benefits to our donors while ensuring all income is utilized for social welfare.</p>
               <p className="text-gray-700 leading-relaxed">
                 <span>&nbsp;</span>We work with communities to address their most pressing challenges through sustainable, locally-driven solutions that create lasting positive change.
               </p>

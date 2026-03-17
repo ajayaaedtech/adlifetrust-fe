@@ -10,7 +10,7 @@ const Footer = () => {
   const socialLinks = [
     // { icon: Facebook, href: '#', name: 'Facebook' },
     // { icon: Twitter, href: '#', name: 'Twitter' },
-    // { icon: Instagram, href: '#', name: 'Instagram' },
+    { icon: Instagram, href: '#', name: 'Instagram' },
     { icon: Linkedin, href: '#', name: 'LinkedIn' },
   ];
 
@@ -23,11 +23,12 @@ const Footer = () => {
   ];
 
   const programLinks = [
-    { name: 'Blood Donation Drive – 2026', href: '/#blood-bank' },
+    { name: 'Bridge To Brilliance', href: '/activities' },
+    { name: 'MIND OVER MILES', href: '/activities' },
+    { name: 'Livelihood', href: '/activities' },
+    { name: 'Education', href: '/activities' },
     { name: 'Healthcare Initiatives', href: '/activities' },
-    // { name: 'Livelihood Projects', href: '#' },
-    // { name: 'Mentorship', href: '#' },
-    // { name: 'Community Outreach', href: '#' },
+
   ];
 
   return (
@@ -53,8 +54,8 @@ const Footer = () => {
                 <Image
                   src="/ad_life_adding_value_to_life_logo.png"
                   alt="AD Trust Logo"
-                  width={180}
-                  height={48}
+                  width={80  }
+                  height={40}
                   className="object-contain"
                 />
               </div>
@@ -105,23 +106,32 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Programs */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-bold text-red-400 tracking-wider uppercase flex items-center gap-2">
+          {/* Programs */}
+          <div>
+            <h3 className="text-lg font-bold text-red-400 tracking-wider uppercase flex items-center gap-2 mb-4">
               <div className="w-1 h-6 bg-red-400 rounded-full"></div>
-              Our Activities
+              Our Current Activities
             </h3>
-            <ul className="space-y-3">
-              {programLinks.map((link) => (
+
+            <ul className="space-y-3 text-sm">
+
+              {programLinks.map((link, index) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-300 hover:text-white hover:pl-4 transition-all duration-300 block py-1 relative group"
+                    className="group flex items-start gap-3 hover:text-white transition-all duration-300"
                   >
-                    <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-0 group-hover:w-2 h-0.5 bg-red-400 transition-all duration-300 rounded-full"></span>
-                    {link.name}
+                    {/* Bullet Icon */}
+                    <span className="mt-1 w-2 h-2 bg-red-400 rounded-full group-hover:scale-125 transition"></span>
+
+                    {/* Text */}
+                    <span className="leading-snug text-gray-300 group-hover:text-white">
+                      {link.name}
+                    </span>
                   </Link>
                 </li>
               ))}
+
             </ul>
           </div>
         </div>
@@ -178,18 +188,6 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 text-sm">
-              {/* <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors duration-300">
-                Privacy Policy
-              </Link>
-              <Link href="/terms-of-service" className="text-gray-400 hover:text-white transition-colors duration-300">
-                Terms of Service
-              </Link>
-              <Link href="/cookie-policy" className="text-gray-400 hover:text-white transition-colors duration-300">
-                Cookie Policy
-              </Link>
-              <Link href="/accessibility" className="text-gray-400 hover:text-white transition-colors duration-300">
-                Accessibility
-              </Link> */}
               <p className="flex items-center gap-2">
                 <span className="w-3 h-3 bg-[#E51C23] rounded-full"></span>
                 <span>Adding Value to Lives</span>

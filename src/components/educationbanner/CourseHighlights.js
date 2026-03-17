@@ -30,7 +30,7 @@ const steps = [
     stepNum: "03",
     title: "Upload Documents",
     description: "Securely upload following mandatory documents:",
-    tags: ["Marksheet", "Aadhaar", "SSC Cert.", "Bank Passbook", "Photo",],
+    tags: ["Latest Marksheet", "Aadhaar", "Photo", , "SSC Cert.", "Bank Passbook",],
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
@@ -42,7 +42,7 @@ const steps = [
     id: 4,
     stepNum: "04",
     title: "Pay Application Fee",
-    description: "Pay the required processing fee securely via the online payment gateway.",
+    description: "Pay the required processing fee securely via the online payment gateway and get your receipt.",
     highlight: "₹1,800 One-Time Fee",
     highlightColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
     icon: (
@@ -58,6 +58,8 @@ const steps = [
     title: "Appear for Exam",
     description: "Take the 90-minute examination from any internet-enabled device.",
     highlight: "AI-Proctored Exam",
+    tags: ["Exam date will be announced soon",],
+
     highlightColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -127,7 +129,7 @@ export default function ApplicationProcess() {
 
                 {/* Document Tags (For Step 3) */}
                 {step.tags && (
-                  <div className="w-full flex flex-wrap justify-center gap-1.5 mt-auto">
+                  <div className="w-full flex flex-wrap justify-center mb-2 gap-1.5 mt-auto">
                     {step.tags.map((tag, idx) => (
                       <span key={idx} className="px-2 py-1 bg-slate-50 border border-slate-200 text-slate-600 text-[10px] font-semibold rounded-md">
                         {tag}

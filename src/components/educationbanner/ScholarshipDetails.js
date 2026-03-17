@@ -12,7 +12,7 @@ const ScholarshipDetails = () => {
     },
     {
       id: 'B',
-      title: 'Track C: Government Exam Coaching',
+      title: 'Track B: Government Exam Coaching',
       color: 'bg-[#7f1d1d]', // Maroon
       border: 'border-[#7f1d1d]',
       courses: 'UPSC (IAS/IPS/IFS) • All State PSCs • SSC CGL/CHSL/MTS • IBPS/SBI Banking PO & Clerk/ RRB /Group D/ TET/DSC/ State Police Boards',
@@ -20,11 +20,11 @@ const ScholarshipDetails = () => {
     },
     {
       id: 'C',
-      title: 'Track D: Entrance Exam Coaching',
+      title: 'Track C: Entrance Exam Coaching',
       color: 'bg-[#78350f]', // Gold/Brown
       border: 'border-[#78350f]',
       courses: 'JEE Main • JEE Advanced / NEET-UG • NEET-PG',
-      bestFor: 'MPC (Inter) • BiPC (Inter) • MBBS Graduates (for NEET-PG)'
+      bestFor: 'MPC (Inter) • BiPC (Inter) • MBBS Graduates (for NEET-PG) • MBA • CLAT'
     }
   ];
 
@@ -37,7 +37,7 @@ const ScholarshipDetails = () => {
           Choose Your Coaching Track
         </h2>
         <p className="text-slate-600 mb-8">
-          Select <strong className="text-slate-900">ONE</strong> primary track based on your stream and career goal. The scholarship covers 100% of the approved coaching fee at an empanelled Coaching Institute.
+          Select <strong className="text-slate-900">ONE</strong> primary track based on your stream and career goal. The scholarship covers 100% of the approved coaching fee at a trust empanelled Coaching Institute.
         </p>
 
         <div className="space-y-6">
