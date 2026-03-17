@@ -52,39 +52,60 @@ function TermsModal({ onClose }) {
   );
 }
 
-/* ─── Register Button ─── */
-function RegisterButton({ href = "#" }) {
-  const [ripples, setRipples] = useState([]);
-  function addRipple(e) {
-    const r = e.currentTarget.getBoundingClientRect();
-    const id = Date.now();
-    setRipples(p => [...p, { id, x: e.clientX - r.left, y: e.clientY - r.top }]);
-    setTimeout(() => setRipples(p => p.filter(q => q.id !== id)), 900);
-  }
+/* ─── Register Button (Upcoming - Border Shine Animation) ─── */
+/* ─── Register Button (Upcoming - Guaranteed Animation) ─── */
+function RegisterButton() {
   return (
-    <a href={href} onClick={addRipple}
-      className="btb-shimmer relative overflow-hidden inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl font-bold text-white text-[15px] tracking-wide cursor-pointer select-none shrink-0"
+    <div
+      className="relative overflow-hidden inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl font-bold text-white text-[15px] tracking-wide cursor-not-allowed select-none shrink-0"
       style={{
         background: "linear-gradient(135deg,#f97316,#ea580c,#c2410c)",
-        backgroundSize: "200%", animation: "gradS 3s ease infinite",
+        backgroundSize: "200%",
         boxShadow: "0 5px 22px rgba(249,115,22,.58), inset 0 1px 0 rgba(255,255,255,.16)",
         fontFamily: "'DM Sans', system-ui, sans-serif",
+        // Inline Animation: Isse CSS file ki tension khatam
+        animation: "float 3s ease-in-out infinite, gradS 3s ease infinite",
       }}
     >
-      {ripples.map(({ id, x, y }) => (
-        <span key={id} style={{
-          position: "absolute", left: x, top: y, width: 80, height: 80,
-          marginLeft: -40, marginTop: -40, borderRadius: "50%",
-          background: "rgba(255,255,255,.36)", animation: "ripple .9s ease-out forwards", pointerEvents: "none",
-        }} />
-      ))}
-      <span className="relative z-10 text-md">Register Now</span>
+      {/* 1. Border/Full Surface Shine Effect */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
+          width: "50%",
+          height: "100%",
+          top: 0,
+          left: "-100%",
+          animation: "shine 2s infinite",
+          skewX: "-20deg"
+        }}
+      />
+
+      <span className="relative z-10 text-md">Upcoming Registration</span>
+      
       <span className="relative z-10 w-7 h-7 rounded-lg bg-white/20 border border-white/28 grid place-items-center">
         <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5-5 5M18 12H6" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
         </svg>
       </span>
-    </a>
+
+      {/* Ye Global CSS inject karega taaki animations load ho jayein */}
+      <style>{`
+        @keyframes shine {
+          0% { left: -100%; }
+          100% { left: 200%; }
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-5px); }
+        }
+        @keyframes gradS {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
+    </div>
   );
 }
 
@@ -337,9 +358,9 @@ export default function UpcomingEducationBanner() {
             <div className="flex flex-col gap-3">
 
               {/* Fee card */}
-              <div className="btb-su3 btb-fee-card btb-float relative rounded-[22px] px-5 py-5"
+              {/* <div className="btb-su3 btb-fee-card btb-float relative rounded-[22px] px-5 py-5"
                 style={{ background: "rgba(255,255,255,.07)", backdropFilter: "blur(24px)", border: "1px solid rgba(255,255,255,.14)", boxShadow: "0 14px 44px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.1)" }}>
-                {/* Ribbon */}
+               
                 <div className="absolute -top-3 left-5 px-3.5 py-1 rounded-full text-white"
                   style={{ fontSize: 9.5, fontWeight: 900, textTransform: "uppercase", letterSpacing: ".13em", background: "linear-gradient(90deg,#f97316,#ea580c)", boxShadow: "0 3px 12px rgba(249,115,22,.5)", fontFamily: "'DM Sans',system-ui,sans-serif" }}>
                   Application Fee
@@ -355,8 +376,8 @@ export default function UpcomingEducationBanner() {
                         verticalAlign: "top",
                         marginLeft: ".32em",
                         display: "inline-block",
-                        transform: "rotate(-12deg)", /* Halka sa rotate */
-                        backgroundImage: "linear-gradient(135deg, #FF9933 15%, #FFFFFF 50%, #138808 85%)", /* Trio Color (Tiranga) */
+                        transform: "rotate(-12deg)",
+                        backgroundImage: "linear-gradient(135deg, #FF9933 15%, #FFFFFF 50%, #138808 85%)", 
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                         color: "transparent"
@@ -373,7 +394,7 @@ export default function UpcomingEducationBanner() {
                 <div style={{ fontSize: 11, color: "rgba(255,255,255,.28)", borderTop: "1px solid rgba(255,255,255,.08)", paddingTop: 10, marginTop: 8, fontFamily: "'DM Sans',system-ui,sans-serif", letterSpacing: ".02em" }}>
                   Only payment for the entire program · Paid once before the exam
                 </div>
-              </div>
+              </div> */}
 
               {/* Stats — 4 compact rows */}
               <div className="btb-su4 flex flex-col gap-2">
