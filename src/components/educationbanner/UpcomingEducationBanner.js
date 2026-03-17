@@ -143,7 +143,7 @@ const ACCENTS = {
 function StatRow({ value, label, svgPath, accent }) {
   const c = ACCENTS[accent];
   return (
-    <div className="relative flex items-center gap-3 rounded-2xl px-4 py-3 overflow-hidden"
+    <div className="relative flex items-center gap-4 rounded-2xl px-4 py-4 overflow-hidden"
       style={{ background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.09)" }}>
       <div className="absolute left-0 top-2.5 bottom-2.5 w-[3px] rounded-r-full" style={{ background: c.bar }} />
       <div className="shrink-0 w-9 h-9 rounded-xl grid place-items-center" style={{ background: c.bg }}>
@@ -151,9 +151,9 @@ function StatRow({ value, label, svgPath, accent }) {
           <path strokeLinecap="round" strokeLinejoin="round" d={svgPath} />
         </svg>
       </div>
-      <div className="flex-1 min-w-0">
-        <div className="font-black leading-none mb-0.5" style={{ fontSize: "clamp(14px,2vw,17px)", color: c.text, fontFamily: "'DM Sans',system-ui,sans-serif" }}>{value}</div>
-        <div className="text-white font-semibold" style={{ fontSize: 11.5 }}>{label}</div>
+      <div className="flex-1 min-w-0 ">
+        <div className="font-black leading-none mb-0.5" style={{ fontSize: "clamp(18px,2vw,17px)", color: c.text, fontFamily: "'DM Sans',system-ui,sans-serif" }}>{value}</div>
+        <div className="text-white font-semibold mt-2" style={{ fontSize: 11.5 }}>{label}</div>
       </div>
       <div className="absolute -right-4 -bottom-4 w-16 h-16 rounded-full pointer-events-none"
         style={{ background: `radial-gradient(circle,${c.glow} 0%,transparent 70%)` }} />
@@ -241,7 +241,7 @@ export default function UpcomingEducationBanner() {
 
         {/* ── Content ── */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-20 sm:mt-20 mt-28">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start mt-15">
 
             {/* ══════ LEFT COLUMN ══════ */}
             <div>
@@ -262,7 +262,7 @@ export default function UpcomingEducationBanner() {
                     <span className="btb-ping absolute inset-0 rounded-full" style={{ background: "rgba(249,115,22,.7)" }} />
                     <span className="relative z-10 w-2 h-2 rounded-full bg-orange-500 inline-flex" />
                   </span>
-                  Applications Open · 2025
+                  Applications Open · 2026
                 </span>
               </div>
 
@@ -397,7 +397,7 @@ export default function UpcomingEducationBanner() {
               </div> */}
 
               {/* Stats — 4 compact rows */}
-              <div className="btb-su4 flex flex-col gap-2">
+              <div className=" flex flex-col gap-4 mt-10">
                 {stats.map(s => <StatRow key={s.value} {...s} />)}
               </div>
 

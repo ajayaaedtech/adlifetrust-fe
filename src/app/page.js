@@ -19,6 +19,7 @@ import UpcomingEducationBanner from "@/components/educationbanner/UpcomingEducat
 import CourseHighlights from "@/components/educationbanner/CourseHighlights";
 import BrochureDownload from "@/components/educationbanner/BrochureDownload";
 import ScholarshipDetails from "@/components/educationbanner/ScholarshipDetails";
+import OurPartners from "@/components/educationbanner/OurPartners";
 
 function HomeContent() {
   const pathname = usePathname();
@@ -50,6 +51,7 @@ function HomeContent() {
         <ScholarshipDetails/>
         <CourseHighlights />
         <BrochureDownload />
+        <OurPartners/>
       </>
 
       {/* ❤️ Blood Bank Drive Section */}
@@ -75,13 +77,13 @@ function HomeContent() {
       <ADLifeProfile />
 
       {/* 🕊️ Gandhi Quote */}
-      <GandhiQuoteHero />
 
       {/* 💸 Donation Section */}
       <DonationSection />
+      <GandhiQuoteHero />
 
       {/* 🙌 Profile Card */}
-      <ProfileCard />
+      {/* <ProfileCard /> */}
     </main>
   );
 }
