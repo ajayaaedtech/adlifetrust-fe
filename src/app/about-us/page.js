@@ -26,94 +26,12 @@ const Information = () => {
                     </div>
                     <div className="prose prose-lg text-gray-700 max-w-4xl">
                         <p>
-                            The trust is registered under the Indian Trusts Act, 1982 with Sub Registrar at Kempti, Ringsboro since January 3rd, 2005.
+                            The trust is registered under the Indian Trusts Act, 1882, with the Sub-Registrar at Bengaluru, since January 3rd, 2005.
                         </p>
                     </div>
                 </div>
 
-                {/* Trustees Profile */}
-                <div className="mb-20">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Trustees</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {/* K Dolly Profile */}
-                        <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:scale-[1.02]">
-                            <div className="p-8">
-                                <div className="flex items-start mb-6">
-                                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mr-6">
-                                        <Briefcase className="h-8 w-8 text-blue-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-2xl font-bold text-gray-900">K Dolly</h3>
-                                        <p className="text-blue-600 font-medium">XIM Bhubaneswar Graduate</p>
-                                    </div>
-                                </div>
-                                <div className="prose prose-lg text-gray-700">
-                                    <p>
-                                        Brings nearly two decades of experience in project and stakeholder management within the development sector. Leads projects funded by:
-                                    </p>
-                                    <ul className="mt-4 space-y-2">
-                                        <li className="flex">
-                                            <span className="text-blue-500 mr-2">•</span>
-                                            <span>Government of India</span>
-                                        </li>
-                                        <li className="flex">
-                                            <span className="text-blue-500 mr-2">•</span>
-                                            <span>Government of Andhra Pradesh</span>
-                                        </li>
-                                        <li className="flex">
-                                            <span className="text-blue-500 mr-2">•</span>
-                                            <span>Bill & Melinda Gates Foundation</span>
-                                        </li>
-                                        <li className="flex">
-                                            <span className="text-blue-500 mr-2">•</span>
-                                            <span>DFID (UK)</span>
-                                        </li>
-                                    </ul>
-                                    <p className="mt-4 font-medium">
-                                        Specializes in Strategic Planning, Concept Marketing, Programme Management, and Fund Raising.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Ajay Reddy Profile */}
-                        <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:scale-[1.02]">
-                            <div className="p-8">
-                                <div className="flex items-start mb-6">
-                                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mr-6">
-                                        <Users className="h-8 w-8 text-blue-600" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-2xl font-bold text-gray-900">Ajay Reddy</h3>
-                                        <p className="text-blue-600 font-medium">Commerce Graduate</p>
-                                    </div>
-                                </div>
-                                <div className="prose prose-lg text-gray-700">
-                                    <p>
-                                        A dynamic professional deeply empathetic to farmers, tribes, and women&apos;s issues. From a young age, he has actively addressed tribal concerns through:
-                                    </p>
-                                    <div className="mt-4 bg-blue-50 rounded-lg p-6">
-                                        <div className="flex items-center mb-3">
-                                            <GraduationCap className="h-5 w-5 text-blue-600 mr-2" />
-                                            <span className="font-medium">Providing scholarships</span>
-                                        </div>
-                                        <div className="flex items-center mb-3">
-                                            <ShieldCheck className="h-5 w-5 text-blue-600 mr-2" />
-                                            <span className="font-medium">Mobilizing funds for health emergencies</span>
-                                        </div>
-                                        <div className="flex items-center">
-                                            <Briefcase className="h-5 w-5 text-blue-600 mr-2" />
-                                            <span className="font-medium">Former project coordinator at HEPPT</span>
-                                        </div>
-                                    </div>
-                                    <p className="mt-4">
-                                        Known for his motivational and mobilization skills, notably forming a team of 300 tribal youth in Telangana.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+           
 
                 {/* Advisors Section */}
                 <div className="mb-20">
@@ -269,23 +187,94 @@ const Information = () => {
                         </div>
                     </div>
                 </div>
-            </div>
 
-            {/* CTA Section */}
-            <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-6">Want to learn more about our work?</h2>
-                    <p className="text-xl text-gray-600 mb-8">
-                        Explore how we`&apos;`;re making a difference in communities through education, healthcare, and livelihood programs.
-                    </p>
-                    <a
-                        href="/information"
-                        className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
-                    >
-                        Visit Our Full Information Page
-                    </a>
+                     {/* Trustees Profile */}
+                <div className="mb-20">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Trustees</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* K Dolly Profile */}
+                        <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:scale-[1.02]">
+                            <div className="p-8">
+                                <div className="flex items-start mb-6">
+                                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+                                        <Briefcase className="h-8 w-8 text-blue-600" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-gray-900">K Dolly</h3>
+                                        <p className="text-blue-600 font-medium">XIM Bhubaneswar Graduate</p>
+                                    </div>
+                                </div>
+                                <div className="prose prose-lg text-gray-700">
+                                    <p>
+                                        Brings nearly two decades of experience in project and stakeholder management within the development sector. Leads projects funded by:
+                                    </p>
+                                    <ul className="mt-4 space-y-2">
+                                        <li className="flex">
+                                            <span className="text-blue-500 mr-2">•</span>
+                                            <span>Government of India</span>
+                                        </li>
+                                        <li className="flex">
+                                            <span className="text-blue-500 mr-2">•</span>
+                                            <span>Government of Andhra Pradesh</span>
+                                        </li>
+                                        <li className="flex">
+                                            <span className="text-blue-500 mr-2">•</span>
+                                            <span>Bill & Melinda Gates Foundation</span>
+                                        </li>
+                                        <li className="flex">
+                                            <span className="text-blue-500 mr-2">•</span>
+                                            <span>DFID (UK)</span>
+                                        </li>
+                                    </ul>
+                                    <p className="mt-4 font-medium">
+                                        Specializes in Strategic Planning, Concept Marketing, Programme Management, and Fund Raising.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Ajay Reddy Profile */}
+                        <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:scale-[1.02]">
+                            <div className="p-8">
+                                <div className="flex items-start mb-6">
+                                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+                                        <Users className="h-8 w-8 text-blue-600" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-gray-900">Ajay Reddy</h3>
+                                        <p className="text-blue-600 font-medium">Commerce Graduate</p>
+                                    </div>
+                                </div>
+                                <div className="prose prose-lg text-gray-700">
+                                    <p>
+                                        A dynamic professional deeply empathetic to farmers, tribes, and women&apos;s issues. From a young age, he has actively addressed tribal concerns through:
+                                    </p>
+                                    <div className="mt-4 bg-blue-50 rounded-lg p-6">
+                                        <div className="flex items-center mb-3">
+                                            <GraduationCap className="h-5 w-5 text-blue-600 mr-2" />
+                                            <span className="font-medium">Providing scholarships</span>
+                                        </div>
+                                        <div className="flex items-center mb-3">
+                                            <ShieldCheck className="h-5 w-5 text-blue-600 mr-2" />
+                                            <span className="font-medium">Mobilizing funds for health emergencies</span>
+                                        </div>
+                                        <div className="flex items-center">
+                                            <Briefcase className="h-5 w-5 text-blue-600 mr-2" />
+                                            <span className="font-medium">Former project coordinator at HEPPT</span>
+                                        </div>
+                                    </div>
+                                    <p className="mt-4">
+                                        Known for his motivational and mobilization skills, notably forming a team of 300 tribal youth in Telangana.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            
+
         </div>
     );
 };

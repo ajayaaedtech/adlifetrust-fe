@@ -8,6 +8,25 @@ import Image from 'next/image';
 import ProductShowcase from '@/components/ProductList/ProductList';
 
 const activities = [
+    {
+    id: 'health',
+    title: 'Health',
+    icon: Stethoscope,
+    color: 'from-red-500 to-pink-600',
+    bgColor: 'bg-red-50',
+    images: [
+      {
+        id: 1,
+        src: '/c.jpg',
+        alt: 'women gathered for a knowledge of healthcare camp organized by AD Life in Telangana.'
+      },
+
+    ],
+    paragraphs: [
+      "Ensuring good health is pivotal for a fulfilling life, yet India grapples with widespread health issues, including malnutrition, infant, and maternal mortality. Despite constitutional guarantees for free healthcare, over 70% of health expenses are borne by individuals, creating a significant financial burden.",
+      "Recognizing this challenge, AD Life has focused its efforts on healthcare, particularly targeting tribal populations, constituting 7.95% of India's total population. Working in Telangana, AD Life has provided essential health services to 25,000 tribal individuals, collaborating with local gram panchayats in 30 villages. Medical camps facilitated access to general physicians, cardiologists, pediatricians, and gynecologists, benefitting 9,467 tribal members. Eye and dental camps further addressed specific health needs.",
+    ]
+  },
   {
     id: 'Mental-Health ',
     title: 'Mental Health ',
@@ -42,10 +61,12 @@ const activities = [
       },
 
     ],
-    paragraphs: [
-      "Every step taken was a step toward breaking the stigma surrounding mental health. Thank you to every runner, volunteer, sponsor, and supporter who helped build this journey",
-      "more than 2800+ Participants ",
-      "Incredible distance! 25Km"
+paragraphs: [
+      "Every step taken was a step toward breaking the stigma surrounding mental health. Thank you to every runner, volunteer, and supporter who joined this journey.",
+      "2800+ Participants | 25Km Incredible distance",
+      "Venue: Gachibowli Stadium, Hyderabad",
+      "Date: 09/11/2025",
+      "Powered by Orange Hub and AD Life Trust to support mental health initiatives and community well-being."
     ]
   },
   {
@@ -86,25 +107,7 @@ const activities = [
       "Addressing gender biases in education, AD Life Trust sponsored the initial fees for a deserving young woman pursuing a Ph.D., exemplifying its commitment to empowering individuals. The sponsored individual's success story, securing a higher-paying job aligned with her research, highlights the trust's philosophy of enabling self-sufficiency.",
     ]
   },
-  {
-    id: 'health',
-    title: 'Health',
-    icon: Stethoscope,
-    color: 'from-red-500 to-pink-600',
-    bgColor: 'bg-red-50',
-    images: [
-      {
-        id: 1,
-        src: '/c.jpg',
-        alt: 'women gathered for a knowledge of healthcare camp organized by AD Life in Telangana.'
-      },
 
-    ],
-    paragraphs: [
-      "Ensuring good health is pivotal for a fulfilling life, yet India grapples with widespread health issues, including malnutrition, infant, and maternal mortality. Despite constitutional guarantees for free healthcare, over 70% of health expenses are borne by individuals, creating a significant financial burden.",
-      "Recognizing this challenge, AD Life has focused its efforts on healthcare, particularly targeting tribal populations, constituting 7.95% of India's total population. Working in Telangana, AD Life has provided essential health services to 25,000 tribal individuals, collaborating with local gram panchayats in 30 villages. Medical camps facilitated access to general physicians, cardiologists, pediatricians, and gynecologists, benefitting 9,467 tribal members. Eye and dental camps further addressed specific health needs.",
-    ]
-  },
   {
     id: 'research',
     title: 'Research and Documentation',
@@ -307,7 +310,7 @@ const ActivitiesPage = () => {
                 { icon: <GraduationCap size={38} className='' />, label: "Education" },
                 { icon: <Stethoscope size={38} />, label: "Healthcare" },
                 { icon: <Briefcase size={38} />, label: "Livelihoods" },
-                { icon: <BookOpen size={38} />, label: "Research" }
+                { icon: <BookOpen size={38} />, label: "Humanitarian Efforts" }
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
