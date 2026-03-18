@@ -6,7 +6,7 @@ const Information = () => {
         <div className="bg-white mt-20">
             {/* Hero Section */}
             <div className="relative bg-gradient-to-r from-blue-800 to-indigo-900 py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto text-center">
+                <div className="max-w-7xl mx-auto text-center mt-10">
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">About AD Life Trust</h1>
                     <p className="text-xl text-blue-100 max-w-3xl mx-auto">
                         Registered under the Indian Trusts Act, we are committed to creating sustainable change through education, healthcare, and community development.
@@ -190,7 +190,7 @@ const Information = () => {
 
                      {/* Trustees Profile */}
                 <div className="mb-20">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Trustees</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Member Trustees</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* K Dolly Profile */}
                         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:scale-[1.02]">

@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Stethoscope, Briefcase, BookOpen  , Brain,HeartHandshake  } from 'lucide-react';
+import { GraduationCap, Stethoscope, Briefcase, BookOpen, Brain, HeartHandshake, HandHeart } from 'lucide-react';
 
 
 import Image from 'next/image';
 import ProductShowcase from '@/components/ProductList/ProductList';
 
 const activities = [
-    {
+  {
     id: 'health',
     title: 'Health',
     icon: Stethoscope,
@@ -43,14 +43,14 @@ const activities = [
 
     ],
     paragraphs: [
-      " At Orange Hub Events, we believe mental health deserves the same attention and celebration as physical wellness. In today’s fast-paced world, mental well-being is often neglected or misunderstood — but it’s at the heart of how we live, work, connect, and grow.",
+      " AD LIFE TRUST, we believe mental health deserves the same attention and celebration as physical wellness. In today’s fast-paced world, mental well-being is often neglected or misunderstood — but it’s at the heart of how we live, work, connect, and grow.",
       "According to global studies, 1 in 4 people will experience mental health issues at some point in their lives. Yet the stigma surrounding mental health keeps millions from seeking help, speaking up, or even recognizing the signs.",
     ]
   },
   {
     id: 'mind_over_miles_bg.jpg',
     title: 'MIND OVER MILES',
-    icon: HeartHandshake ,
+    icon: HeartHandshake,
     color: 'from-orange-500 to-yellow-600',
     bgColor: 'bg-orange-50',
     images: [
@@ -61,7 +61,7 @@ const activities = [
       },
 
     ],
-paragraphs: [
+    paragraphs: [
       "Every step taken was a step toward breaking the stigma surrounding mental health. Thank you to every runner, volunteer, and supporter who joined this journey.",
       "2800+ Participants | 25Km Incredible distance",
       "Venue: Gachibowli Stadium, Hyderabad",
@@ -310,7 +310,7 @@ const ActivitiesPage = () => {
                 { icon: <GraduationCap size={38} className='' />, label: "Education" },
                 { icon: <Stethoscope size={38} />, label: "Healthcare" },
                 { icon: <Briefcase size={38} />, label: "Livelihoods" },
-                { icon: <BookOpen size={38} />, label: "Humanitarian Efforts" }
+                { icon: <HandHeart size={38} />, label: "Humanitarian Efforts" }
               ].map((item, index) => (
                 <motion.div
                   key={item.label}

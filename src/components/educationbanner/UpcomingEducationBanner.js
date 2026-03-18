@@ -340,6 +340,7 @@ export default function UpcomingEducationBanner() {
                 </span>
               </div>
 
+
               {/* Buttons — in their own row, wrap naturally */}
               <div className="flex flex-col sm:flex-row gap-3 mb-3 w-full">
                 <RegisterButton />
@@ -407,6 +408,9 @@ export default function UpcomingEducationBanner() {
             {/* RIGHT COLUMN — Stats */}
 
             <div className="flex flex-col gap-4 lg:mt-10">
+              {/* <p style={{ fontFamily: "'DM Sans',system-ui,sans-serif", fontSize: "clamp(26px,2vw,15px)", color: "rgba(191,219,254,.65)", lineHeight: 1.72 }}>
+                - Because Every Dream Deserves a Chance.
+              </p> */}
               {stats.map(s => <StatRow key={s.value} {...s} />)}
             </div>
 
