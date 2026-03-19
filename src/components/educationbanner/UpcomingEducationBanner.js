@@ -310,11 +310,20 @@ export default function UpcomingEducationBanner() {
             "Because Every Dream Deserves a Chance."
           </p>
           {/* Org label */}
-          <div className="w-full  items-center gap-3 mb-4">
+          <div className="w-full flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-5" style={{ background: "rgba(255,255,255,.2)" }} />
-            <span style={{ fontFamily: "'DM Sans',system-ui,sans-serif", fontSize: 10, fontWeight: 800, textTransform: "uppercase", letterSpacing: ".14em", color: "rgba(255,255,255,.35)" }}>
+
+            <span style={{
+              fontFamily: "'DM Sans',system-ui,sans-serif",
+              fontSize: 10,
+              fontWeight: 800,
+              textTransform: "uppercase",
+              letterSpacing: ".14em",
+              color: "rgba(255,255,255,.35)"
+            }}>
               National Professional Coaching Scholarship Programme
             </span>
+
             <div className="h-px w-5" style={{ background: "rgba(255,255,255,.2)" }} />
           </div>
         </div>

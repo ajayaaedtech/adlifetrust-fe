@@ -66,7 +66,7 @@ const activities = [
       "2800+ Participants | 25Km Incredible distance",
       "Venue: Gachibowli Stadium, Hyderabad",
       "Date: 09/11/2025",
-      "Powered by Orange Hub and AD Life Trust to support mental health initiatives and community well-being."
+      "AD Life Trust to support mental health initiatives and community well-being."
     ]
   },
   {
@@ -85,7 +85,7 @@ const activities = [
     ],
     paragraphs: [
       "AD Life Trust is deeply committed to enhancing livelihoods through skill development programs, with a focus on empowering suburban women. Over 30 batches, comprising 10 women each, were trained in Akiveedu, West Godavari district, mastering skills such as tailoring, embroidery, and handicraft making.",
-      "Through its affiliated, AD Life Projects Pvt. Ltd., AD Life Trust established a transformative partnership with Brandix India Apparel City, providing training for women in garment manufacturing.",
+      "Through its affiliated, AD Life Projects Pvt. Ltd , AD Life Trust established a transformative partnership with Brandix India Apparel City, providing training for women in garment manufacturing.",
       "This collaboration led to successful placements in various apparel units, aligning with industry needs. With a 3000 square feet training center, AD Life Trust has supported the program with experienced trainers, covering essential skills and holistic development"
     ]
   },
@@ -144,6 +144,7 @@ const ImageDisplay = ({ images, title, color }) => {
               src={currentImage.src}
               alt={currentImage.alt}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={
                 currentImage.customstyle === "customstyle"
                   ? "object-cover object-bottom"

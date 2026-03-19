@@ -27,6 +27,7 @@ const Navbar = () => {
     { name: "Home", link: "/" },
     { name: "Activities", link: "/activities" },
     { name: "Volunteer", link: "/volunteer" },
+    { name: "Mental Health", link: "/activities/mental-health" },
     // { name: "Mentorship", link: "/mentees" },
     { name: "About us ", link: "/about-us " },
   ];
@@ -77,6 +78,8 @@ const Navbar = () => {
                 height={80}
                 className="object-contain"
                 priority
+                style={{ height: 'auto' }} // Maintains aspect ratio
+
               />
 
             </div>
@@ -100,28 +103,7 @@ const Navbar = () => {
               ))}
             </ul>
 
-            {/* <div className="ml-6">
-              <a
-                href="https://pages.razorpay.com/pl_NIXwYVaXickvmj/view"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button
-                  className="relative bg-gradient-to-r from-[#E51C23] to-[#c2181e]
-      text-white px-9 py-3 rounded-md text-base font-semibold shadow-xl
-      flex items-center space-x-2 hover:cursor-pointer animate-bounce"
-                >
-                  <span>Donate Now</span>
-
-                  <span className="flex h-3 w-3 relative">
-                    <span className="absolute inline-flex h-full w-full rounded-full bg-white opacity-60 animate-ping"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-                  </span>
-                </button>
-              </a>
-            </div> */}
-
-               <div className="ml-6">
+            <div className="ml-6">
               <a
                 href=""
                 target="_blank"
@@ -171,26 +153,8 @@ const Navbar = () => {
               </ListItem>
             ))}
             <ListItem className="mt-2 px-4">
-              {/* <Link href="/donate" className="w-full">
-                <button
-                  onClick={toggleDrawer(false)}
-                  className="w-full bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white py-3 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center space-x-2"
-                >
-                  <span>Donate Now</span>
-                  <ChevronRight className="w-4 h-4" />
-                </button>
-              </Link> */}
-{/* 
-               <Link href="" className="w-full">
-                <button
-                  onClick={toggleDrawer(false)}
-                  className="w-full bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white py-3 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center space-x-2"
-                >
-                  <span>Upcoming Registration</span>
-                  <ChevronRight className="w-4 h-4" />
-                </button>
-              </Link> */}
-              <span  className="w-full bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white py-3 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center space-x-2">Upcoming Registration</span>
+
+              <span className="w-full bg-gradient-to-r from-[#E51C23] to-[#c2181e] text-white py-3 rounded-md font-semibold hover:scale-105 transition-all duration-200 shadow-lg flex items-center justify-center space-x-2">Upcoming Registration</span>
 
             </ListItem>
           </List>
