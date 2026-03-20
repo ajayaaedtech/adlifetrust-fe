@@ -110,7 +110,7 @@ export default function MentalHealthPage() {
             </div>
           </motion.div>
           <div className="relative h-[600px] rounded-[3rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
-            <Image src="/mentalhealth/group-photo-event.jpg" alt="Event Highlights" fill unoptimized className="object-cover" />
+            <Image src="/mentalhealth/groupevent.jpg" alt="Event Highlights" fill unoptimized className="object-cover" />
           </div>
         </div>
       </section>
