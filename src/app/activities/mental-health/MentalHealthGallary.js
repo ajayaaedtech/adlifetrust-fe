@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight, Camera, X, Maximize2 } from "lucide-react";
 
 const galleryImages = [
   { id: 1, src: "/mentalhealth/run.webp", alt: "Participants running for mental health awareness" },
-  { id: 2, src: "/mentalhealth/groupevent.jpg", alt: "Community group photo at Hyderabad event" },
+  { id: 2, src: "/groupevent.jpg", alt: "Community group photo at Hyderabad event" },
   { id: 3, src: "/mentalhealth/volunteers.jpg", alt: "Volunteers supporting the Mind Over Miles initiative" },
   
   // ... copy-paste your other 13+ images here, ensuring unique IDs or src
