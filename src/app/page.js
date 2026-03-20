@@ -19,7 +19,10 @@ import UpcomingEducationBanner from "@/components/educationbanner/UpcomingEducat
 import CourseHighlights from "@/components/educationbanner/CourseHighlights";
 import BrochureDownload from "@/components/educationbanner/BrochureDownload";
 import ScholarshipDetails from "@/components/educationbanner/ScholarshipDetails";
-import OurPartners from "@/components/educationbanner/OurPartners";
+import OurPartners from "@/components/ourpartner/OurPartners";
+import {
+  NGO_PARTNERS, 
+} from "../components/ourpartner/data/partners";
 
 function HomeContent() {
   const pathname = usePathname();
@@ -48,10 +51,10 @@ function HomeContent() {
 
       <>
         <UpcomingEducationBanner />
-        <ScholarshipDetails/>
+        <ScholarshipDetails />
         <CourseHighlights />
         <BrochureDownload />
-        <OurPartners/>
+        <OurPartners partners={NGO_PARTNERS} />
       </>
 
       {/* ❤️ Blood Bank Drive Section */}

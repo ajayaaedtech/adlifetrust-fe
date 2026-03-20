@@ -25,8 +25,8 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Activities", link: "/activities" },
     { name: "Volunteer", link: "/volunteer" },
+    { name: "Activities", link: "/activities" },
     { name: "Mental Health", link: "/activities/mental-health" },
     // { name: "Mentorship", link: "/mentees" },
     { name: "About us ", link: "/about-us " },

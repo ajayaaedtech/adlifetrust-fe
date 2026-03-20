@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 import { Calendar, MapPin, Users, ChevronDown, Heart, Award, Trophy, Camera, CalendarCheck } from "lucide-react";
 import ReelShowcase from "@/components/ReelShowcase";
 import MentalHealthGallery from "./MentalHealthGallary";
-
+import OurPartners from "@/components/ourpartner/OurPartners";
+import {
+  MEDIA_PARTNERS,
+} from "../../../components/ourpartner/data/partners";
 export default function MentalHealthPage() {
   const fadeIn = {
     initial: { opacity: 0, y: 30 },
@@ -127,18 +130,15 @@ export default function MentalHealthPage() {
 
       {/* 📰 MEDIA RECOGNITION */}
       <section className="py-32 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-slate-400 uppercase tracking-[0.4em] font-bold text-xs mb-12">As Seen On</h2>
-          <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all">
-            <span className="text-2xl font-black text-slate-800 italic">DAILY HUNTS</span>
-            <span className="text-2xl font-black text-slate-800 italic">METRO INDIA</span>
-            <span className="text-2xl font-black text-slate-800 italic">THE WEEK </span>
-            <span className="text-2xl font-black text-slate-800 italic">THE HINDUSTHAN EXPRESS</span>
-            <span className="text-2xl font-black text-slate-800 italic">SANGRI TODAY</span>
-            <span className="text-2xl font-black text-slate-800 italic">JAIPUR TIMES</span>
-            <span className="text-2xl font-black text-slate-800 italic">WELTH I</span>
-          </div>
-        </div>
+        {/* Corporate */}
+        <OurPartners
+          partners={MEDIA_PARTNERS}
+          title="Media Partners"
+          bg="bg-white-50"
+
+        />
+
+
       </section>
 
 
