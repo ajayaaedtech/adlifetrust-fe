@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Stethoscope, Briefcase, BookOpen, Brain, HeartHandshake, HandHeart } from 'lucide-react';
+import { GraduationCap, Stethoscope, Briefcase, BookOpen, Brain, HeartHandshake, HandHeart, Target } from 'lucide-react';
 
 
 import Image from 'next/image';
-import ProductShowcase from '@/components/ProductList/ProductList';
+
 
 const activities = [
   {
@@ -109,8 +109,8 @@ const activities = [
   },
 
   {
-    id: 'research',
-    title: 'Research and Documentation',
+    id: 'Humanitarian Efforts',
+    title: 'Humanitarian Efforts',
     icon: Stethoscope,
     color: 'from-red-500 to-pink-600',
     bgColor: 'bg-red-50',
@@ -351,18 +351,61 @@ const ActivitiesPage = () => {
       </div>
 
       {/* Activity Sections */}
-      {activities.map((activity, index) => (
+      {/* {activities.map((activity, index) => (
         <ActivitySection
           key={activity.id}
           activity={activity}
           index={index}
           isReverse={index % 2 === 1}
         />
+      ))} */}
+      {activities.map((activity, index) => (
+        <React.Fragment key={activity.id}>
+
+          <ActivitySection
+            activity={activity}
+            index={index}
+            isReverse={index % 2 === 1}
+          />
+
+          {/* Inject heading AFTER first section */}
+          {index === 0 && (
+  <section className="relative py-24 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+    {/* Decorative background blur */}
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl bg-blue-50/50 rounded-full blur-3xl -z-10" />
+
+    <div className="px-4 md:px-8 max-w-5xl mx-auto text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        {/* Animated Badge */}
+        <div className="inline-flex items-center space-x-2 px-4 py-1.5 mb-6 bg-blue-100 text-blue-700 rounded-full">
+          <Target size={16} className="animate-pulse" />
+          <span className="text-xs font-bold uppercase tracking-widest">Future Roadmap</span>
+        </div>
+
+        {/* Main Heading */}
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-6 tracking-tight">
+          Focused <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">2026–2028</span>
+        </h2>
+
+        {/* Subtext */}
+        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-light leading-relaxed">
+          Our strategic roadmap focuses on <span className="text-gray-900 font-semibold italic">scaling impact</span> for the coming years across 
+        </p>
+
+    
+      </motion.div>
+    </div>
+  </section>
+)}
+        </React.Fragment>
       ))}
 
-      {/* <section>
-        <ProductShowcase />
-      </section> */}
+
 
       {/* Call to Action Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900">

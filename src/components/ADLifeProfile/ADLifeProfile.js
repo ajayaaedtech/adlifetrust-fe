@@ -124,12 +124,12 @@ const ADLifeProfilePage = () => {
     //   color: "purple",
     //   description: "Generating insights to shape impactful social development strategies."
     // },
-     {
-      text: "Training And Advocacy",
-      icon: BriefcaseBusiness ,
-      color: "purple",
-      description: "nurturing health, enriching education, strengthening livelihoods, guiding humanitarian action, and shaping tomorrow with research-driven insight."
-    },
+    //  {
+    //   text: "Training And Advocacy",
+    //   icon: BriefcaseBusiness ,
+    //   color: "purple",
+    //   description: "nurturing health, enriching education, strengthening livelihoods, guiding humanitarian action, and shaping tomorrow with research-driven insight."
+    // },
 
   ];
 
@@ -312,7 +312,7 @@ const ADLifeProfilePage = () => {
             <ImpactStat number={establishedYear} label="Established Year" icon={MapPin} delay={100} isAnimated={true} />
             <ImpactStat number={`${yearsOfOperation}+`} label="Years of Service" icon={Target} delay={200} isAnimated={true} />
             <ImpactStat number="50,000+" label="Lives Impacted" icon={Users} delay={300} />
-            <ImpactStat number="5" label="Focus Areas" icon={Heart} delay={400} />
+            <ImpactStat number="4" label="Focus Areas" icon={Heart} delay={400} />
           </div>
         </div>
       </section>

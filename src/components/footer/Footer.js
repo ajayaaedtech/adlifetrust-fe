@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex gap-3 pt-2">
-              <Link href="#" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white hover:text-slate-950 transition-all duration-300">
+              <Link href="https://www.instagram.com/adlife_trust_2005" target='_blank' className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white hover:text-slate-950 transition-all duration-300">
                 <Instagram size={16} />
               </Link>
               <Link href="#" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white hover:text-slate-950 transition-all duration-300">
