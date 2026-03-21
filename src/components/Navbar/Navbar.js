@@ -78,7 +78,6 @@ const Navbar = () => {
                 height={80}
                 className="object-contain"
                 priority
-                style={{ height: 'auto' }} // Maintains aspect ratio
 
               />
 
