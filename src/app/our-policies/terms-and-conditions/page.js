@@ -246,9 +246,9 @@ export default function TermsOfUsePage() {
           </div>
           
           {/* subtle footer */}
-          <div className="bg-gray-50 px-6 py-3 text-right text-xs text-gray-400 border-t border-gray-100">
+          {/* <div className="bg-gray-50 px-6 py-3 text-right text-xs text-gray-400 border-t border-gray-100">
             Bridge to Brilliance — Read our terms carefully before using services
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
