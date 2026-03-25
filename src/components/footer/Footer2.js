@@ -4,6 +4,13 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Linkedin, Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
+import { ChevronRight } from "lucide-react";
+
+const policyLinks = [
+  { name: "Privacy Policy", href: "/our-policies/privacy-policy" },
+  { name: "Terms & Conditions", href: "/our-policies/terms-and-conditions" },
+  { name: "Refund Policy", href: "/our-policies/refund-policy" },
+];
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -99,6 +106,10 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
+
+            {/* col 3 */}
+
+            {/* end col 3 */}
 
             {/* Column 2: Our Activities */}
             <div className="space-y-8">

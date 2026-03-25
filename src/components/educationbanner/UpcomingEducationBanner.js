@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Link from "next/link";
 /* ─── Terms Modal ─── */
 const TERMS = [
   ["Application Fee", "₹1,800 is non-refundable in all circumstances, including withdrawal or disqualification."],
@@ -404,14 +404,40 @@ export default function UpcomingEducationBanner() {
               </div>
 
               {/* Terms */}
-              <button
+              {/* <button
                 onClick={() => setShowTerms(true)}
                 style={{ background: "none", border: "none", cursor: "pointer", fontSize: 11.5, color: "rgba(255,255,255,.3)", textDecoration: "underline", textUnderlineOffset: 3, fontFamily: "'DM Sans',system-ui,sans-serif", transition: "color .18s", alignSelf: "flex-start", marginTop: 4 }}
                 onMouseEnter={e => { e.currentTarget.style.color = "rgba(255,255,255,.6)"; }}
                 onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,.3)"; }}
               >
                 View Terms & Conditions
-              </button>
+              </button> */}
+
+              {/* import Link from "next/link"; */}
+              <div className="flex  gap-4 mt-1">
+
+                <Link
+                  href="/our-policies/privacy-policy"
+                  className="text-[11.5px] text-white/30 hover:text-white/60 underline underline-offset-[3px] transition-colors duration-200 font-sans"
+                >
+                  Privacy Policy
+                </Link>
+
+                <Link
+                  href="/our-policies/terms-and-conditions"
+                  className="text-[11.5px] text-white/30 hover:text-white/60 underline underline-offset-[3px] transition-colors duration-200 font-sans"
+                >
+                  Terms & Conditions
+                </Link>
+
+                <Link
+                  href="/our-policies/refund-policy"
+                  className="text-[11.5px] text-white/30 hover:text-white/60 underline underline-offset-[3px] transition-colors duration-200 font-sans"
+                >
+                  Refund Policy
+                </Link>
+
+              </div>
             </div>
 
             {/* RIGHT COLUMN — Stats */}
