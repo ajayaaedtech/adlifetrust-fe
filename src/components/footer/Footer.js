@@ -13,6 +13,12 @@ const Footer = () => {
     // { name: 'Contact', href: '/contact' },
   ];
 
+  const policyLinks = [
+    { name: "Privacy Policy", href: "/our-policies/privacy-policy" },
+    { name: "Terms & Conditions", href: "/our-policies/terms-and-conditions" },
+    { name: "Refund Policy", href: "/our-policies/refund-policy" },
+  ];
+
   const initiativeLinks = [
     { name: 'Mind Over Miles', href: '/activities/mental-health' },
     { name: 'Bridge To Brilliance', href: '/activities' },
@@ -23,7 +29,7 @@ const Footer = () => {
     <footer className="bg-slate-950 text-slate-400 py-16 border-t border-white/5 font-sans">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
-          
+
           {/* 1. Brand & Contact (Left) */}
           <div className="md:col-span-3 space-y-6">
             <div className="bg-white inline-block p-2 rounded-lg shadow-sm">
@@ -39,7 +45,7 @@ const Footer = () => {
               <a href="tel:+919505051521" className="flex items-center gap-3 text-sm hover:text-white transition-colors group">
                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-red-500/20 transition-all">
                   <Phone size={14} className="text-red-500" />
-                </div> 
+                </div>
                 +91 95050 51521
               </a>
               <a href="mailto:director@adlifetrust.org.in" className="flex items-center gap-3 text-sm hover:text-white transition-colors group">
@@ -84,6 +90,7 @@ const Footer = () => {
             </ul>
           </div>
 
+
           {/* 3. Initiatives (Animated List) */}
           <div className="md:col-span-3 space-y-5">
             <div>
@@ -115,7 +122,50 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* policies */}
+
+
+          {/* Policies */}
+          {/* Policies */}
+          <div className="space-y-4">
+
+            {/* Heading */}
+            <div>
+              <h4 className="font-bold text-xl mb-2 text-[#F1D43B] whitespace-nowrap">
+                Our Policies
+              </h4>
+              <div className="h-1.5 w-12 rounded-full bg-[#F1D43B]" />
+            </div>
+
+            {/* One-line links */}
+            <div className="flex flex-wrap items-center gap-6">
+              {policyLinks?.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="group flex items-center gap-2 text-white/80 hover:text-white transition-all duration-300"
+                >
+                  {/* Dot */}
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 transition-all duration-300 group-hover:scale-0 group-hover:opacity-0" />
+
+                  {/* Arrow */}
+                  <ChevronRight
+                    size={14}
+                    className="text-red-500 opacity-0 -ml-3 transition-all duration-300 group-hover:opacity-100 group-hover:ml-0"
+                  />
+
+                  <span className="text-sm font-medium whitespace-nowrap">
+                    {link.name}
+                  </span>      </Link>
+              ))}
+            </div>
+
+          </div>
+
+
+          {/* end policies  */}
         </div>
+
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5 flex justify-between items-center">
