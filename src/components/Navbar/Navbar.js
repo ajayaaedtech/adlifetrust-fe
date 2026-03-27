@@ -104,7 +104,7 @@ const Navbar = () => {
 
             <div className="ml-6">
               <a
-                href=""
+                href="https://bridge-to-brilliance.register.epravesh.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
