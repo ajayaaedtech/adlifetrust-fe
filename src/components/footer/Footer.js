@@ -21,7 +21,7 @@ const Footer = () => {
 
   const initiativeLinks = [
     { name: 'Mind Over Miles', href: '/activities/mental-health' },
-    { name: 'Bridge To Brilliance', href: '/activities' },
+    { name: 'Bridge To Brilliance', href: 'https://bridge-to-brilliance.register.epravesh.com/' },
     { name: 'Livelihood Programs', href: '/activities' },
   ];
 
