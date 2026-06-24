@@ -205,7 +205,7 @@ export default function BrochureDownload() {
             <a href="tel:+919505051521"
               className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-5 py-3 text-sm text-slate-600 hover:border-slate-300 hover:bg-white transition-all no-underline">
               <span style={{ fontSize: 15 }}>📞</span>
-              <span className="text-[#1a3a6b] font-semibold">+91 95050 51521</span>
+              <span className="text-[#1a3a6b] font-semibold">+91 8019037799</span>
             </a>
           </div>
 

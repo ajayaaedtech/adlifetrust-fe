@@ -67,14 +67,20 @@ const GlobalStyles = () => (
 /* ─── Register Button ─── */
 function RegisterButton() {
   return (
-    <div
-      className="w-full sm:w-auto relative overflow-hidden flex justify-center items-center gap-2.5 px-7 py-3.5 rounded-2xl font-bold text-white text-[15px] tracking-wide cursor-not-allowed select-none"
+    <a
+      href="https://bridge-to-brilliance.register.epravesh.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full sm:w-auto relative overflow-hidden inline-flex justify-center items-center gap-2.5 px-7 py-3.5 rounded-2xl font-bold text-white text-[15px] tracking-wide select-none transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
       style={{
-        background: "linear-gradient(135deg,#f97316,#ea580c,#c2410c)",
+        background:
+          "linear-gradient(135deg,#f97316,#ea580c,#c2410c)",
         backgroundSize: "200%",
-        boxShadow: "0 5px 22px rgba(249,115,22,.58), inset 0 1px 0 rgba(255,255,255,.16)",
+        boxShadow:
+          "0 5px 22px rgba(249,115,22,.58), inset 0 1px 0 rgba(255,255,255,.16)",
         fontFamily: "'DM Sans', system-ui, sans-serif",
-        animation: "float 3s ease-in-out infinite, gradS 3s ease infinite",
+        animation:
+          "float 3s ease-in-out infinite, gradS 3s ease infinite",
       }}
     >
       <div
@@ -84,25 +90,38 @@ function RegisterButton() {
           left: "-100%",
           width: "50%",
           height: "100%",
-          background: "linear-gradient(90deg,transparent,rgba(255,255,255,0.4),transparent)",
+          background:
+            "linear-gradient(90deg,transparent,rgba(255,255,255,0.4),transparent)",
           animation: "shine 2s infinite",
           transform: "skewX(-20deg)",
         }}
       />
 
-      <span className="relative z-10">Upcoming Registration</span>
+      <span className="relative z-10">
+        Register Now
+      </span>
 
       <span className="relative z-10 w-7 h-7 rounded-lg bg-white/20 border border-white/30 grid place-items-center">
-        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        <svg
+          className="w-3.5 h-3.5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2.5}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13 5l7 7-7 7M5 12h15"
+          />
         </svg>
       </span>
-    </div>
+    </a>
   );
 }
 
 /* ─── Phone Button ─── */
-function PhoneButton({ phone = "+919505051521", display = "+91 95050 51521" }) {
+function PhoneButton({ phone = "+919505051521", display = "+918019037799" }) {
   return (
     <a
       href={`tel:${phone}`}
@@ -272,7 +291,7 @@ export default function UpcomingEducationBanner() {
   const [selectedLang, setSelectedLang] = useState(BROCHURES[0]);
 
   const eligibility = [
-    { label: "Class 11 & 12", icon: "📗" },
+    { label: "Class 10 , 11 & 12", icon: "📗" },
     { label: "UG Degree", icon: "🎓" },
     { label: "Postgraduate", icon: "🏅" },
     { label: "Students from all academic streams", icon: "" },
@@ -403,15 +422,7 @@ export default function UpcomingEducationBanner() {
                 </div>
               </div>
 
-              {/* Terms */}
-              {/* <button
-                onClick={() => setShowTerms(true)}
-                style={{ background: "none", border: "none", cursor: "pointer", fontSize: 11.5, color: "rgba(255,255,255,.3)", textDecoration: "underline", textUnderlineOffset: 3, fontFamily: "'DM Sans',system-ui,sans-serif", transition: "color .18s", alignSelf: "flex-start", marginTop: 4 }}
-                onMouseEnter={e => { e.currentTarget.style.color = "rgba(255,255,255,.6)"; }}
-                onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,.3)"; }}
-              >
-                View Terms & Conditions
-              </button> */}
+             
 
               {/* import Link from "next/link"; */}
               <div className="flex  gap-4 mt-1">
