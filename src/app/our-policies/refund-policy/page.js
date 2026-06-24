@@ -204,7 +204,7 @@ export default function RefundPolicyPage() {
                 <p className="font-semibold">AD Life Trust – Bridge to Brilliance Talent and Coaching Scholarship Program</p>
                 <p>Hyderabad, Telangana, India</p>
                 <p>Email: <a href="mailto:director@adlifetrust.org.in" className="text-indigo-700 hover:underline">director@adlifetrust.org.in</a></p>
-                {/* <p>Phone: <a href="tel:+918019038899" className="text-indigo-700 hover:underline">+91 80190 38899</a></p> */}
+                <p>Phone: <a href="tel:+918019037799" className="text-indigo-700 hover:underline">+91  8019037799</a></p>
                 <p>Website: <a href="https://www.adlifetrust.org.in" target="_blank" rel="noopener noreferrer" className="text-indigo-700 hover:underline">www.adlifetrust.org.in</a></p>
               </div>
             </section>

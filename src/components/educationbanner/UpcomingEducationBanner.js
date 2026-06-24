@@ -243,7 +243,7 @@ export default function UpcomingEducationBanner() {
     { value: "100% Scholarship Fee Support", label: "Full fee paid directly to the Empaneled Institute. Zero coaching costs for you.", accent: "orange", svgPath: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" },
     { value: "Quality Coaching Access", label: "Top coaching institutes with experienced faculty and proven results.", accent: "orange", svgPath: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" },
     { value: "Top 100 Performers", label: "Full scholarships awarded for quality coaching & career development.", accent: "gold", svgPath: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" },
-    { value: "National Ranking & Cert", label: "Benchmark your aptitude against peers nationwide with a verifiable score.", accent: "teal", svgPath: "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" },
+    { value: "National Ranking & Certification", label: "Benchmark your aptitude against peers nationwide with a verifiable score.", accent: "teal", svgPath: "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" },
     { value: "Free Study Material", label: "Free high-quality online study material provided to all exam takers.", accent: "violet", svgPath: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.746 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
     { value: "3 Free Career Counselling Sessions", label: "Professional guidance and support from premium academicians.", accent: "teal", svgPath: "M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" }
   ];
@@ -394,16 +394,16 @@ export default function UpcomingEducationBanner() {
 
               {/* Footer Policy Links */}
               <div className="flex gap-4 mt-1 border-t border-white/[0.04] pt-3">
-                <Link href="/our-policies/privacy-policy" className="text-[11px] text-white/30 hover:text-white/50 underline underline-offset-[3px] transition-colors duration-200 font-sans">
+                <Link href="/our-policies/privacy-policy" className="text-[14px] text-white/30 hover:text-white/50 underline underline-offset-[3px] transition-colors duration-200 font-sans">
                   Privacy Policy
                 </Link>
                 {/* <button onClick={() => setShowTerms(true)} className="text-[11px] text-white/30 hover:text-white/50 underline underline-offset-[3px] transition-colors duration-200 font-sans bg-transparent border-none cursor-pointer p-0">
                   Terms & Conditions
                 </button> */}
-                <Link href="/our-policies/terms-and-conditions" className="text-[11px] text-white/30 hover:text-white/50 underline underline-offset-[3px] transition-colors duration-200 font-sans">
+                <Link href="/our-policies/terms-and-conditions" className="text-[14px] text-white/30 hover:text-white/50 underline underline-offset-[3px] transition-colors duration-200 font-sans">
                   Terms & Conditions
                 </Link>
-                <Link href="/our-policies/refund-policy" className="text-[11px] text-white/30 hover:text-white/50 underline underline-offset-[3px] transition-colors duration-200 font-sans">
+                <Link href="/our-policies/refund-policy" className="text-[14px] text-white/30 hover:text-white/50 underline underline-offset-[3px] transition-colors duration-200 font-sans">
                   Refund Policy
                 </Link>
               </div>
