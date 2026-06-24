@@ -104,7 +104,7 @@ const Navbar = () => {
                   alt="AD Life Trust Logo"
                   width={64}
                   height={64}
-                  className="w-[52px] h-[52px] sm:w-[78px] sm:h-[78px]"
+                  className=""
                   priority
                 />
               </div>
