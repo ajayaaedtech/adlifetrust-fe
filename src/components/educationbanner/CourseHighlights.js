@@ -5,7 +5,7 @@ const steps = [
     id: 1,
     stepNum: "01",
     title: "Register",
-    description: "Create an account on the portal using your mobile number and email.",
+    description: "Create an account at the AD Life Trust website Bridge-to-Brilliance portal.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -17,7 +17,7 @@ const steps = [
     id: 2,
     stepNum: "02",
     title: "Fill the Application",
-    description: "Enter personal details, academic information, and choose your career track.",
+    description: "Select your career track and enter academic details.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
@@ -30,7 +30,7 @@ const steps = [
     stepNum: "03",
     title: "Upload Documents",
     description: "Securely upload following mandatory documents:",
-    tags: ["Latest Marksheet", "Aadhaar", "Photo", , "SSC Cert.", "Bank Passbook",],
+    tags: ["Latest Marksheet", "Aadhaar", "photograph"],
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
@@ -42,7 +42,7 @@ const steps = [
     id: 4,
     stepNum: "04",
     title: "Pay Application Fee",
-    description: "Pay the required processing fee securely via the online payment gateway and get your receipt.",
+    description: "A one-time ₹1,800 application fee covers the entire process—no additional fees are required before or after selection",
     highlight: "₹1,800 One-Time Fee",
     highlightColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
     icon: (

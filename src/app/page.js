@@ -53,7 +53,7 @@ function HomeContent() {
         <UpcomingEducationBanner />
         <ScholarshipDetails />
         <CourseHighlights />
-        <BrochureDownload />
+        {/* <BrochureDownload /> */}
         <OurPartners partners={NGO_PARTNERS} />
       </>
 

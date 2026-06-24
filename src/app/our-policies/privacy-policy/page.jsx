@@ -8,12 +8,13 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 mt-28">
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
           
-          {/* decorative header: brand bar (only visual, no content added) */}
+          {/* decorative header: brand bar */}
           <div className="bg-gradient-to-r from-indigo-800 to-indigo-900 px-6 py-4 sm:px-8">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h1 className="text-white text-2xl md:text-3xl font-bold tracking-tight">Privacy Policy</h1>
-                <p className="text-indigo-200 text-sm mt-1">Bridge to Brilliance – An Initiative by AD Life Trust</p>
+                <p className="text-indigo-200 text-sm mt-1">Bridge to Brilliance Talent and Coaching Scholarship Program</p>
+                <p className="text-indigo-300 text-xs mt-0.5">Pan India Initiative by AD Life Trust</p>
               </div>
               <div className="mt-2 sm:mt-0 text-indigo-200 text-sm border-t sm:border-t-0 border-indigo-700 pt-1 sm:pt-0">
                 <span className="inline-flex items-center gap-1">
@@ -26,14 +27,14 @@ export default function PrivacyPolicyPage() {
             </div>
           </div>
           
-          {/* policy body: exact content from the provided document, unchanged */}
+          {/* policy body: content updated precisely as requested */}
           <div className="px-6 py-8 sm:px-8 sm:py-10 text-gray-800 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mt-2 [&_ul]:mb-3 [&_li]:mb-1 [&_a]:text-indigo-700 [&_a]:underline [&_a:hover]:opacity-80">
             
             {/* 1. INTRODUCTION */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">1. INTRODUCTION</h2>
-              <p className="mb-3">AD Life Trust ("we", "us", "our") operates the Bridge to Brilliance program through its website www.adlifetrust.org.in (the "Website") and associated registration platforms. This Privacy Policy explains how we collect, use, store, and protect the personal information of students, beneficiaries, volunteers, and other users ("you", "your") who interact with our services.</p>
-              <p className="mb-3">By registering on our Website or participating in any Bridge to Brilliance program, you acknowledge that you have read and understood this Privacy Policy and consent to the practices described herein.</p>
+              <p className="mb-3">AD Life Trust ("we", "us", "our") operates the Bridge to Brilliance Talent and Coaching Scholarship program through its website <a href="https://www.adlifetrust.org.in" target="_blank" rel="noopener noreferrer">www.adlifetrust.org.in</a> (the "Website") and associated registration platforms. This Privacy Policy explains how we collect, use, store, and protect the personal information of students, beneficiaries, volunteers, and other users ("you", "your") who interact with our services.</p>
+              <p className="mb-3">By registering on our website or participating in any Bridge to Brilliance Talent and Coaching Scholarship program, you acknowledge that you have read and understood this Privacy Policy and consent to the practices described herein.</p>
               <p>AD Life Trust is a registered non-profit trust headquartered in Hyderabad, Telangana, India, dedicated to creating quality life for women and children through education, livelihood, health, and humanitarian interventions.</p>
             </section>
             
@@ -43,7 +44,7 @@ export default function PrivacyPolicyPage() {
               
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-gray-800 mt-2 mb-2">2.1 Personal Information You Provide</h3>
-                <p className="mb-2">When you register for the Bridge to Brilliance program, apply for a course, volunteer, or interact with our services, we may collect the following information:</p>
+                <p className="mb-2">When you register for the Bridge to Brilliance Talent and Coaching Scholarship program, apply for a course, volunteer, or interact with our services, we may collect the following information:</p>
                 <ul className="list-disc pl-6 space-y-1 mb-3">
                   <li className="mb-2">
                     <span className="font-medium">a) Identification Details:</span>
@@ -91,7 +92,7 @@ export default function PrivacyPolicyPage() {
               
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-2">2.2 Information Collected Automatically</h3>
-                <p className="mb-2">When you visit our Website, we may automatically collect:</p>
+                <p className="mb-2">When you visit our website, we may automatically collect:</p>
                 <ul className="list-disc pl-6">
                   <li>Browser type and version</li>
                   <li>IP address and approximate geographic location</li>
@@ -103,7 +104,7 @@ export default function PrivacyPolicyPage() {
               
               <div>
                 <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-2">2.3 Information from Third Parties</h3>
-                <p>We may receive information about you from partner organizations, government bodies, or referral networks involved in the implementation of Bridge to Brilliance programs, solely to facilitate your enrollment or program delivery.</p>
+                <p>We may receive information about you from partner organizations, government bodies, or referral networks involved in the implementation of Bridge to Brilliance Talent and Coaching Scholarship programs, solely to facilitate your enrollment or program delivery.</p>
               </div>
             </section>
             
@@ -112,7 +113,7 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">3. HOW WE USE YOUR INFORMATION</h2>
               <p className="mb-2">We use the information we collect for the following purposes:</p>
               <ul className="list-disc pl-6 space-y-1">
-                <li><span className="font-medium">a) Program Enrollment &amp; Administration:</span> To process your registration, admit you into a program, issue course materials, and manage your participation in Bridge to Brilliance activities.</li>
+                <li><span className="font-medium">a) Program Enrollment &amp; Administration:</span> To process your registration, admit you into a program, issue course materials, and manage your participation in Bridge to Brilliance Talent and Coaching Scholarship Program activities.</li>
                 <li><span className="font-medium">b) Communication:</span> To send you program updates, schedules, notifications, certificates, and important announcements via email, SMS, or phone.</li>
                 <li><span className="font-medium">c) Record Keeping &amp; Compliance:</span> To maintain accurate records of beneficiaries, attendance, and program outcomes as required for internal reporting, donor reporting, and statutory compliance.</li>
                 <li><span className="font-medium">d) Program Improvement:</span> To analyze participation data and feedback to improve the quality, reach, and effectiveness of our programs.</li>
@@ -168,7 +169,7 @@ export default function PrivacyPolicyPage() {
                 <li><span className="font-medium">a) Right to Access:</span> You may request a copy of the personal information we hold about you.</li>
                 <li><span className="font-medium">b) Right to Correction:</span> You may request correction of inaccurate or incomplete information.</li>
                 <li><span className="font-medium">c) Right to Withdrawal of Consent:</span> You may withdraw consent for non-essential uses of your data at any time, without affecting the lawfulness of processing prior to withdrawal.</li>
-                <li><span className="font-medium">d) Right to Opt-Out of Communications:</span> You may unsubscribe from non-essential communications by emailing director@adlifetrust.org.in with the subject line "UNSUBSCRIBE".</li>
+                <li><span className="font-medium">d) Right to Opt-Out of Communications:</span> You may unsubscribe from non-essential communications by emailing <a href="mailto:director@adlifetrust.org.in">director@adlifetrust.org.in</a> with the subject line "UNSUBSCRIBE".</li>
                 <li><span className="font-medium">e) Right to Data Portability:</span> Where technically feasible, you may request your data in a structured, commonly used format.</li>
               </ul>
               <p className="mt-2">To exercise any of these rights, please contact us at the details provided in Section 10.</p>
@@ -177,14 +178,14 @@ export default function PrivacyPolicyPage() {
             {/* 8. COOKIES AND TRACKING TECHNOLOGIES */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">8. COOKIES AND TRACKING TECHNOLOGIES</h2>
-              <p>Our Website may use cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, and improve our services. Cookies are small text files stored on your device.</p>
-              <p className="mt-2">You may control cookie settings through your browser preferences. However, disabling certain cookies may affect the functionality of our Website.</p>
+              <p>Our website may use cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, and improve our services. Cookies are small text files stored on your device.</p>
+              <p className="mt-2">You may control cookie settings through your browser preferences. However, disabling certain cookies may affect the functionality of our website.</p>
             </section>
             
             {/* 9. CHILDREN'S PRIVACY */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">9. CHILDREN'S PRIVACY</h2>
-              <p><em>Bridge to Brilliance programs serve students, including minors. For participants under the age of 18, we require consent from a parent or legal guardian at the time of registration. We are committed to handling the information of minors with the highest standard of care and do not use such information for any purpose beyond program delivery.</em></p>
+              <p>The Bridge to Brilliance Talent and Coaching Scholarship program serves students, including minors. For participants under the age of 18, we require consent from a parent or legal guardian at the time of registration. We are committed to handling the information of minors with the highest standard of care and do not use such information for any purpose beyond program delivery.</p>
             </section>
             
             {/* 10. CONTACT INFORMATION */}
@@ -192,10 +193,10 @@ export default function PrivacyPolicyPage() {
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">10. CONTACT INFORMATION</h2>
               <p>For any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact:</p>
               <div className="mt-2 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                <p className="font-semibold">AD Life Trust – Bridge to Brilliance Program</p>
+                <p className="font-semibold">AD Life Trust – Bridge to Brilliance Talent and Coaching Scholarship Program</p>
                 <p>Hyderabad, Telangana, India</p>
                 <p>Email: <a href="mailto:director@adlifetrust.org.in" className="text-indigo-700 hover:underline">director@adlifetrust.org.in</a></p>
-                <p>Phone: <a href="tel:+918019037799" className="text-indigo-700 hover:underline">+91 80190 37799</a></p>
+                <p>Phone: <a href="tel:+918019038899" className="text-indigo-700 hover:underline">+91 80190 38899</a></p>
                 <p>Website: <a href="https://www.adlifetrust.org.in" target="_blank" rel="noopener noreferrer" className="text-indigo-700 hover:underline">www.adlifetrust.org.in</a></p>
               </div>
             </section>
@@ -203,7 +204,7 @@ export default function PrivacyPolicyPage() {
             {/* 11. CHANGES TO THIS PRIVACY POLICY */}
             <section className="mb-4">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">11. CHANGES TO THIS PRIVACY POLICY</h2>
-              <p>AD Life Trust reserves the right to update this Privacy Policy at any time. Significant changes will be communicated via our Website or by email. Continued use of our services after such changes constitutes your acceptance of the revised Policy.</p>
+              <p>AD Life Trust reserves the right to update this Privacy Policy at any time. Significant changes will be communicated via our website or by email. Continued use of our services after such changes constitutes your acceptance of the revised Policy.</p>
             </section>
             
             {/* footer signature and copyright exactly as provided */}
@@ -214,10 +215,6 @@ export default function PrivacyPolicyPage() {
             
           </div>
           
-          {/* optional subtle footer */}
-          {/* <div className="bg-gray-50 px-6 py-3 text-right text-xs text-gray-400 border-t border-gray-100">
-            Bridge to Brilliance — Transparency &amp; data protection commitment
-          </div> */}
         </div>
       </div>
     </div>

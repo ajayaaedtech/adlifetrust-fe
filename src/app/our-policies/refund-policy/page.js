@@ -5,7 +5,7 @@ export default function RefundPolicyPage() {
   return (
     <div className="bg-gray-50 font-sans antialiased min-h-screen">
       {/* main container: max-w-4xl centered, white card background, subtle border */}
-      <div className="max-w-4xl mx-auto px-4 mt-34 sm:px-6 lg:px-8 py-8 md:py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 mt-28">
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
           
           {/* decorative header: brand bar */}
@@ -13,7 +13,8 @@ export default function RefundPolicyPage() {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h1 className="text-white text-2xl md:text-3xl font-bold tracking-tight">Refund Policy</h1>
-                <p className="text-indigo-200 text-sm mt-1">Bridge to Brilliance – An Initiative by AD Life Trust</p>
+                <p className="text-indigo-200 text-sm mt-1">Bridge to Brilliance Talent and Coaching Scholarship Program</p>
+                <p className="text-indigo-300 text-xs mt-0.5">Pan India Initiative by AD Life Trust</p>
               </div>
               <div className="mt-2 sm:mt-0 text-indigo-200 text-sm border-t sm:border-t-0 border-indigo-700 pt-1 sm:pt-0">
                 <span className="inline-flex items-center gap-1">
@@ -27,19 +28,19 @@ export default function RefundPolicyPage() {
           </div>
           
           {/* policy body: exact content from the provided document, unchanged */}
-          <div className="px-6 py-8 sm:px-8 sm:py-10 text-gray-800">
+          <div className="px-6 py-8 sm:px-8 sm:py-10 text-gray-800 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mt-2 [&_ul]:mb-3 [&_li]:mb-1 [&_a]:text-indigo-700 [&_a]:underline [&_a:hover]:opacity-80">
             
             {/* 1. OVERVIEW */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">1. OVERVIEW</h2>
-              <p className="mb-3">AD Life Trust is committed to providing high-quality educational programs under the Bridge to Brilliance initiative. This Refund Policy outlines the terms and conditions governing refund requests for fees paid toward program registration, course enrollment, or any other services offered by AD Life Trust through its Website www.adlifetrust.org.in.</p>
+              <p className="mb-3">AD Life Trust is committed to providing high-quality educational programs under the Bridge to Brilliance Talent and Coaching Scholarship initiative. This Refund Policy outlines the terms and conditions governing refund requests for fees paid toward program registration, course enrollment, or any other services offered by AD Life Trust through its Website <a href="https://www.adlifetrust.org.in" target="_blank" rel="noopener noreferrer">www.adlifetrust.org.in</a>.</p>
               <p>We encourage all participants to carefully review program details, eligibility criteria, and fee structures before completing payment, as the conditions for refunds are limited.</p>
             </section>
             
             {/* 2. FREE PROGRAMS */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">2. FREE PROGRAMS</h2>
-              <p>Many Bridge to Brilliance programs are offered free of charge as part of AD Life Trust's social mission to serve marginalized communities. For such programs, no payment is collected, and this Refund Policy does not apply.</p>
+              <p>Many Bridge to Brilliance Talent and Coaching Scholarship programs are offered free of charge as part of AD Life Trust's social mission to serve marginalized communities. For such programs, no payment is collected, and this Refund Policy does not apply.</p>
             </section>
             
             {/* 3. REGISTRATION / ENROLLMENT FEES */}
@@ -47,15 +48,15 @@ export default function RefundPolicyPage() {
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">3. REGISTRATION / ENROLLMENT FEES</h2>
               
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-gray-800 mt-2 mb-2">3.1 Non-Refundable Registration Fees</h3>
-                <ul className="list-disc pl-6 space-y-1 mb-3">
+                <h3 className="text-lg font-semibold text-gray-800 mt-2 mb-1">3.1 Non-Refundable Registration Fees</h3>
+                <ul className="list-disc pl-6 space-y-1">
                   <li>Registration fees, application processing fees, and enrollment confirmation fees, once paid, are strictly NON-REFUNDABLE.</li>
                   <li>These fees cover administrative, coordination, and processing costs incurred at the time of enrollment and are non-recoverable regardless of whether the participant subsequently withdraws, is unable to attend, or fails to meet program requirements.</li>
                 </ul>
               </div>
               
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-2">3.2 Duplicate Payment</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-1">3.2 Duplicate Payment</h3>
                 <ul className="list-disc pl-6 space-y-1">
                   <li>If you have been charged twice for the same registration due to a technical error or payment gateway failure, you are entitled to a full refund of the duplicate charge.</li>
                   <li>To claim a duplicate payment refund, contact us within 7 working days of the transaction with payment proof and transaction reference numbers.</li>
@@ -68,7 +69,7 @@ export default function RefundPolicyPage() {
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">4. COURSE / PROGRAM FEES</h2>
               
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-gray-800 mt-2 mb-2">4.1 Cancellation After Program Commencement</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mt-2 mb-1">4.1 Cancellation After Program Commencement</h3>
                 <ul className="list-disc pl-6 space-y-1">
                   <li>Once a program has commenced, no refund will be issued for withdrawal or discontinuation of participation, regardless of the reason.</li>
                   <li>This applies to both online and offline program formats.</li>
@@ -76,7 +77,7 @@ export default function RefundPolicyPage() {
               </div>
               
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-2">4.2 Program Postponement by AD Life Trust</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mt-4 mb-1">4.2 Program Postponement by AD Life Trust</h3>
                 <p>If a program is postponed (not cancelled), this will be intimated to the students.</p>
               </div>
             </section>
@@ -104,19 +105,20 @@ export default function RefundPolicyPage() {
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">7. HOW TO REQUEST A REFUND</h2>
               <p className="mb-3">To initiate a refund request, please follow the steps below:</p>
-              <div className="space-y-3">
-                <p><span className="font-bold">Step 1:</span> Send an email to director@adlifetrust.org.in with the subject line:</p>
-                <p className="bg-gray-50 p-3 rounded border border-gray-200 font-mono text-sm">"REFUND REQUEST — [Your Full Name] — [Program Name]"</p>
-                <p><span className="font-bold">Step 2:</span> Include the following details in your email:</p>
-                <ul className="list-disc pl-6 space-y-1">
-                  <li>Full name of the registered participant</li>
-                  <li>Mobile number and email used during registration</li>
-                  <li>Program/course name and batch</li>
-                  <li>Transaction ID and date of payment</li>
-                  <li>Reason for refund request</li>
-                  <li>Bank account details for refund (Account Name, Account Number, IFSC Code, Bank Name)</li>
-                </ul>
-                <p><span className="font-bold">Step 3:</span> AD Life Trust will acknowledge your request within 3 working days and communicate the outcome within 7 working days.</p>
+              <div className="space-y-3 pl-2">
+                <p><span className="font-semibold block text-indigo-900">Step 1:</span> Send an email to <a href="mailto:director@adlifetrust.org.in">director@adlifetrust.org.in</a> with the subject line:<br /><span className="bg-gray-100 px-2 py-1 rounded font-mono text-sm block mt-1 border border-gray-200">"REFUND REQUEST — [Your Full Name] — [Program Name]"</span></p>
+                <div>
+                  <span className="font-semibold block text-indigo-900 mb-1">Step 2: Include the following details in your email:</span>
+                  <ul className="list-disc pl-6 space-y-0.5">
+                    <li>Full name of the registered participant</li>
+                    <li>Mobile number and email used during registration</li>
+                    <li>Program/course name and batch</li>
+                    <li>Transaction ID and date of payment</li>
+                    <li>Reason for refund request</li>
+                    <li>Bank account details for refund (Account Name, Account Number, IFSC Code, Bank Name)</li>
+                  </ul>
+                </div>
+                <p><span className="font-semibold block text-indigo-900">Step 3:</span> AD Life Trust will acknowledge your request within 3 working days and communicate the outcome within 7 working days.</p>
               </div>
             </section>
             
@@ -148,40 +150,40 @@ export default function RefundPolicyPage() {
             {/* 10. SPECIAL CIRCUMSTANCES */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">10. SPECIAL CIRCUMSTANCES</h2>
-              <p>AD Life Trust understands that unforeseen circumstances (medical emergencies, bereavement, natural disasters) may arise. Participants facing such situations are encouraged to reach out to us at director@adlifetrust.org.in. While exceptions to this policy cannot be guaranteed, we will review such cases with compassion and on their individual merits.</p>
+              <p>AD Life Trust understands that unforeseen circumstances (medical emergencies, bereavement, natural disasters) may arise. Participants facing such situations are encouraged to reach out to us at <a href="mailto:director@adlifetrust.org.in">director@adlifetrust.org.in</a>. While exceptions to this policy cannot be guaranteed, we will review such cases with compassion and their individual merits.</p>
             </section>
             
             {/* 11. REFUND POLICY SUMMARY TABLE */}
             <section className="mb-8">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">11. REFUND POLICY SUMMARY TABLE</h2>
-              <div className="overflow-x-auto">
-                <table className="min-w-full border border-gray-300 rounded-lg overflow-hidden">
-                  <thead className="bg-gray-100">
+              <div className="overflow-x-auto mt-4 border border-gray-200 rounded-lg">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-gray-50">
                     <tr>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">Fee Type</th>
-                      <th className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">Refund Eligibility</th>
+                      <th scope="col" className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider border-r border-gray-200">Fee Type</th>
+                      <th scope="col" className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Refund Eligibility</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="bg-white divide-y divide-gray-200">
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2">Registration / Application Fee</td>
-                      <td className="border border-gray-300 px-4 py-2">Non-Refundable</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Registration / Application Fee</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Non-Refundable</td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2">Program postponed by AD Life Trust</td>
-                      <td className="border border-gray-300 px-4 py-2">Non Refundable</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Program postponed by AD Life Trust</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Non-Refundable</td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2">Duplicate payment (technical error)</td>
-                      <td className="border border-gray-300 px-4 py-2">Full Refund of duplicate amount</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Duplicate payment (technical error)</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600 font-medium text-emerald-700">Full Refund of duplicate amount</td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2">Physical/digital study materials</td>
-                      <td className="border border-gray-300 px-4 py-2">Non-Refundable</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Physical/digital study materials</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Non-Refundable</td>
                     </tr>
                     <tr>
-                      <td className="border border-gray-300 px-4 py-2">Donations</td>
-                      <td className="border border-gray-300 px-4 py-2">Non-Refundable</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border-r border-gray-200">Donations</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Non-Refundable</td>
                     </tr>
                   </tbody>
                 </table>
@@ -195,14 +197,14 @@ export default function RefundPolicyPage() {
             </section>
             
             {/* 13. CONTACT US */}
-            <section className="mb-8">
+            <section className="mb-4">
               <h2 className="text-xl font-bold text-gray-900 border-l-4 border-indigo-600 pl-3 mb-3">13. CONTACT US</h2>
-              <p>For any queries or concerns regarding this Refund Policy, please contact:</p>
+              <p>For any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact:</p>
               <div className="mt-2 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                <p className="font-semibold">AD Life Trust – Bridge to Brilliance Program</p>
+                <p className="font-semibold">AD Life Trust – Bridge to Brilliance Talent and Coaching Scholarship Program</p>
                 <p>Hyderabad, Telangana, India</p>
                 <p>Email: <a href="mailto:director@adlifetrust.org.in" className="text-indigo-700 hover:underline">director@adlifetrust.org.in</a></p>
-                <p>Phone: <a href="tel:+918019037799" className="text-indigo-700 hover:underline">+91 80190 37799</a></p>
+                {/* <p>Phone: <a href="tel:+918019038899" className="text-indigo-700 hover:underline">+91 80190 38899</a></p> */}
                 <p>Website: <a href="https://www.adlifetrust.org.in" target="_blank" rel="noopener noreferrer" className="text-indigo-700 hover:underline">www.adlifetrust.org.in</a></p>
               </div>
             </section>
@@ -215,10 +217,6 @@ export default function RefundPolicyPage() {
             
           </div>
           
-          {/* subtle footer */}
-          {/* <div className="bg-gray-50 px-6 py-3 text-right text-xs text-gray-400 border-t border-gray-100">
-            Bridge to Brilliance — Transparency &amp; fair practices
-          </div> */}
         </div>
       </div>
     </div>
