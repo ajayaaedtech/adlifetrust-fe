@@ -104,7 +104,46 @@ function RegisterButton() {
 }
 
 /* ─── Phone Button ─── */
-function PhoneButton({ phone = "+919505051521", display = "+918019037799" }) {
+function PhoneButton({ phone = "+918019037799", display = "+918019037799" }) {
+  return (
+    <a
+      href={`tel:${phone}`}
+      className="w-full sm:w-auto flex justify-center items-center gap-2.5 px-4 py-2.5 rounded-xl transition-all duration-200 no-underline"
+      style={{
+        background: "rgba(255,255,255,.06)",
+        border: "1px solid rgba(255,255,255,.11)",
+        fontFamily: "'DM Sans',system-ui,sans-serif",
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.background = "rgba(255,255,255,.12)";
+        e.currentTarget.style.borderColor = "rgba(255,255,255,.22)";
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.background = "rgba(255,255,255,.06)";
+        e.currentTarget.style.borderColor = "rgba(255,255,255,.11)";
+      }}
+    >
+      <div
+        className="w-7 h-7 rounded-lg grid place-items-center shrink-0"
+        style={{
+          background: "rgba(52,211,153,.12)",
+          border: "1px solid rgba(52,211,153,.22)",
+        }}
+      >
+        <svg className="w-3 h-3" fill="#34d399" viewBox="0 0 24 24">
+          <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 00.57 3.57 1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z" />
+        </svg>
+      </div>
+      <div className="flex flex-col leading-none">
+        <span className="text-white font-bold" style={{ fontSize: 13.5 }}>
+          {display}
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function PhoneButton2({ phone = "+918019038899", display = "+918019038899" }) {
   return (
     <a
       href={`tel:${phone}`}
@@ -186,7 +225,7 @@ function FeeNote() {
           whiteSpace: "normal",
         }}
       >
-        Pay <span style={{ fontWeight: 800, color: "#fbbf24" }}>₹1,800</span> and receive your <span style={{ fontWeight: 700, color: "rgba(255,255,255,.9)" }}>score report</span> along with a <span style={{ fontWeight: 700, color: "rgba(255,255,255,.9)" }}>certificate</span>
+        Pay <span style={{ fontWeight: 800, color: "#fbbf24" }}>₹1,800</span> <span style={{ fontWeight: 700, color: "rgba(255,255,255,.9)" }}>registration fee to participate in the scholarship Test and receive your Rank Card along with a </span>  <span style={{ fontWeight: 700, color: "rgba(255,255,255,.9)" }}>Participation Certificate</span>
       </p>
     </div>
   );
@@ -250,8 +289,8 @@ export default function UpcomingEducationBanner() {
 
   const BROCHURES = [
     { id: "en", lang: "English", href: "/education-pdf/BridgeToBrilliance.pdf" },
-    { id: "hi", lang: "हिन्दी", href: "/education-pdf/BridgeToBrilliance_Hindi.pdf" },
-    { id: "te", lang: "తెలుగు", href: "/education-pdf/BridgeToBrilliance_Telugu.pdf" },
+    // { id: "hi", lang: "हिन्दी", href: "/education-pdf/BridgeToBrilliance_Hindi.pdf" },
+    // { id: "te", lang: "తెలుగు", href: "/education-pdf/BridgeToBrilliance_Telugu.pdf" },
   ];
   const [selectedLang, setSelectedLang] = useState(BROCHURES[0]);
 
@@ -340,6 +379,7 @@ export default function UpcomingEducationBanner() {
               <div className="flex flex-col sm:flex-row gap-2.5 w-full">
                 <RegisterButton />
                 <PhoneButton />
+                <PhoneButton2 />
               </div>
 
               {/* Fee Note */}

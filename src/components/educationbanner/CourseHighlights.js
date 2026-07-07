@@ -42,7 +42,7 @@ const steps = [
     id: 4,
     stepNum: "04",
     title: "Pay Application Fee",
-    description: "A one-time ₹1,800 application fee covers the entire process—no additional fees are required before or after selection",
+    description: "A one-time application fee of ₹1,800 covers the entire application process, including the Rank Card and Participation Certificate. No additional fees will be charged at any stage, either before or after the selection process",
     highlight: "₹1,800 One-Time Fee",
     highlightColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
     icon: (

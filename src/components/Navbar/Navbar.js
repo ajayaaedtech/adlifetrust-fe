@@ -60,6 +60,13 @@ const Navbar = () => {
                 <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-400 shrink-0" />
                 <span>+918019037799</span>
               </a>
+                <a
+                href="tel:+918019038899"
+                className="flex items-center gap-1.5 hover:text-red-300 transition-colors whitespace-nowrap"
+              >
+                <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-400 shrink-0" />
+                <span>+918019038899</span>
+              </a>
             </div>
 
             {/* Social Icons */}
