@@ -257,7 +257,7 @@ export default function UpcomingEducationBanner() {
   ];
 
   const BROCHURES = [
-    { id: "en", lang: "English", href: "/education-pdf/BridgeToBrilliance.pdf" },
+    { id: "en", lang: "English", href: "/education-pdf/B2B-For-Print.pdf" },
   ];
   const [selectedLang, setSelectedLang] = useState(BROCHURES[0]);
 
@@ -391,7 +391,7 @@ export default function UpcomingEducationBanner() {
               <motion.div variants={fadeUp} className="flex flex-col sm:flex-row flex-wrap gap-3 w-full">
                 <RegisterButton />
                 <div className="flex gap-3 flex-1 sm:flex-initial">
-                  <PhoneButton phone="+918019037799" display="+918019037799" />
+                  {/* <PhoneButton phone="+918019037799" display="+918019037799" /> */}
                   <PhoneButton phone="+918019038899" display="+918019038899" />
                 </div>
               </motion.div>

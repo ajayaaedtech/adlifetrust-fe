@@ -53,13 +53,13 @@ const Navbar = () => {
                 <span className="font-medium select-all">director@adlifetrust.org.in</span>
               </a>
 
-              <a
+              {/* <a
                 href="tel:+918019037799"
                 className="flex items-center gap-1.5 hover:text-red-300 transition-colors whitespace-nowrap"
               >
                 <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-red-400 shrink-0" />
                 <span>+918019037799</span>
-              </a>
+              </a> */}
                 <a
                 href="tel:+918019038899"
                 className="flex items-center gap-1.5 hover:text-red-300 transition-colors whitespace-nowrap"

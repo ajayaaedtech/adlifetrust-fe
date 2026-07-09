@@ -59,9 +59,9 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="text-white space-y-3 text-sm font-semibold">
-            <a href="tel:+918019037799" className="flex items-center justify-center gap-3 hover:text-blue-900 transition-colors">
+            {/* <a href="tel:+918019037799" className="flex items-center justify-center gap-3 hover:text-blue-900 transition-colors">
               <Phone size={16} /> <span>+91 8019037799</span>
-            </a>
+            </a> */}
             <a href="mailto:director@adlifetrust.org.in" className="flex items-center justify-center gap-3 hover:text-blue-900 transition-colors">
               <Mail size={16} /> <span className="break-all">director@adlifetrust.org.in</span>
             </a>

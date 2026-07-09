@@ -42,12 +42,12 @@ const Footer = () => {
               />
             </div>
             <div className="space-y-4">
-              <a href="tel:+918019037799" className="flex items-center gap-3 text-sm hover:text-white transition-colors group">
+              {/* <a href="tel:+918019037799" className="flex items-center gap-3 text-sm hover:text-white transition-colors group">
                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-red-500/20 transition-all">
                   <Phone size={14} className="text-red-500" />
                 </div>
                 +91 8019037799
-              </a>
+              </a> */}
 
                <a href="tel:+918019038899" className="flex items-center gap-3 text-sm hover:text-white transition-colors group">
                 <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-red-500/20 transition-all">
