@@ -80,11 +80,12 @@ const GlobalStyles = () => (
     .animate-signal-pulse { animation: liveSignal 1.8s ease-out infinite; }
     .animate-glow-sweep { animation: glowSweep 3s infinite linear; }
     
-    /* Fixed: Image is now perfectly centered on both mobile and desktop viewports */
+    /* Fixed: Using standard positioning properties prevents scroll redraw glitches */
     .responsive-bg-focus {
       background-image: url('/bg/study.jpg');
       background-size: cover;
-      background-position: center !important;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
   `}</style>
 );
@@ -109,7 +110,6 @@ function RegisterButton() {
   );
 }
 
-// Phone Button Definition
 function PhoneButton({ phone, display }) {
   return (
     <motion.a
@@ -136,7 +136,6 @@ function PremiumDownloadButton({ selectedLang, customClasses = "" }) {
       className={`relative overflow-hidden inline-flex justify-center items-center gap-2 px-6 py-3 rounded-full border border-white/25 text-white font-bold tracking-wide text-[13px] uppercase transition-all duration-200 backdrop-blur-sm bg-white/5 shadow-md text-center font-sans ${customClasses}`}
     >
       <span className="absolute top-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/15 to-transparent transform -skew-x-12 pointer-events-none animate-glow-sweep" />
-      <span className="text-orange-400 text-xs"></span>
       <span>Download Brochure</span>
     </motion.a>
   );
@@ -221,8 +220,8 @@ export default function UpcomingEducationBanner() {
         {showTerms && <TermsModal onClose={() => setShowTerms(false)} />}
       </AnimatePresence>
 
-      {/* ─── TOP HERO SECTION — Matched Screenshot Typography ─── */}
-      <section className="relative min-h-[90vh] flex items-end overflow-hidden bg-[#0A0E1A] mt-24 md:mt-28">
+      {/* ─── TOP HERO SECTION — Fixed layout parameters to lock background position ─── */}
+      <section className="relative h-[90vh] min-h-[650px] flex items-end overflow-hidden bg-[#0A0E1A] mt-24 md:mt-28">
         <div className="absolute inset-0 z-0 pointer-events-none responsive-bg-focus" />
         <div className="absolute inset-0 bg-slate-950/25 pointer-events-none z-0" />
         
@@ -234,21 +233,21 @@ export default function UpcomingEducationBanner() {
           }}
         />
 
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-10 lg:px-14 pb-10 pt-36">
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-10 lg:px-14 pb-12 pt-36">
           <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-3xl space-y-5">
             
-            {/* ⚡ FIXED: Pan-India Line Box */}
+            {/* Pan-India Line Box */}
             <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-slate-950/70 shadow-md backdrop-blur-md">
               <span className="relative flex w-1.5 h-1.5">
                 <span className="absolute inset-0 rounded-full bg-orange-400 animate-signal-pulse" />
                 <span className="relative z-10 w-1.5 h-1.5 rounded-full bg-orange-500" />
               </span>
-              <span className="text-white font-bold text-[11px] sm:text-[11.5px] tracking-[0.2em] uppercase font-sans drop-shadow-sm">
+              <span className="text-white font-bold text-[8px] sm:text-[10px] tracking-[0.2em] uppercase font-sans drop-shadow-sm">
                 A Pan-India Initiative by AD Life Trust
               </span>
             </motion.div>
 
-            {/* ⚡ MATCHED LAYOUT: Screenshot Exact Typography Stack */}
+            {/* Typography Stack */}
             <div className="space-y-3.5">
               <motion.h1
                 variants={fadeUp}
@@ -272,7 +271,7 @@ export default function UpcomingEducationBanner() {
               </motion.p>
             </div>
 
-            {/* ⚡ ADDED INDICATOR: Applications Open capsule pill block */}
+            {/* Applications Open Capsule Pill */}
             <motion.div 
               variants={fadeUp}
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider text-orange-400 font-sans"
@@ -300,29 +299,29 @@ export default function UpcomingEducationBanner() {
       <section className="relative z-20 bg-[#FAF7F2] py-14 sm:py-20 border-t border-[#EFE8D9]">
         <div className="max-w-6xl mx-auto px-4 sm:px-10 lg:px-14 space-y-12 sm:space-y-14">
 
-          {/* Upgraded NCERT Style Program Overview */}
+          {/* Program Overview */}
           <div className="max-w-3xl border-l-4 border-orange-500 pl-4 sm:pl-6 my-6">
             <p className="text-[#5B5346] leading-[1.8] text-[15px] sm:text-[16.5px] font-sans font-medium text-justify">
               <span className="float-left text-[40px] sm:text-[48px] leading-[0.8] font-black text-[#0B0F19] mr-2 mt-1 bg-gradient-to-br from-orange-500 to-amber-600 bg-clip-text text-transparent">
                 T
               </span>
-              he Bridge to Brilliance All India Talent and Scholarship Program uses a comprehensive national-level talent assessment [cite: 15] to move beyond traditional academic grading, instead focusing on professional readiness and career success[cite: 15]. By providing a structured{" "}
+              he Bridge to Brilliance All India Talent and Scholarship Program uses a comprehensive national-level talent assessment to move beyond traditional academic grading, instead focusing on professional readiness and career success. By providing a structured{" "}
               <span className="text-[#0B0F19] font-bold px-1.5 py-0.5 rounded bg-orange-500/10 border-b-2 border-orange-500">
                 National Score and Rank
               </span>
-              , the program helps students understand their standing on a competitive national scale [cite: 15], bridging the gap between formal education and the practical skills required for specialized careers[cite: 15].
+              , the program helps students understand their standing on a competitive national scale, bridging the gap between formal education and the practical skills required for specialized careers.
             </p>
           </div>
 
           {/* Guidelines Split Layout Panel */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
             
-            {/* Left: Premium Official Scholarship Tracking Info Matrix Card */}
+            {/* Left: Scholarship Tracking Card */}
             <div className="lg:col-span-7 bg-gradient-to-br from-[#0B0F19] via-[#131927] to-[#0B0F19] p-6 sm:p-8 rounded-xl text-white shadow-xl flex flex-col justify-between border border-white/10 relative overflow-hidden group">
               <div className="space-y-4 relative z-10">
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-orange-400 bg-orange-400/10 px-2.5 py-0.5 rounded-md inline-block font-sans">Official Tracking Matrix</span>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-orange-400 bg-orange-400/10 px-2.5 py-0.5 rounded-md inline-block font-sans">Official Matrix</span>
                 </div>
                 
                 <h4 className="text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-orange-300 transition-colors font-sans">
@@ -330,10 +329,10 @@ export default function UpcomingEducationBanner() {
                 </h4>
                 
                 <p className="text-slate-300 text-xs leading-relaxed font-sans font-medium">
-                  Review the official curriculum frameworks setup to verify national allocation .
+                  Review the official curriculum frameworks setup to verify national allocation.
                 </p>
 
-                {/* Real Content Checklist directly from Brochure Image */}
+                {/* Content Checklist */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 pt-2 pb-2">
                   {[
                     "All India Talent Assessment Rules",
@@ -367,7 +366,7 @@ export default function UpcomingEducationBanner() {
                     {BROCHURES.map(b => <option key={b.id} value={b.id} className="text-slate-900">{b.lang}</option>)}
                   </select>
                 </div>
-                <PremiumDownloadButton selectedLang={selectedLang} customClasses="flex-1 sm:flex-none" />
+                <PremiumDownloadButton selectedLang={selectedLang} customClasses="w-full sm:w-auto" />
               </div>
 
             </div>
@@ -384,7 +383,7 @@ export default function UpcomingEducationBanner() {
                 </div>
               </div>
               <p className="text-[12px] text-[#8C816E] font-medium font-sans leading-relaxed pt-3 border-t border-[#E7DFD1]/40">
-                * Must be an Indian citizen residing in India [cite: 10], willing to join coaching within 60 days [cite: 22], and not receiving another full coaching scholarship[cite: 21].
+                * Must be an Indian citizen residing in India, willing to join coaching within 60 days, and not receiving another full coaching scholarship.
               </p>
             </div>
 

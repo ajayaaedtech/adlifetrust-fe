@@ -34,10 +34,55 @@ body {
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 /* *{
   padding: 0px;
   margin:0px;
 } */
+
+
+
+
+
+
+
+/* ─── Modern Standard Scrollbar Properties (Firefox) ─── */
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #CF2026 #FFFFFF; /* Red thumb | Pure White track */
+  scrollbar-width: thin; /* Changed from auto to thin for Firefox */
+}
+
+/* ─── WebKit Browser Scrollbar Properties (Chrome, Safari, Edge, Opera) ─── */
+
+/* 1. The container area for the scrollbar (Reduced width for a sleeker look) */
+::-webkit-scrollbar {
+  width: 8px;   /* Narrower vertical scrollbar */
+  height: 8px;  /* Narrower horizontal scrollbar */
+}
+
+/* 2. The background track of the scrollbar (Pure White) */
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+/* 3. The draggable scrollbar handle (Thumb) */
+::-webkit-scrollbar-thumb {
+  background: #CF2026;
+  border-radius: 100px; /* Fully rounded pill shape */
+  /* Reduced border to 2px to look balanced with the narrower 8px width */
+  border: 2px solid #FFFFFF; 
+}
+
+/* 4. The scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6900;
+  cursor: pointer;
+}
+
+/* 5. Corner piece where vertical and horizontal scrollbars meet */
+::-webkit-scrollbar-corner {
+  background: #FFFFFF;
+}
