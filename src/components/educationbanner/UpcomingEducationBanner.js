@@ -82,7 +82,7 @@ const GlobalStyles = () => (
     
     /* Fixed: Using standard positioning properties prevents scroll redraw glitches */
     .responsive-bg-focus {
-      background-image: url('/bg/study.jpg');
+      background-image: url('/bg/home-img.jpg');
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
