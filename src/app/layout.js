@@ -4,10 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 
-// const dancing = Dancing_Script({
-//   weight: ["400", "500", "600", "700"],
-//   subsets: ["latin"],
-// });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +35,10 @@ export const metadata = {
     "mental wellness programs India",
     "charity organization India"
   ],
+   other: {
+    "dmca-site-verification":
+      "VWVQZW51Ym5uR1F2d3VRSzlrbWd1MVFuQjdHc0l3Tk1TS3VZTzhtTU5vOD01",
+  },
 };
 
 export default function RootLayout({ children }) {
