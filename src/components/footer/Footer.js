@@ -176,7 +176,10 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5 flex justify-between items-center">
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=90584b6d-44d1-4e15-b091-903e4b8d6e79" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-11.png?ID=90584b6d-44d1-4e15-b091-903e4b8d6e79"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        {/* <a href="//www.dmca.com/Protection/Status.aspx?ID=90584b6d-44d1-4e15-b091-903e4b8d6e79" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-11.png?ID=90584b6d-44d1-4e15-b091-903e4b8d6e79"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script> */}
+
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=90584b6d-44d1-4e15-b091-903e4b8d6e79" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w150-5x1-07.png?ID=90584b6d-44d1-4e15-b091-903e4b8d6e79"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        
           <p className="text-[10px] uppercase tracking-[0.3em] text-slate-600 font-bold">
             © {new Date().getFullYear()} AD LIFE TRUST
           </p>
