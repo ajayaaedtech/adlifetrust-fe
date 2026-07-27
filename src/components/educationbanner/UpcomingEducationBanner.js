@@ -201,7 +201,7 @@ export default function UpcomingEducationBanner() {
     { value: "3 Free Career Counselling Sessions", label: "Professional guidance and support from premium academicians.", svgPath: "M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" }
   ];
 
-  const BROCHURES = [{ id: "en", lang: "English", href: "/education-pdf/B2B-For-Print.pdf" }];
+  const BROCHURES = [{ id: "en", lang: "English", href: "/education-pdf/Student brochure_adlifetrust.pdf" }];
   const [selectedLang, setSelectedLang] = useState(BROCHURES[0]);
 
   const eligibility = [

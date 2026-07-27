@@ -23,6 +23,7 @@ import OurPartners from "@/components/ourpartner/OurPartners";
 import {
   NGO_PARTNERS,
 } from "../components/ourpartner/data/partners";
+import EklavyaFeatures from "@/components/examinfo/EklavyaFeatures";
 
 function HomeContent() {
   const pathname = usePathname();
@@ -52,8 +53,11 @@ function HomeContent() {
       <>
         <UpcomingEducationBanner />
         <ScholarshipDetails />
+        
         <CourseHighlights />
         {/* <BrochureDownload /> */}
+      <EklavyaFeatures/>
+
         <OurPartners partners={NGO_PARTNERS} />
       </>
 
@@ -61,12 +65,8 @@ function HomeContent() {
       {/* <section id="blood-bank">
         <BloodBankLanding />
       </section> */}
-
-
-
       {/* 🧠 Mind Over Miles Hero */}
       {/* <MindOverMilesHero /> */}
-
       {/* 🎥 Reels Showcase */}
       {/* <ReelShowcase
         videos={[
@@ -77,14 +77,11 @@ function HomeContent() {
 
       {/* 👩‍⚕️ AD Life Profile */}
       <ADLifeProfile />
-
       {/* 🕊️ Gandhi Quote */}
-
       {/* 💸 Donation Section */}
       <DonationSection />
       <GandhiQuoteHero />
       <DonationBanner />
-
       {/* 🙌 Profile Card */}
       {/* <ProfileCard /> */}
     </main>
