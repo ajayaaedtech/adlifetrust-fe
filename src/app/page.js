@@ -5,7 +5,7 @@ import { Suspense, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
 import ADLifeProfile from "@/components/ADLifeProfile/ADLifeProfile";
-import BloodBankLanding from "@/components/BloodBankLanding";
+// import BloodBankLanding from "@/components/BloodBankLanding";
 import DonationBanner from "@/components/DonationBanner/DonationBanner";
 import DonationSection from "@/components/donationsection/DonationSection";
 import Empowerment from "@/components/Empowerment/Empowerment";
@@ -53,11 +53,9 @@ function HomeContent() {
       <>
         <UpcomingEducationBanner />
         <ScholarshipDetails />
-        
         <CourseHighlights />
         {/* <BrochureDownload /> */}
-      <EklavyaFeatures/>
-
+        <EklavyaFeatures />
         <OurPartners partners={NGO_PARTNERS} />
       </>
 
