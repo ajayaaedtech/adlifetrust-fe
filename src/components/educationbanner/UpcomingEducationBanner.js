@@ -134,110 +134,13 @@ export default function UpcomingEducationBanner() {
       <section className="relative z-20 bg-[#FAF7F2] py-16 sm:py-24 border-t border-[#EFE8D9]">
         <div className="max-w-6xl mx-auto px-4 sm:px-10 lg:px-14 space-y-16">
 
-          {/* Program Overview Callout */}
-          <div className="relative max-w-4xl mx-auto bg-gradient-to-r from-orange-500/10 via-amber-500/5 to-transparent rounded-2xl p-6 sm:p-8 border-l-4 border-orange-500 shadow-sm backdrop-blur-sm">
-            <p className="text-[#4A4335] leading-[1.85] text-[15.5px] sm:text-[17px] font-sans font-medium text-justify">
-              <span className="float-left text-[44px] sm:text-[52px] leading-[0.8] font-black text-[#0B0F19] mr-3 mt-1 bg-gradient-to-br from-orange-500 to-amber-600 bg-clip-text text-transparent">
-                T
-              </span>
-              he Bridge to Brilliance All India Talent and Scholarship Program uses a comprehensive national-level talent assessment to move beyond traditional academic grading, instead focusing on professional readiness and career success. By providing a structured{" "}
-              <span className="text-[#0B0F19] font-bold px-2 py-0.5 rounded bg-orange-500/15 border-b-2 border-orange-500 inline-block my-0.5">
-                National Score and Rank
-              </span>
-              , the program helps students understand their standing on a competitive national scale, bridging the gap between formal education and the practical skills required for specialized careers.
-            </p>
-          </div>
-
-          {/* Guidelines Split Layout Panel */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
-            {/* Left Card: Official Matrix Download */}
-            <div className="lg:col-span-7 bg-white/90 backdrop-blur-sm rounded-2xl p-7 sm:p-9 text-[#0B0F19] shadow-lg shadow-orange-950/[0.03] flex flex-col justify-between border border-[#E7DFD1] relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-br from-orange-500/10 to-amber-500/0 rounded-full blur-3xl pointer-events-none" />
-              
-              <div className="space-y-5 relative z-10">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse" />
-                  <span className="text-[10px] font-black uppercase tracking-widest text-orange-600 bg-orange-500/10 px-3 py-1 rounded-full font-sans border border-orange-500/20">
-                    Official Matrix
-                  </span>
-                </div>
-                
-                <h4 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0B0F19] font-sans">
-                  Scholarship Roadmap &amp; Guidelines Pack
-                </h4>
-                
-                <p className="text-[#6B6353] text-xs sm:text-[13.5px] leading-relaxed font-sans font-medium">
-                  Review the official curriculum frameworks setup to verify national allocation.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 pt-2 pb-2">
-                  {[
-                    "All India Talent Assessment Rules",
-                    "Free Career Counselling Flowchart",
-                    "All India Rank & Certificate Blueprint",
-                    "AI-Proctored Exam Instructions"
-                  ].map((item, idx) => (
-                    <div key={idx} className="flex items-center gap-3 text-[13px] font-bold text-[#3D372C] font-sans">
-                      <div className="w-5 h-5 rounded-full bg-orange-500/15 text-orange-600 flex items-center justify-center shrink-0 font-black text-xs">
-                        ✓
-                      </div>
-                      <span className="leading-tight">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Action Toolbar */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mt-8 relative z-10 w-full border-t border-[#EFE8D9] pt-5">
-                <div className="relative flex-1">
-                  <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-sm z-10 pointer-events-none">🌐</span>
-                  <select
-                    value={selectedLang?.id}
-                    onChange={e => setSelectedLang(BROCHURES.find(b => b.id === e.target.value))}
-                    className="appearance-none w-full pl-9 pr-9 py-3 bg-white text-[#0B0F19] font-bold text-xs rounded-xl border border-[#E7DFD1] outline-none cursor-pointer transition-all font-sans focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 shadow-sm"
-                    style={{
-                      backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%230B0F19'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "right 0.85rem center",
-                      backgroundSize: "0.85em",
-                    }}
-                  >
-                    {BROCHURES.map(b => <option key={b.id} value={b.id} className="text-slate-900">{b.lang}</option>)}
-                  </select>
-                </div>
-                <LightDownloadButton selectedLang={selectedLang} customClasses="w-full sm:w-auto" />
-              </div>
-
-            </div>
-
-            {/* Right Card: Who Can Apply */}
-            <div className="lg:col-span-5 p-7 sm:p-9 space-y-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-[#E7DFD1] shadow-md flex flex-col justify-between">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2.5">
-                  <span className="w-1.5 h-4 bg-orange-500 rounded-full" />
-                  <h4 className="text-[#0B0F19] font-extrabold text-xs tracking-wider uppercase font-sans">
-                    Who Can Apply
-                  </h4>
-                </div>
-                
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {eligibility.map(e => <EligBadge key={e.label} {...e} />)}
-                </div>
-              </div>
-
-              <p className="text-[12px] text-[#8C816E] font-medium font-sans leading-relaxed pt-4 border-t border-[#EFE8D9]">
-                * Must be an Indian citizen residing in India, willing to join coaching within 60 days, and not receiving another full coaching scholarship.
-              </p>
-            </div>
-
-          </div>
+          
 
           {/* Component 2: Educational Analysis & Bento Grid */}
           <EducationalAnalysis />
 
           {/* Offerings Grid */}
-          <div className="space-y-8 pt-8 border-t border-[#EFE8D9]">
+          {/* <div className="space-y-8 pt-8 border-t border-[#EFE8D9]">
             <div className="flex items-center gap-3">
               <span className="w-6 h-1 bg-orange-500 rounded-full" />
               <h3 className="text-xs font-black text-[#0B0F19] tracking-widest uppercase font-sans">
@@ -250,7 +153,7 @@ export default function UpcomingEducationBanner() {
                 <StatCard key={s.value} {...s} index={i} />
               ))}
             </div>
-          </div>
+          </div> */}
 
         </div>
       </section>
