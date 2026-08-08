@@ -121,13 +121,19 @@ export function PremiumDownloadButton({ selectedLang, customClasses = "" }) {
 
 export function FeeNote() {
   return (
-    <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 px-5 py-3 rounded-xl sm:rounded-full border border-white/10 shadow-md backdrop-blur-md w-full sm:w-auto text-center bg-slate-950/40">
-      <div className="flex items-center gap-2">
-        <span className="text-[15px] font-black bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent animate-amber-glow font-sans">₹1,800</span>
-      </div>
-      <span className="hidden sm:block w-px h-3 bg-white/20" />
-      <span className="text-center sm:text-left text-[12.5px] text-white/80 font-medium font-sans leading-normal">
-        Registration fee to participate in the scholarship Test and receive your Rank Card along with a Participation Certificate
+    // <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 px-5 py-3 rounded-xl sm:rounded-full border border-white/10 shadow-md backdrop-blur-md w-full sm:w-auto text-center bg-slate-950/40">
+    //   <div className="flex items-center gap-2">
+    //     <span className="text-[15px] font-black bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent animate-amber-glow font-sans">₹1,800</span>
+    //   </div>
+    //   <span className="hidden sm:block w-px h-3 bg-white/20" />
+    //   <span className="text-center sm:text-left text-[12.5px] text-white/80 font-medium font-sans leading-normal">
+    //     Registration fee to participate in the scholarship Test and receive your Rank Card along with a Participation Certificate
+    //   </span>
+    // </div>
+     <div className=" inline-flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 px-5 py-3 rounded-xl sm:rounded-full border border-white/10 shadow-md backdrop-blur-md w-full sm:w-auto text-center bg-slate-950/40">
+     
+      <span className="text-center sm:text-left text-[16.5px] text-white/80 font-medium font-sans leading-normal">
+       An affordable opportunity to support your learning journey, contact us for more information.
       </span>
     </div>
   );

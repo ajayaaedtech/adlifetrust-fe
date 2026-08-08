@@ -126,35 +126,13 @@ export default function UpcomingEducationBanner() {
       <AnimatePresence>
         {showTerms && <TermsModal onClose={() => setShowTerms(false)} />}
       </AnimatePresence>
-
       {/* Component 1: Hero Section */}
       <HeroSection selectedLang={selectedLang} />
-
       {/* Details Section */}
       <section className="relative z-20 bg-[#FAF7F2] py-16 sm:py-24 border-t border-[#EFE8D9]">
         <div className="max-w-6xl mx-auto px-4 sm:px-10 lg:px-14 space-y-16">
-
-          
-
           {/* Component 2: Educational Analysis & Bento Grid */}
           <EducationalAnalysis />
-
-          {/* Offerings Grid */}
-          {/* <div className="space-y-8 pt-8 border-t border-[#EFE8D9]">
-            <div className="flex items-center gap-3">
-              <span className="w-6 h-1 bg-orange-500 rounded-full" />
-              <h3 className="text-xs font-black text-[#0B0F19] tracking-widest uppercase font-sans">
-                Program Benefits &amp; Offerings
-              </h3>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {stats.map((s, i) => (
-                <StatCard key={s.value} {...s} index={i} />
-              ))}
-            </div>
-          </div> */}
-
         </div>
       </section>
     </>

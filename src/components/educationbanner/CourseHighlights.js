@@ -38,12 +38,26 @@ const steps = [
     ),
     iconColor: "text-red-500 bg-red-50 border-red-100",
   },
+  // {
+  //   id: 4,
+  //   stepNum: "04",
+  //   title: "Pay Application Fee",
+  //   description: "A one-time application fee of ₹1,800 covers the entire application process, including the Rank Card and Participation Certificate. No additional fees will be charged at any stage, either before or after the selection process",
+  //   highlight: "₹1,800 One-Time Fee",
+  //   highlightColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+  //   icon: (
+  //     <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+  //       <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+  //     </svg>
+  //   ),
+  //   iconColor: "text-indigo-600 bg-indigo-50 border-indigo-100",
+  // },
   {
     id: 4,
     stepNum: "04",
     title: "Pay Application Fee",
-    description: "A one-time application fee of ₹1,800 covers the entire application process, including the Rank Card and Participation Certificate. No additional fees will be charged at any stage, either before or after the selection process",
-    highlight: "₹1,800 One-Time Fee",
+    description: "An affordable opportunity to support your learning journey, contact us for more information.",
+    // highlight: "₹1,800 One-Time Fee",
     highlightColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
