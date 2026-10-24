@@ -1,16 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-/* ─── Motion Animation Tokens ─── */
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
-};
-
-const staggerContainer = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.06, delayChildren: 0.02 } },
-};
+import Image from "next/image";
 
 /* ─── Terms Modal Data ─── */
 const TERMS = [
@@ -142,74 +132,31 @@ export function FeeNote() {
 /* ─── Hero Component ─── */
 export default function HeroSection({ selectedLang }) {
   return (
-    <section className="relative h-[90vh] min-h-[650px] flex items-end overflow-hidden bg-[#0A0E1A] mt-24 md:mt-28">
-      <div className="absolute inset-0 z-0 pointer-events-none responsive-bg-focus" />
-      <div className="absolute inset-0 bg-slate-950/25 pointer-events-none z-0" />
-      
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(11,15,25,0.15) 0%, rgba(11,15,25,0.4) 45%, rgba(11,15,25,0.75) 68%, rgba(11,15,25,0.98) 100%)",
-        }}
-      />
-
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-10 lg:px-14 pb-12 pt-36">
-        <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-3xl space-y-5">
-          
-          <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-slate-950/70 shadow-md backdrop-blur-md">
-            <span className="relative flex w-1.5 h-1.5">
-              <span className="absolute inset-0 rounded-full bg-orange-400 animate-signal-pulse" />
-              <span className="relative z-10 w-1.5 h-1.5 rounded-full bg-orange-500" />
-            </span>
-            <span className="text-white font-bold text-[8px] sm:text-[10px] tracking-[0.2em] uppercase font-sans drop-shadow-sm">
-              A Pan-India Initiative by AD Life Trust
-            </span>
-          </motion.div>
-
-          <div className="space-y-3.5">
-            <motion.h1
-              variants={fadeUp}
-              className="text-[34px] sm:text-[54px] lg:text-[68px] font-black text-white leading-[1.1] tracking-wide font-sans uppercase"
-            >
-              BRIDGE TO <span className="text-orange-500">BRILLIANCE</span>
-            </motion.h1>
-
-            <motion.p
-              variants={fadeUp}
-              className="text-slate-300 uppercase text-[13px] sm:text-[15px] tracking-[0.14em] font-sans font-bold"
-            >
-              TALENT &amp; COACHING SCHOLARSHIP PROGRAM
-            </motion.p>
-
-            <motion.p
-              variants={fadeUp}
-              className="text-white/85 text-[15px] sm:text-[16.5px] italic font-sans"
-            >
-              "Because Every Dream Deserves a Chance" 
-            </motion.p>
-          </div>
-
-          <motion.div 
-            variants={fadeUp}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider text-orange-400 font-sans"
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
-            Applications Open · 2026
-          </motion.div>
-
-          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-            <RegisterButton />
-            <PremiumDownloadButton selectedLang={selectedLang} customClasses="w-full sm:w-auto" />
-            <PhoneButton phone="+918019038899" display="+91 80190 38899" />
-          </motion.div>
-
-          <motion.div variants={fadeUp} className="pt-1">
-            <FeeNote />
-          </motion.div>
-
-        </motion.div>
-      </div>
+    <section className="relative w-full overflow-hidden bg-[#0A0E1A] mt-24 md:mt-28">
+      <a
+        href="https://zerohourofficial.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Explore Zero Hour Fitness Carnival & Midnight Run"
+        className="relative block w-full"
+      >
+        <Image
+          src="/zero.png"
+          alt="Zero Hour Fitness Carnival & Midnight Run — Organised by AD Life Trust, 31 December 2026, Hyderabad"
+          width={768}
+          height={1376}
+          priority
+          className="block sm:hidden w-full h-auto object-cover"
+        />
+        <Image
+          src="/zero-hour-banner.jpeg"
+          alt="Zero Hour Fitness Carnival & Midnight Run — Organised by AD Life Trust, 31 December 2026, Hyderabad"
+          width={1600}
+          height={700}
+          priority
+          className="hidden sm:block w-full h-auto object-cover"
+        />
+      </a>
     </section>
   );
 }
